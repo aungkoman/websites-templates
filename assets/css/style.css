@@ -1762,7 +1762,8 @@ span{
 
 .overview-thumb--style2 {
     position: relative;
-    background-image: url("../images/overview.png");
+    /* background-image: url("../images/overview.png"); */
+    background-image: url("../images/overview.jpg");
     z-index: 2;
     background-size: cover;
     background-position: center;
@@ -1780,7 +1781,8 @@ span{
 
 .overview-thumb--style4{
     position: relative;
-    background-image: url("../images/faq-2.png");
+    /* background-image: url("../images/faq-2.png"); */
+    background-image: url("../images/faq2replace.jfif");
     z-index: 2;
     background-size: cover;
     background-position: center;
