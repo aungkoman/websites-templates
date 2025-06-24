@@ -18,10 +18,11 @@ change content for Ministry of Hotel and Tourism , Myanmar .
 
 ## 2025-06-24 Tasks
 
-- [ ] remove top most bar of website
+- [x] remove top most bar of website
 - [ ] place Language Dropdown into Menu Bar 
-- [ ] remove home menu 
+- [x] remove home menu 
 - [ ] 3 nested navigation 
 - [x] remove Ministry Leadership
 - [ ] info@tourism.gov.mm 
-- [ ] remove call to actions, sub titles
+- [x] remove call to actions, sub titles
+- [ ] e gov services listing
