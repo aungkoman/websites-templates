@@ -15,3 +15,9 @@ change content for Ministry of Hotel and Tourism , Myanmar .
 - [ ] Events Page - events.html
 - [ ] Gallery - gallery.html
 - [ ] Contact Page - contact.html
+
+## 2025-06-24 Tasks
+
+- [ ] remove top most bar of website
+- [ ] place Language Dropdown into Menu Bar 
+- [ ] remove home menu 
