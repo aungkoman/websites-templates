@@ -21,3 +21,6 @@ change content for Ministry of Hotel and Tourism , Myanmar .
 - [ ] remove top most bar of website
 - [ ] place Language Dropdown into Menu Bar 
 - [ ] remove home menu 
+- [ ] 3 nested navigation 
+- [x] remove Ministry Leadership
+- [ ] info@tourism.gov.mm 
