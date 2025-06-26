@@ -12,7 +12,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 h1 {
@@ -50,17 +50,42 @@ th {
 .back-to-home {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
+    /* background-color: #007bff; */
+    color: #007bff;
     text-decoration: none;
-    border-radius: 5px;
+    text-decoration: underline;
+    /* border-radius: 5px; */
     margin-bottom: 20px;
+    /* border-bottom: 1px solid #007bff; */
 }
 
 .back-to-home:hover {
-    background-color: #b7bec6;
+    color: #0c3969;
+    text-decoration: underline;
+
 }
 
 .back-to-home i {
     margin-right: 5px;
+}
+.header-container {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    
+    background-color: #fff;
+}
+.header-bottom {
+    padding-top: 0;   
+    padding-bottom: 0; 
+    border-bottom: 1px solid #ddd;
+}
+.footer-container {
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+section#police-hotlines {
+    margin: 20px 0;
 }

@@ -638,7 +638,7 @@ span{
 .header-section .header-top {
     /* background-color: var(--main-color); */
     background-color: #fff;
-    padding: 20px;
+    padding: 5px 20px;
 }
 
 @media (max-width: 991px) {
@@ -2060,6 +2060,8 @@ span{
 
 .footer-social{
     margin-top: 20px;
+    display: flex;
+    
 }
 
 .footer-social li {
@@ -3730,4 +3732,15 @@ blockquote::before {
 #our-role-menu ul.sub-menu li.menu_has_children ul.sub-menu {
     right: 100%; 
     left: auto; 
+}
+
+.navbar-collapse .main-menu li .sub-menu li a {
+    font-size: 0.8rem;
+}
+.navbar-collapse .main-menu li .sub-menu li .sub-menu li a {
+    font-size: 0.8rem;
+}
+.header-bottom {
+    padding-top: 0;   
+    padding-bottom: 0; 
 }
