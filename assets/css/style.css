@@ -3724,3 +3724,10 @@ blockquote::before {
 .main-menu li.menu_has_children ul.sub-menu li.menu_has_children:hover > ul.sub-menu {
     display: block; 
 }
+.navbar-collapse .main-menu li a {
+  font-size: 0.9rem; 
+}
+#our-role-menu ul.sub-menu li.menu_has_children ul.sub-menu {
+    right: 100%; 
+    left: auto; 
+}
