@@ -636,7 +636,8 @@ span{
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .header-section .header-top {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
+    background-color: #fff;
     padding: 20px;
 }
 
@@ -3707,3 +3708,19 @@ blockquote::before {
       .swiper-notification{
           display: none;
       }
+      .border-bottom {
+        border-bottom: 1px solid #ddd;
+      }
+      .main-menu li.menu_has_children ul.sub-menu li.menu_has_children ul.sub-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none; 
+    z-index: 1;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.main-menu li.menu_has_children ul.sub-menu li.menu_has_children:hover > ul.sub-menu {
+    display: block; 
+}
