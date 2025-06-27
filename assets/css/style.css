@@ -3957,3 +3957,29 @@ blockquote::before {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+/* Simple breadcrumb, no background */
+.breadcrumb-section,
+.breadcrumb {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">" !important;
+    color: #888 !important;
+    padding: 0 8px !important;
+}
+
+.breadcrumb-item a {
+    color: #007bff !important;
+    text-decoration: none !important;
+}
+
+.breadcrumb-item.active {
+    color: #333 !important;
+}

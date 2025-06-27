@@ -89,3 +89,29 @@ th {
 section#police-hotlines {
     margin: 20px 0;
 }
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 380px; 
+    background: url('../cover-images/1.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay for text readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+}
