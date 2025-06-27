@@ -3983,3 +3983,30 @@ blockquote::before {
 .breadcrumb-item.active {
     color: #333 !important;
 }
+@media (max-width: 992px) {
+    .sub-menu {
+        display: none; /* Hide sub-menus by default */
+        /* Other styling properties */
+    }
+
+    .sub-menu.show {
+        display: block; /* Show sub-menus when the 'show' class is added */
+    }
+}
+
+footer.footer-section{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.logo-container {
+    display: none;
+}
+
+/* Show logo only on mobile */
+@media (max-width: 991px) {
+    .logo-container {
+        display: block;
+    }
+}
