@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourism Police Offices - Ministry of Hotels and Tourism</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/tourism-police-offices.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- fontawesome css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontawesome css link -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <!-- flaticon css -->
     <link rel="stylesheet" href="assets/font/flaticon.css">
@@ -27,24 +33,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-     <!-- favicon -->
+    <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
 </head>
+
 <body>
-       <!-- header-section start -->
+
+    <!-- header-section start -->
     <header class="header-section">
         <!-- start top header section -->
 
-        <div class="header-top d-none d-xl-block border-bottom">
+        <!-- removed in header-top -> d-none d-xl-block -->
+        <div class="header-top  border-bottom">
             <div class="container header-container">
-                <div class="row align-items-center">
-                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo.png" width="90px"
-                            height="90px" alt="Ministry of Hotel and Tourism"></a>
-                    <h3 class="title">MINISTRY OF HOTELS & TOURISM</h3>
+                <div class="row align-items-center d-xl-flex d-none d-md-flex" id="logo_for_web">
+                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo-with-text-cut.png"
+                            width="500px" height="500px" alt="Ministry of Hotels and Tourism"></a>
 
 
 
                 </div>
+
+
             </div>
         </div>
         <!--  top header section end -->
@@ -54,20 +64,18 @@
             <div class="container header-container">
                 <div class="row align-items-center justify-content-between">
                     <div class="logo-container">
-                        <img src="assets/images/logo.png" alt="Mobile Logo" width="90px" height="90px">
+                        <img src="assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px" height="300px">
                     </div>
-                    <div class="logo-container">
-                        <h3>Ministry of Hotels and Tourism</h3>
-                    </div>
+
 
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        
                         <span class="fas fa-bars"></span>
                     </button>
                     <nav class="navbar navbar-expand-lg p-0">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse">
+                            <!-- removed in collapse id="navbarSupportedContent" -->
                             <ul class="navbar-nav main-menu ml-auto">
                                 <li class="menu_has_children"><a href="">Vital Info<i class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
@@ -281,317 +289,519 @@
 
                         </div>
                     </nav>
+                                    <!-- Mobile Menu Section start -->
+                <!-- Mobile Menu -->
+                <div class="mobile-menu" id="navbarSupportedContent">
+                    <div class="mobile-menu-header">
+                        <span class="mobile-menu-close">&times;</span>
+                    </div>
+                    <ul class="mobile-main-menu">
+                        <li class="mobile-menu_has_children">
+                            <a href="#">Vital Info <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about-myanmar.html">About Myanmar</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">Visa Requirements <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Electronic Visa</a></li>
+                                        <li><a href="coming.html">Visa Exemption</a></li>
+                                        <li><a href="coming.html">Visa on Arrival</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">Guidelines for Tour Companies</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">Traveller Tips <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Traveller Tips</a></li>
+                                        <li><a href="coming.html">Required Documents for Applying Tours</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">Helpdesk <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="branch-offices.html">Branch Offices</a></li>
+                                        <li><a href="information-counters.html">Information Counters</a></li>
+                                        <li><a href="tourism-police-offices.html">Tourism Police Offices</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">Attraction Entry Free</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">Embassies & Missions <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Myanmar Missions</a></li>
+                                        <li><a href="coming.html">Foreign Embassies in Myanmar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">Myanmar Ministries</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">Explorer Myanmar <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">North Myanmar <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Kachin</a></li>
+                                        <li><a href="coming.html">Sagaing</a></li>
+                                        <li><a href="coming.html">Chin</a></li>
+                                        <li><a href="coming.html">Shan</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Central Myanmar <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Magway</a></li>
+                                        <li><a href="coming.html">Nay Pyi Taw</a></li>
+                                        <li><a href="coming.html">Mandalay</a></li>
+                                        <li><a href="coming.html">Rakhine</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">South Myanmar <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Ayeyarwady</a></li>
+                                        <li><a href="coming.html">Kayah</a></li>
+                                        <li><a href="coming.html">Kayin</a></li>
+                                        <li><a href="coming.html">Bago</a></li>
+                                        <li><a href="coming.html">Yangon</a></li>
+                                        <li><a href="coming.html">Mon</a></li>
+                                        <li><a href="coming.html">Tanintharyi</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">Highlight <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">Festivals</a></li>
+                                <li><a href="coming.html">Ecotourism</a></li>
+                                <li><a href="coming.html">Community Based Tourism</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">Services <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Accommodation <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Hotels & Resorts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Tours <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">Tour Companies <span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">Inbound Tour Companies</a></li>
+                                                <li><a href="coming.html">Outbound Tour Companies</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">Tour Guides <span class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">Transportation <span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">Cruises & Others</a></li>
+                                                <li><a href="coming.html">Hot-Air Balloons</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">Guides & Resources <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">Tourism Legislation</a></li>
+                                <li><a href="coming.html">Tourism Statistics</a></li>
+                                <li><a href="coming.html">Tourism Publications</a></li>
+                                <li><a href="coming.html">ASEAN Tourism Standards</a></li>
+                                <li><a href="coming.html">Myanmar Be Enchanted</a></li>
+                                <li><a href="coming.html">Myanmar Let The Journey Begin</a></li>
+                                <li><a href="coming.html">Brochures & Pamphlets</a></li>
+                                <li><a href="coming.html">Visitors Guide Book</a></li>
+                                <li><a href="coming.html">Articles</a></li>
+                                <li><a href="coming.html">Video & Photos</a></li>
+                                <li><a href="coming.html">Maps</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">News & Announcements <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">Health And Travel Latest News From Myanmar</a></li>
+                                <li><a href="coming.html">Weather Forecast</a></li>
+                                <li><a href="coming.html">Upcoming Events</a></li>
+                                <li><a href="coming.html">News</a></li>
+                                <li><a href="coming.html">Announcements</a></li>
+                                <li><a href="coming.html">Travel Advisory</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">Our Role <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="duties.html">Duties & Responsibilities</a></li>
+                                <li><a href="objectives.html">Objectives</a></li>
+                                <li><a href="six-policies.html">Six Policies of Ministry of Hotels and Tourism</a>
+                                </li>
+                                <li><a href="coming.html">International Cooperation</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Tourism Business <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Doing Business in Myanmar</a></li>
+                                        <li><a href="coming.html">Myanmar Investment Law</a></li>
+                                        <li><a href="coming.html">Tourism Investment Opportunities</a></li>
+                                        <li><a href="coming.html">Why Invest in Myanmar</a></li>
+                                        <li><a href="coming.html">Foreign Investment in Hotels and commercial
+                                                complexes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Statistics <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Tourism Statistics</a></li>
+                                        <li><a href="coming.html">Arrivals 2024</a></li>
+                                        <li><a href="coming.html">Arrivals 2023</a></li>
+                                        <li><a href="coming.html">Arrivals 2022</a></li>
+                                        <li><a href="coming.html">Arrivals 2021</a></li>
+                                        <li><a href="coming.html">Arrivals 2020</a></li>
+                                        <li><a href="coming.html">Arrivals 2019</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Training Courses</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">Contact Person</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu Section end -->
                 </div>
             </div>
         </div>
         <!-- end bottom header section -->
     </header>
     <!-- header-section end -->
-         <section class="hero-section">
-    <div class="hero-overlay">
-        <!-- <h1 class="hero-title">About Myanmar</h1> -->
-    </div>
-</section>
-    
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <!-- <h1 class="hero-title">About Myanmar</h1> -->
+        </div>
+    </section>
+
     <div class="container">
-        
+
         <h1>Tourism Police Offices</h1>
 
-                      <nav aria-label="breadcrumb" class="breadcrumb-section">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-            Tourism Police Offices
-        </li>
-    </ol>
-</nav>
+        <nav aria-label="breadcrumb" class="breadcrumb-section">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Tourism Police Offices
+                </li>
+            </ol>
+        </nav>
 
         <p>Contact information for Tourism Police Units across Myanmar.</p>
 
         <section id="police-units">
             <!-- <h2>Tourism Police Units and Addresses</h2> -->
-             <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tourism Police Office Unit</th>
-                        <th>Address</th>
-                        <th>Phone Number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Head Quarter</td>
-                        <td>Naypyitaw, Zabuthiri Township, Hotel Zone-1, at No.2 Police Station and Operating Functions.</td>
-                        <td>067-414303, 067-414364</td>
-                    </tr>
-                    <tr>
-                        <td>Naypyitaw Unit</td>
-                        <td>Inside the Head Quarter building.</td>
-                        <td>067-414226, 09-448539518</td>
-                    </tr>
-                    <tr>
-                        <td>Yangon Unit</td>
-                        <td>No.110, Pansodan Road (middle block), Kyauktada Tsp.</td>
-                        <td>01-379991, 09-448539519</td>
-                    </tr>
-                    <tr>
-                        <td>Mandalay Unit</td>
-                        <td>Aung Myay Tharzan Tsp, Min- Te- Ei- Kin Quarter, 19th Street (between 90th and Tar- Pat St) at Kyauk- Tha- Beik Police Quarter.</td>
-                        <td>02-67382, 09-791107831</td>
-                    </tr>
-                    <tr>
-                        <td>Pyin Oo Lwin Sub- unit</td>
-                        <td>Inside Pyin Oo Lwin Tsp Local Police Station.</td>
-                        <td>09-422527811</td>
-                    </tr>
-                    <tr>
-                        <td>Bagan Unit</td>
-                        <td>New Bagan, at Bagan Local Police Station.</td>
-                        <td>061-65474, 09-448539508</td>
-                    </tr>
-                    <tr>
-                        <td>Popa Sub-unit</td>
-                        <td>Located at Summit of Popa Padestal hill, Ruby Stairway, Board of Trustee building.</td>
-                        <td>09-256261413</td>
-                    </tr>
-                    <tr>
-                        <td>Shan Unit</td>
-                        <td>Inside Nyaung Shwe, (In Le) Tsp, Local Police Station.</td>
-                        <td>081-209911, 09-448539509</td>
-                    </tr>
-                    <tr>
-                        <td>Kalaw Sub-unit</td>
-                        <td>Inside Kalaw Tsp, Local Police Station.</td>
-                        <td>09-428313074</td>
-                    </tr>
-                    <tr>
-                        <td>Pindaya Sub-unit</td>
-                        <td>Inside Pindaya Local Police Station.</td>
-                        <td>09-49355319</td>
-                    </tr>
-                    <tr>
-                        <td>Ayarwaddy Unit</td>
-                        <td>Ayarwaddy Units (Ngwe Saung and Chaung Thar) are placed in respective Local Police Stations.</td>
-                        <td>09-250236373, 09-250188328</td>
-                    </tr>
-                    <tr>
-                        <td>Srikhittayar Unit (Pyu Ancient City)</td>
-                        <td>Bago Regional Division (west), Pyay Tsp, North Chapel of Shwe San Daw Pagoda.</td>
-                        <td>09-250236373, 09-250188328</td>
-                    </tr>
-                    <tr>
-                        <td>Bago Sub-unit</td>
-                        <td>Bago Tsp, West Chapel of Shwemawdaw Pagoda, Power Supply building.</td>
-                        <td>09-250471372</td>
-                    </tr>
-                    <tr>
-                        <td>Beikthano Unit (Pyu Ancient City)</td>
-                        <td>Magway Regional Division, Taungdwingyi tsp, Local Police Station.</td>
-                        <td>063-51148, 09-256016729</td>
-                    </tr>
-                    <tr>
-                        <td>Hanlin Unit (Pyu Ancient City)</td>
-                        <td>Sagaing Regional Division, Shwebo district, Wetlet Tsp, Local Police Station.</td>
-                        <td>09-400536332</td>
-                    </tr>
-                    <tr>
-                        <td>Sagaing- Mingun Sub-unit</td>
-                        <td>Inside Mingun Police Station.</td>
-                        <td>09-797399188</td>
-                    </tr>
-                    <tr>
-                        <td>Mawlamyaing Unit</td>
-                        <td>Mon State, Mawlamyaing Tsp, Maung Ngan Quarter, Maung Ngan Police Outpost.</td>
-                        <td>09-977044493, 09-254299912</td>
-                    </tr>
-                    <tr>
-                        <td>Kyaikhtiyo Sub-unit</td>
-                        <td>Mon State, Kyaikhto Tsp, Kimonchaung Police Station.</td>
-                        <td>09-428206641</td>
-                    </tr>
-                    <tr>
-                        <td>Myawaddy Unit</td>
-                        <td>Kayin State, Myawaddy Tsp, Local Police Station.</td>
-                        <td>09-43200250</td>
-                    </tr>
-                    <tr>
-                        <td>Tachileik Unit</td>
-                        <td>Shan State, Tachileik Tsp, Pasak Quarter, No.218, Bogyoke Aung San Road.</td>
-                        <td>09-428003877</td>
-                    </tr>
-                    <tr>
-                        <td>Ngapali Unit</td>
-                        <td>Rakhine State, Thandwe Tsp, Jeiktaw Police Station.</td>
-                        <td>09-403714839</td>
-                    </tr>
-                    <tr>
-                        <td>Mrauk-U Sub-unit</td>
-                        <td>Rakhine State, Mrauk-U Tsp, nearby Shitthaung Pagoda, Archaeology building.</td>
-                        <td>09-787191051, 09-253448499</td>
-                    </tr>
-                     <tr>
-                        <td>Kanpatlat Sub-unit</td>
-                        <td>Chin State, Kanpatlat Tsp Police Station.</td>
-                        <td>09-73056986</td>
-                    </tr>
-                    <tr>
-                        <td>Dawei Sub-unit</td>
-                        <td>Tanintharyi Regional Division, Dawei Tsp, Pa-lae Police Avenue Compound.</td>
-                        <td>09-250477105, 09-47053133</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tourism Police Office Unit</th>
+                            <th>Address</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Head Quarter</td>
+                            <td>Naypyitaw, Zabuthiri Township, Hotel Zone-1, at No.2 Police Station and Operating
+                                Functions.</td>
+                            <td>067-414303, 067-414364</td>
+                        </tr>
+                        <tr>
+                            <td>Naypyitaw Unit</td>
+                            <td>Inside the Head Quarter building.</td>
+                            <td>067-414226, 09-448539518</td>
+                        </tr>
+                        <tr>
+                            <td>Yangon Unit</td>
+                            <td>No.110, Pansodan Road (middle block), Kyauktada Tsp.</td>
+                            <td>01-379991, 09-448539519</td>
+                        </tr>
+                        <tr>
+                            <td>Mandalay Unit</td>
+                            <td>Aung Myay Tharzan Tsp, Min- Te- Ei- Kin Quarter, 19th Street (between 90th and Tar- Pat
+                                St) at Kyauk- Tha- Beik Police Quarter.</td>
+                            <td>02-67382, 09-791107831</td>
+                        </tr>
+                        <tr>
+                            <td>Pyin Oo Lwin Sub- unit</td>
+                            <td>Inside Pyin Oo Lwin Tsp Local Police Station.</td>
+                            <td>09-422527811</td>
+                        </tr>
+                        <tr>
+                            <td>Bagan Unit</td>
+                            <td>New Bagan, at Bagan Local Police Station.</td>
+                            <td>061-65474, 09-448539508</td>
+                        </tr>
+                        <tr>
+                            <td>Popa Sub-unit</td>
+                            <td>Located at Summit of Popa Padestal hill, Ruby Stairway, Board of Trustee building.</td>
+                            <td>09-256261413</td>
+                        </tr>
+                        <tr>
+                            <td>Shan Unit</td>
+                            <td>Inside Nyaung Shwe, (In Le) Tsp, Local Police Station.</td>
+                            <td>081-209911, 09-448539509</td>
+                        </tr>
+                        <tr>
+                            <td>Kalaw Sub-unit</td>
+                            <td>Inside Kalaw Tsp, Local Police Station.</td>
+                            <td>09-428313074</td>
+                        </tr>
+                        <tr>
+                            <td>Pindaya Sub-unit</td>
+                            <td>Inside Pindaya Local Police Station.</td>
+                            <td>09-49355319</td>
+                        </tr>
+                        <tr>
+                            <td>Ayarwaddy Unit</td>
+                            <td>Ayarwaddy Units (Ngwe Saung and Chaung Thar) are placed in respective Local Police
+                                Stations.</td>
+                            <td>09-250236373, 09-250188328</td>
+                        </tr>
+                        <tr>
+                            <td>Srikhittayar Unit (Pyu Ancient City)</td>
+                            <td>Bago Regional Division (west), Pyay Tsp, North Chapel of Shwe San Daw Pagoda.</td>
+                            <td>09-250236373, 09-250188328</td>
+                        </tr>
+                        <tr>
+                            <td>Bago Sub-unit</td>
+                            <td>Bago Tsp, West Chapel of Shwemawdaw Pagoda, Power Supply building.</td>
+                            <td>09-250471372</td>
+                        </tr>
+                        <tr>
+                            <td>Beikthano Unit (Pyu Ancient City)</td>
+                            <td>Magway Regional Division, Taungdwingyi tsp, Local Police Station.</td>
+                            <td>063-51148, 09-256016729</td>
+                        </tr>
+                        <tr>
+                            <td>Hanlin Unit (Pyu Ancient City)</td>
+                            <td>Sagaing Regional Division, Shwebo district, Wetlet Tsp, Local Police Station.</td>
+                            <td>09-400536332</td>
+                        </tr>
+                        <tr>
+                            <td>Sagaing- Mingun Sub-unit</td>
+                            <td>Inside Mingun Police Station.</td>
+                            <td>09-797399188</td>
+                        </tr>
+                        <tr>
+                            <td>Mawlamyaing Unit</td>
+                            <td>Mon State, Mawlamyaing Tsp, Maung Ngan Quarter, Maung Ngan Police Outpost.</td>
+                            <td>09-977044493, 09-254299912</td>
+                        </tr>
+                        <tr>
+                            <td>Kyaikhtiyo Sub-unit</td>
+                            <td>Mon State, Kyaikhto Tsp, Kimonchaung Police Station.</td>
+                            <td>09-428206641</td>
+                        </tr>
+                        <tr>
+                            <td>Myawaddy Unit</td>
+                            <td>Kayin State, Myawaddy Tsp, Local Police Station.</td>
+                            <td>09-43200250</td>
+                        </tr>
+                        <tr>
+                            <td>Tachileik Unit</td>
+                            <td>Shan State, Tachileik Tsp, Pasak Quarter, No.218, Bogyoke Aung San Road.</td>
+                            <td>09-428003877</td>
+                        </tr>
+                        <tr>
+                            <td>Ngapali Unit</td>
+                            <td>Rakhine State, Thandwe Tsp, Jeiktaw Police Station.</td>
+                            <td>09-403714839</td>
+                        </tr>
+                        <tr>
+                            <td>Mrauk-U Sub-unit</td>
+                            <td>Rakhine State, Mrauk-U Tsp, nearby Shitthaung Pagoda, Archaeology building.</td>
+                            <td>09-787191051, 09-253448499</td>
+                        </tr>
+                        <tr>
+                            <td>Kanpatlat Sub-unit</td>
+                            <td>Chin State, Kanpatlat Tsp Police Station.</td>
+                            <td>09-73056986</td>
+                        </tr>
+                        <tr>
+                            <td>Dawei Sub-unit</td>
+                            <td>Tanintharyi Regional Division, Dawei Tsp, Pa-lae Police Avenue Compound.</td>
+                            <td>09-250477105, 09-47053133</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <section id="police-hotlines">
             <h3>Tourism Police Hotlines and Locations</h3>
-              <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>No.</th>
-                        <th>Location</th>
-                        <th>Phone Number</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>The Head Quarter</td>
-                        <td>067-414303, 067-414364</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Naypyitaw</td>
-                        <td>067-414226</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Yangon</td>
-                        <td>01-379991</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Mandalay</td>
-                        <td>02-67382</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Pyin Oo Lwin</td>
-                        <td>09-422527811</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Bagan</td>
-                        <td>061-65474</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Popa</td>
-                        <td>09-256261413</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Shan</td>
-                        <td>081-209911</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Pindaya</td>
-                        <td>09-49355319</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Kalaw</td>
-                        <td>09-428313074</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Tachileik</td>
-                        <td>09-428003877</td>
-                    </tr>
-                    <tr>
-                        <td>12</td>
-                        <td>Ayarwaddy</td>
-                        <td>09-250236373</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>Srikhittaya</td>
-                        <td>09-250188328</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td>Bago</td>
-                        <td>09-250343438</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>Beikthano</td>
-                        <td>09-250471372</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td>Beikthano</td>
-                        <td>063-51148</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td>Hanlin</td>
-                        <td>09-2560167729, 09-47061503</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                        <td>Mingon</td>
-                        <td>09-797399188</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td>Mawlamyaing</td>
-                        <td>09-8548090</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>Kyaikhtiyoe</td>
-                        <td>09-428206641</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                        <td>Ngapali</td>
-                        <td>09-403714839, 043-42191</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>Mrauk-U</td>
-                        <td>09-253448499, 09-78719105</td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                        <td>Myawaddy</td>
-                        <td>09-43200250</td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
-                        <td>Kanpatlat</td>
-                        <td>09-73056986</td>
-                    </tr>
-                    <tr>
-                        <td>25</td>
-                        <td>Dawei</td>
-                        <td>09-250477105, 09-47053133</td>
-                    </tr>
-                    <tr>
-                        <td>26</td>
-                        <td>Loikaw</td>
-                        <td>09-420153119</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Location</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>The Head Quarter</td>
+                            <td>067-414303, 067-414364</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Naypyitaw</td>
+                            <td>067-414226</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Yangon</td>
+                            <td>01-379991</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Mandalay</td>
+                            <td>02-67382</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Pyin Oo Lwin</td>
+                            <td>09-422527811</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Bagan</td>
+                            <td>061-65474</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Popa</td>
+                            <td>09-256261413</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Shan</td>
+                            <td>081-209911</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Pindaya</td>
+                            <td>09-49355319</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Kalaw</td>
+                            <td>09-428313074</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Tachileik</td>
+                            <td>09-428003877</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Ayarwaddy</td>
+                            <td>09-250236373</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Srikhittaya</td>
+                            <td>09-250188328</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Bago</td>
+                            <td>09-250343438</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Beikthano</td>
+                            <td>09-250471372</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Beikthano</td>
+                            <td>063-51148</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Hanlin</td>
+                            <td>09-2560167729, 09-47061503</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Mingon</td>
+                            <td>09-797399188</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Mawlamyaing</td>
+                            <td>09-8548090</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Kyaikhtiyoe</td>
+                            <td>09-428206641</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Ngapali</td>
+                            <td>09-403714839, 043-42191</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Mrauk-U</td>
+                            <td>09-253448499, 09-78719105</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Myawaddy</td>
+                            <td>09-43200250</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Kanpatlat</td>
+                            <td>09-73056986</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Dawei</td>
+                            <td>09-250477105, 09-47053133</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Loikaw</td>
+                            <td>09-420153119</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </div>
 
@@ -599,9 +809,9 @@
 
     <!-- main section end -->
 
-     <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
+    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
     <a href="#" class="scrollToTop"><img src="assets/images/plane-up-solid.svg" alt="image"></a>
-       <!-- footer-section start -->
+    <!-- footer-section start -->
     <footer class="footer-section pt-120 pb-120">
         <div class="container footer-container">
             <div class="row mb-30-none">
@@ -644,15 +854,15 @@
                     <div class="footer-widget widget-menu">
                         <h3 class="widget-title">Contact Us</h3>
                         <ul class="footer-widget-content">
-                             <li>
-        <p><i class="fas fa-phone-alt"></i> (+95) 673406458</p>
-    </li>
-    <li>
-        <p><i class="fas fa-phone-alt"></i> (+95) 673406247</p>
-    </li>
-    <li>
-        <p><i class="fas fa-phone-alt"></i> 1551</p>
-    </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+95) 673406458</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+95) 673406247</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> 1551</p>
+                            </li>
                             <li>
                                 <p><i class="fas fa-map-marker-alt"></i>Ministry of Hotels and Tourism, Office No. 33,
                                     Nay Pyi Taw, Myanmar</p>
@@ -672,7 +882,8 @@
 
                             <li><a href="https://t.me/myanmarbeenchanted" target="_blank"><i
                                         class="fab fa-telegram-plane"></i></a></li>
-                                        <li><a href="https://pinterest.com/tourisminmyanmar" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="https://pinterest.com/tourisminmyanmar" target="_blank"><i
+                                        class="fab fa-pinterest-p"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -690,7 +901,7 @@
     </div> -->
     <!-- footer-section end -->
 
-     <!-- jquery -->
+    <!-- jquery -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- migarate-jquery -->
     <script src="assets/js/jquery-migrate-3.0.0.js"></script>
@@ -712,49 +923,68 @@
     <script src="assets/js/jquery.paroller.min.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
-        <!-- for mobile menu -->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    function isMobile() {
-        return window.innerWidth < 992;
-    }
+    <!-- for mobile menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobile() {
+                return window.innerWidth < 992;
+            }
 
-    // Attach click event to all menu_has_children > a (including submenus)
-    document.querySelectorAll('.main-menu .menu_has_children > a').forEach(function (parentLink) {
-        parentLink.addEventListener('click', function (e) {
-            if (isMobile()) {
-                e.preventDefault();
-                e.stopPropagation();
+            const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
 
-                var parentLi = this.parentElement;
+            mobileMenuLinks.forEach(function (parentLink) {
+                parentLink.addEventListener('click', function (e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        e.stopPropagation();
 
-                // Close other open submenus at the same level
-                var siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
-                siblings.forEach(function (sibling) {
-                    sibling.classList.remove('open');
-                    var siblingSub = sibling.querySelector(':scope > .sub-menu');
-                    if (siblingSub) {
-                        siblingSub.classList.remove('show'); // Use classList instead of style
+                        const parentLi = this.parentElement;
+                        const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
+
+                        // Close other open submenus at the same level
+                        const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
+                        siblings.forEach(function (sibling) {
+                            sibling.classList.remove('open');
+                            const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
+                            if (siblingSub) {
+                                siblingSub.style.display = 'none'; // Hide the submenu
+                            }
+                        });
+
+                        // Toggle the current submenu
+                        if (submenu) {
+                            if (submenu.style.display === 'block') {
+                                submenu.style.display = 'none';
+                                parentLi.classList.remove('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
+                            } else {
+                                submenu.style.display = 'block';
+                                parentLi.classList.add('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+                            }
+                        }
                     }
                 });
+            });
 
-                // Toggle only the direct submenu of this parent
-                var submenu = parentLi.querySelector(':scope > .sub-menu');
-                if (submenu) {
-                    submenu.classList.toggle('show'); // Use classList instead of style
-                    parentLi.classList.toggle('open');
-                }
-            }
-        });
-    });
+            // Mobile menu toggle button
+            navbarToggler.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event bubbling
+                mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
+            });
 
-    // Initialize: Hide all sub-sub menus on load
-    if (isMobile()) {
-        document.querySelectorAll('.main-menu .menu_has_children .sub-menu .menu_has_children .sub-menu').forEach(function (subSubMenu) {
-            subSubMenu.classList.add('hide');
+            // Mobile menu close button
+            mobileMenuClose.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+            });
         });
-    }
-});
-</script>
+    </script>
+
+
+
 </body>
+
 </html>

@@ -68,19 +68,19 @@ th {
 .back-to-home i {
     margin-right: 5px;
 }
-.header-container {
+ .header-container {
       width: 100%;
       margin: 0;
       padding: 0;
       box-shadow: none;
     
     background-color: #fff;
-}
+} 
 .header-bottom {
     padding-top: 0;   
     padding-bottom: 0; 
     border-bottom: 1px solid #ddd;
-}
+} 
 .footer-container {
     background-color: transparent;
     padding-top: 0;

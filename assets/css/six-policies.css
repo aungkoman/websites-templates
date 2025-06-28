@@ -69,12 +69,12 @@ ol li {
       box-shadow: none;
     
     background-color: #fff;
-}
+} 
 .header-bottom {
     padding-top: 0;   
     padding-bottom: 0; 
     border-bottom: 1px solid #ddd;
-}
+} 
 .footer-container {
     background-color: transparent;
     padding-top: 0;
