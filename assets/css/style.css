@@ -4013,15 +4013,17 @@ footer.footer-section{
  /* Mobile Menu Styles */
  .mobile-menu {
   display: none;
+  transition: transform 0.3s ease;
  }
 
  @media (max-width: 991px) {
+  
     nav.navbar {
         display: none;
     }
   .mobile-menu {
    display: block;
-   /* Add your mobile menu styling here */
+   
    background: #f9f9f9;
    padding: 15px;
    position: fixed;
@@ -4103,3 +4105,4 @@ footer.footer-section{
   font-size: 2em;
   cursor: pointer;
  }
+

@@ -42,15 +42,16 @@
     <header class="header-section">
         <!-- start top header section -->
 
-        <div class="header-top d-none d-xl-block border-bottom">
+        <div class="header-top border-bottom">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center d-xl-flex d-none" id="logo_for_web">
                     <a class="site-logo site-title" href="index.html"><img src="assets/images/logo.png" width="90px"
                             height="90px" alt="Ministry of Hotels and Tourism"></a>
                     <h3 class="title">MINISTRY OF HOTELS & TOURISM</h3>
-
-
-
+                </div>
+                <div class="row align-items-center d-xl-none d-flex" id="logo_for_mobile">
+                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo-with-text-cut.png"
+                            alt="Ministry of Hotels and Tourism"></a>
                 </div>
             </div>
         </div>
@@ -73,9 +74,10 @@
                         <span class="fas fa-bars"></span>
                     </button>
                     <nav class="navbar navbar-expand-lg p-0">
-                        <div class="collapse navbar-collapse" >
+                        <div class="collapse navbar-collapse">
                             <ul class="navbar-nav main-menu ml-auto">
-                                <li class="menu_has_children"><a href="#" >Vital Info<i class="fas fa-caret-down"></i></a>
+                                <li class="menu_has_children"><a href="#">Vital Info<i
+                                            class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="about-myanmar.html">About Myanmar</a></li>
                                         <li class="menu_has_children">
@@ -288,199 +290,204 @@
                         </div>
                     </nav>
                     <!-- Mobile Menu Section start -->
-   <!-- Mobile Menu -->
-  <div class="mobile-menu" id="navbarSupportedContent">
-  <div class="mobile-menu-header">
-   <span class="mobile-menu-close">&times;</span>
-  </div>
-  <ul class="mobile-main-menu">
-   <li class="mobile-menu_has_children">
-    <a href="#">Vital Info <span class="sub-menu-icon">+</span></a>
-    <ul class="mobile-sub-menu">
-     <li><a href="about-myanmar.html">About Myanmar</a></li>
-     <li class="mobile-menu_has_children">
-      <a href="#">Visa Requirements <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Electronic Visa</a></li>
-       <li><a href="coming.html">Visa Exemption</a></li>
-       <li><a href="coming.html">Visa on Arrival</a></li>
-      </ul>
-     </li>
-     <li><a href="coming.html">Guidelines for Tour Companies</a></li>
-     <li class="mobile-menu_has_children">
-      <a href="#">Traveller Tips <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Traveller Tips</a></li>
-       <li><a href="coming.html">Required Documents for Applying Tours</a></li>
-      </ul>
-     </li>
-     <li class="mobile-menu_has_children">
-      <a href="#">Helpdesk <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="branch-offices.html">Branch Offices</a></li>
-       <li><a href="information-counters.html">Information Counters</a></li>
-       <li><a href="tourism-police-offices.html">Tourism Police Offices</a></li>
-      </ul>
-     </li>
-     <li><a href="coming.html">Attraction Entry Free</a></li>
-     <li class="mobile-menu_has_children">
-      <a href="#">Embassies & Missions <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Myanmar Missions</a></li>
-       <li><a href="coming.html">Foreign Embassies in Myanmar</a></li>
-      </ul>
-     </li>
-     <li><a href="coming.html">Myanmar Ministries</a></li>
-    </ul>
-   </li>
-   <li class="mobile-menu_has_children">
-    <a href="coming.html">Explorer Myanmar <span class="sub-menu-icon">+</span></a>
-    <ul class="mobile-sub-menu">
-     <li class="mobile-menu_has_children">
-      <a href="#">North Myanmar <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Kachin</a></li>
-       <li><a href="coming.html">Sagaing</a></li>
-       <li><a href="coming.html">Chin</a></li>
-       <li><a href="coming.html">Shan</a></li>
-      </ul>
-     </li>
-     <li class="mobile-menu_has_children">
-      <a href="coming.html">Central Myanmar <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Magway</a></li>
-       <li><a href="coming.html">Nay Pyi Taw</a></li>
-       <li><a href="coming.html">Mandalay</a></li>
-       <li><a href="coming.html">Rakhine</a></li>
-      </ul>
-     </li>
-     <li class="mobile-menu_has_children">
-      <a href="coming.html">South Myanmar <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Ayeyarwady</a></li>
-       <li><a href="coming.html">Kayah</a></li>
-       <li><a href="coming.html">Kayin</a></li>
-       <li><a href="coming.html">Bago</a></li>
-       <li><a href="coming.html">Yangon</a></li>
-       <li><a href="coming.html">Mon</a></li>
-       <li><a href="coming.html">Tanintharyi</a></li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="mobile-menu_has_children">
-    <a href="coming.html">Highlight <span class="sub-menu-icon">+</span></a>
-    <ul class="mobile-sub-menu">
-     <li><a href="coming.html">Festivals</a></li>
-     <li><a href="coming.html">Ecotourism</a></li>
-     <li><a href="coming.html">Community Based Tourism</a></li>
-    </ul>
-   </li>
-   <li class="mobile-menu_has_children">
-    <a href="coming.html">Services <span class="sub-menu-icon">+</span></a>
-    <ul class="mobile-sub-menu">
-     <li class="mobile-menu_has_children">
-      <a href="coming.html">Accommodation <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Hotels & Resorts</a></li>
-      </ul>
-     </li>
-     <li class="mobile-menu_has_children">
-      <a href="coming.html">Tours <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li class="mobile-menu_has_children">
-        <a href="coming.html">Tour Companies <span class="sub-menu-icon">+</span></a>
-        <ul class="mobile-sub-menu">
-         <li><a href="coming.html">Inbound Tour Companies</a></li>
-         <li><a href="coming.html">Outbound Tour Companies</a></li>
-        </ul>
-       </li>
-       <li class="mobile-menu_has_children">
-        <a href="coming.html">Tour Guides <span class="sub-menu-icon">+</span></a>
-        <ul class="mobile-sub-menu">
-         <li><a href="coming.html">National Tour Guides</a></li>
-         <li><a href="coming.html">Regional Tour Guides</a></li>
-        </ul>
-       </li>
-       <li class="mobile-menu_has_children">
-        <a href="coming.html">Transportation <span class="sub-menu-icon">+</span></a>
-        <ul class="mobile-sub-menu">
-         <li><a href="coming.html">Cruises & Others</a></li>
-         <li><a href="coming.html">Hot-Air Balloons</a></li>
-        </ul>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li class="mobile-menu_has_children">
-    <a href="coming.html">Guides & Resources <span class="sub-menu-icon">+</span></a>
-    <ul class="mobile-sub-menu">
-     <li><a href="coming.html">Tourism Legislation</a></li>
-     <li><a href="coming.html">Tourism Statistics</a></li>
-     <li><a href="coming.html">Tourism Publications</a></li>
-     <li><a href="coming.html">ASEAN Tourism Standards</a></li>
-     <li><a href="coming.html">Myanmar Be Enchanted</a></li>
-     <li><a href="coming.html">Myanmar Let The Journey Begin</a></li>
-     <li><a href="coming.html">Brochures & Pamphlets</a></li>
-     <li><a href="coming.html">Visitors Guide Book</a></li>
-     <li><a href="coming.html">Articles</a></li>
-     <li><a href="coming.html">Video & Photos</a></li>
-     <li><a href="coming.html">Maps</a></li>
-    </ul>
-   </li>
-   <li class="mobile-menu_has_children">
-    <a href="coming.html">News & Announcements <span class="sub-menu-icon">+</span></a>
-    <ul class="mobile-sub-menu">
-     <li><a href="coming.html">Health And Travel Latest News From Myanmar</a></li>
-     <li><a href="coming.html">Weather Forecast</a></li>
-     <li><a href="coming.html">Upcoming Events</a></li>
-     <li><a href="coming.html">News</a></li>
-     <li><a href="coming.html">Announcements</a></li>
-     <li><a href="coming.html">Travel Advisory</a></li>
-    </ul>
-   </li>
-   <li class="mobile-menu_has_children">
-    <a href="coming.html">Our Role <span class="sub-menu-icon">+</span></a>
-    <ul class="mobile-sub-menu">
-     <li><a href="duties.html">Duties & Responsibilities</a></li>
-     <li><a href="objectives.html">Objectives</a></li>
-     <li><a href="six-policies.html">Six Policies of Ministry of Hotels and Tourism</a></li>
-     <li><a href="coming.html">International Cooperation</a></li>
-     <li class="mobile-menu_has_children">
-      <a href="coming.html">Tourism Business <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Doing Business in Myanmar</a></li>
-       <li><a href="coming.html">Myanmar Investment Law</a></li>
-       <li><a href="coming.html">Tourism Investment Opportunities</a></li>
-       <li><a href="coming.html">Why Invest in Myanmar</a></li>
-       <li><a href="coming.html">Foreign Investment in Hotels and commercial complexes</a></li>
-      </ul>
-     </li>
-     <li class="mobile-menu_has_children">
-      <a href="coming.html">Statistics <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Tourism Statistics</a></li>
-       <li><a href="coming.html">Arrivals 2024</a></li>
-       <li><a href="coming.html">Arrivals 2023</a></li>
-       <li><a href="coming.html">Arrivals 2022</a></li>
-       <li><a href="coming.html">Arrivals 2021</a></li>
-       <li><a href="coming.html">Arrivals 2020</a></li>
-       <li><a href="coming.html">Arrivals 2019</a></li>
-      </ul>
-     </li>
-     <li class="mobile-menu_has_children">
-      <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
-      <ul class="mobile-sub-menu">
-       <li><a href="coming.html">Training Courses</a></li>
-      </ul>
-     </li>
-     <li><a href="coming.html">Contact Person</a></li>
-     <li><a href="contact-us.html">Contact Us</a></li>
-    </ul>
-   </li>
-  </ul>
- </div>
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu" id="navbarSupportedContent">
+                        <div class="mobile-menu-header">
+                            <span class="mobile-menu-close">&times;</span>
+                        </div>
+                        <ul class="mobile-main-menu">
+                            <li class="mobile-menu_has_children">
+                                <a href="#">Vital Info <span class="sub-menu-icon">+</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="about-myanmar.html">About Myanmar</a></li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="#">Visa Requirements <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Electronic Visa</a></li>
+                                            <li><a href="coming.html">Visa Exemption</a></li>
+                                            <li><a href="coming.html">Visa on Arrival</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">Guidelines for Tour Companies</a></li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="#">Traveller Tips <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Traveller Tips</a></li>
+                                            <li><a href="coming.html">Required Documents for Applying Tours</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="#">Helpdesk <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="branch-offices.html">Branch Offices</a></li>
+                                            <li><a href="information-counters.html">Information Counters</a></li>
+                                            <li><a href="tourism-police-offices.html">Tourism Police Offices</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">Attraction Entry Free</a></li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="#">Embassies & Missions <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Myanmar Missions</a></li>
+                                            <li><a href="coming.html">Foreign Embassies in Myanmar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">Myanmar Ministries</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu_has_children">
+                                <a href="coming.html">Explorer Myanmar <span class="sub-menu-icon">+</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li class="mobile-menu_has_children">
+                                        <a href="#">North Myanmar <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Kachin</a></li>
+                                            <li><a href="coming.html">Sagaing</a></li>
+                                            <li><a href="coming.html">Chin</a></li>
+                                            <li><a href="coming.html">Shan</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="coming.html">Central Myanmar <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Magway</a></li>
+                                            <li><a href="coming.html">Nay Pyi Taw</a></li>
+                                            <li><a href="coming.html">Mandalay</a></li>
+                                            <li><a href="coming.html">Rakhine</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="coming.html">South Myanmar <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Ayeyarwady</a></li>
+                                            <li><a href="coming.html">Kayah</a></li>
+                                            <li><a href="coming.html">Kayin</a></li>
+                                            <li><a href="coming.html">Bago</a></li>
+                                            <li><a href="coming.html">Yangon</a></li>
+                                            <li><a href="coming.html">Mon</a></li>
+                                            <li><a href="coming.html">Tanintharyi</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu_has_children">
+                                <a href="coming.html">Highlight <span class="sub-menu-icon">+</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="coming.html">Festivals</a></li>
+                                    <li><a href="coming.html">Ecotourism</a></li>
+                                    <li><a href="coming.html">Community Based Tourism</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu_has_children">
+                                <a href="coming.html">Services <span class="sub-menu-icon">+</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li class="mobile-menu_has_children">
+                                        <a href="coming.html">Accommodation <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Hotels & Resorts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="coming.html">Tours <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li class="mobile-menu_has_children">
+                                                <a href="coming.html">Tour Companies <span
+                                                        class="sub-menu-icon">+</span></a>
+                                                <ul class="mobile-sub-menu">
+                                                    <li><a href="coming.html">Inbound Tour Companies</a></li>
+                                                    <li><a href="coming.html">Outbound Tour Companies</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mobile-menu_has_children">
+                                                <a href="coming.html">Tour Guides <span
+                                                        class="sub-menu-icon">+</span></a>
+                                                <ul class="mobile-sub-menu">
+                                                    <li><a href="coming.html">National Tour Guides</a></li>
+                                                    <li><a href="coming.html">Regional Tour Guides</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mobile-menu_has_children">
+                                                <a href="coming.html">Transportation <span
+                                                        class="sub-menu-icon">+</span></a>
+                                                <ul class="mobile-sub-menu">
+                                                    <li><a href="coming.html">Cruises & Others</a></li>
+                                                    <li><a href="coming.html">Hot-Air Balloons</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu_has_children">
+                                <a href="coming.html">Guides & Resources <span class="sub-menu-icon">+</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="coming.html">Tourism Legislation</a></li>
+                                    <li><a href="coming.html">Tourism Statistics</a></li>
+                                    <li><a href="coming.html">Tourism Publications</a></li>
+                                    <li><a href="coming.html">ASEAN Tourism Standards</a></li>
+                                    <li><a href="coming.html">Myanmar Be Enchanted</a></li>
+                                    <li><a href="coming.html">Myanmar Let The Journey Begin</a></li>
+                                    <li><a href="coming.html">Brochures & Pamphlets</a></li>
+                                    <li><a href="coming.html">Visitors Guide Book</a></li>
+                                    <li><a href="coming.html">Articles</a></li>
+                                    <li><a href="coming.html">Video & Photos</a></li>
+                                    <li><a href="coming.html">Maps</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu_has_children">
+                                <a href="coming.html">News & Announcements <span class="sub-menu-icon">+</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="coming.html">Health And Travel Latest News From Myanmar</a></li>
+                                    <li><a href="coming.html">Weather Forecast</a></li>
+                                    <li><a href="coming.html">Upcoming Events</a></li>
+                                    <li><a href="coming.html">News</a></li>
+                                    <li><a href="coming.html">Announcements</a></li>
+                                    <li><a href="coming.html">Travel Advisory</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu_has_children">
+                                <a href="coming.html">Our Role <span class="sub-menu-icon">+</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li><a href="duties.html">Duties & Responsibilities</a></li>
+                                    <li><a href="objectives.html">Objectives</a></li>
+                                    <li><a href="six-policies.html">Six Policies of Ministry of Hotels and Tourism</a>
+                                    </li>
+                                    <li><a href="coming.html">International Cooperation</a></li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="coming.html">Tourism Business <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Doing Business in Myanmar</a></li>
+                                            <li><a href="coming.html">Myanmar Investment Law</a></li>
+                                            <li><a href="coming.html">Tourism Investment Opportunities</a></li>
+                                            <li><a href="coming.html">Why Invest in Myanmar</a></li>
+                                            <li><a href="coming.html">Foreign Investment in Hotels and commercial
+                                                    complexes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="coming.html">Statistics <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Tourism Statistics</a></li>
+                                            <li><a href="coming.html">Arrivals 2024</a></li>
+                                            <li><a href="coming.html">Arrivals 2023</a></li>
+                                            <li><a href="coming.html">Arrivals 2022</a></li>
+                                            <li><a href="coming.html">Arrivals 2021</a></li>
+                                            <li><a href="coming.html">Arrivals 2020</a></li>
+                                            <li><a href="coming.html">Arrivals 2019</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-menu_has_children">
+                                        <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="coming.html">Training Courses</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">Contact Person</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                     <!-- Mobile Menu Section end -->
                 </div>
             </div>
@@ -585,7 +592,7 @@
                         </div>
                         <h3 class="title">Health and Safety Protocols</h3>
                         <p>Enchanting Myanmar: Health and Safety Protocol
-For Safe Tourism Myanmar</p>
+                            For Safe Tourism Myanmar</p>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
@@ -667,10 +674,10 @@ For Safe Tourism Myanmar</p>
                         <div class="service-thumb">
                             <img src="assets/images/home/bagan-temples.jpg" alt="Bagan Temples">
                             <div class="service-overlay">
-            <div class="service-overlay-thumb">
-                <img src="assets/images/home/bagan-temples.jpg" alt="Bagan Temples">
-            </div>
-        </div>
+                                <div class="service-overlay-thumb">
+                                    <img src="assets/images/home/bagan-temples.jpg" alt="Bagan Temples">
+                                </div>
+                            </div>
                         </div>
                         <div class="service-content">
                             <h3 class="title">Bagan Temple Plains</h3>
@@ -680,7 +687,7 @@ For Safe Tourism Myanmar</p>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
                                 <img src="assets/images/home/bagan-temples.jpg" alt="Bagan">
-                               
+
                             </div>
                         </div>
                     </div>
@@ -698,7 +705,7 @@ For Safe Tourism Myanmar</p>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
                                 <img src="assets/images/home/inle-lake.jpg" alt="Inle Lake">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -1270,15 +1277,15 @@ For Safe Tourism Myanmar</p>
                     <div class="footer-widget widget-menu">
                         <h3 class="widget-title">Contact Us</h3>
                         <ul class="footer-widget-content">
-                             <li>
-        <p><i class="fas fa-phone-alt"></i> (+95) 673406458</p>
-    </li>
-    <li>
-        <p><i class="fas fa-phone-alt"></i> (+95) 673406247</p>
-    </li>
-    <li>
-        <p><i class="fas fa-phone-alt"></i> 1551</p>
-    </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+95) 673406458</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+95) 673406247</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> 1551</p>
+                            </li>
                             <li>
                                 <p><i class="fas fa-map-marker-alt"></i>Ministry of Hotels and Tourism, Office No. 33,
                                     Nay Pyi Taw, Myanmar</p>
@@ -1298,7 +1305,8 @@ For Safe Tourism Myanmar</p>
 
                             <li><a href="https://t.me/myanmarbeenchanted" target="_blank"><i
                                         class="fab fa-telegram-plane"></i></a></li>
-                                        <li><a href="https://pinterest.com/tourisminmyanmar" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="https://pinterest.com/tourisminmyanmar" target="_blank"><i
+                                        class="fab fa-pinterest-p"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -1341,64 +1349,65 @@ For Safe Tourism Myanmar</p>
     <script src="assets/js/main.js"></script>
 
     <!-- for mobile menu -->
-<script>
+   
+ <script>
   document.addEventListener('DOMContentLoaded', function() {
-  function isMobile() {
-   return window.innerWidth < 992;
-  }
+   function isMobile() {
+    return window.innerWidth < 992;
+   }
 
-  const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
-  const navbarToggler = document.querySelector('.navbar-toggler');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const mobileMenuClose = document.querySelector('.mobile-menu-close');
+   const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
+   const navbarToggler = document.querySelector('.navbar-toggler');
+   const mobileMenu = document.querySelector('.mobile-menu');
+   const mobileMenuClose = document.querySelector('.mobile-menu-close');
 
-  mobileMenuLinks.forEach(function(parentLink) {
-   parentLink.addEventListener('click', function(e) {
-    if (isMobile()) {
-     e.preventDefault();
-     e.stopPropagation();
+   mobileMenuLinks.forEach(function(parentLink) {
+    parentLink.addEventListener('click', function(e) {
+     if (isMobile()) {
+      e.preventDefault();
+      e.stopPropagation();
 
-     const parentLi = this.parentElement;
-     const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
+      const parentLi = this.parentElement;
+      const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
 
-     // Close other open submenus at the same level
-     const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
-     siblings.forEach(function(sibling) {
-      sibling.classList.remove('open');
-      const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
-      if (siblingSub) {
-       siblingSub.style.display = 'none'; // Hide the submenu
-      }
-     });
+      // Close other open submenus at the same level
+      const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
+      siblings.forEach(function(sibling) {
+       sibling.classList.remove('open');
+       const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
+       if (siblingSub) {
+        siblingSub.style.display = 'none'; // Hide the submenu
+       }
+      });
 
-     // Toggle the current submenu
-     if (submenu) {
-      if (submenu.style.display === 'block') {
-       submenu.style.display = 'none';
-       parentLi.classList.remove('open');
-       parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
-      } else {
-       submenu.style.display = 'block';
-       parentLi.classList.add('open');
-       parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+      // Toggle the current submenu
+      if (submenu) {
+       if (submenu.style.display === 'block') {
+        submenu.style.display = 'none';
+        parentLi.classList.remove('open');
+        parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
+       } else {
+        submenu.style.display = 'block';
+        parentLi.classList.add('open');
+        parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+       }
       }
      }
-    }
+    });
+   });
+
+   // Mobile menu toggle button
+   navbarToggler.addEventListener('click', function(e) {
+    e.stopPropagation(); // Prevent event bubbling
+    mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
+   });
+
+   // Mobile menu close button
+   mobileMenuClose.addEventListener('click', function() {
+    mobileMenu.classList.remove('active');
    });
   });
-
-  // Mobile menu toggle button
-  navbarToggler.addEventListener('click', function() {
-   mobileMenu.classList.add('active'); // Add/remove a class to show/hide the whole menu
-  });
-
-  // Mobile menu close button
-  mobileMenuClose.addEventListener('click', function() {
-   mobileMenu.classList.remove('active');
-  });
- });
-</script>
-
+ </script>
 
 </body>
 
