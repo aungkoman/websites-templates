@@ -4010,3 +4010,96 @@ footer.footer-section{
         display: block;
     }
 }
+ /* Mobile Menu Styles */
+ .mobile-menu {
+  display: none;
+ }
+
+ @media (max-width: 991px) {
+    nav.navbar {
+        display: none;
+    }
+  .mobile-menu {
+   display: block;
+   /* Add your mobile menu styling here */
+   background: #f9f9f9;
+   padding: 15px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow-y: auto;
+   z-index: 1000;
+   transform: translateX(-100%);
+   transition: transform 0.3s ease;
+  }
+
+  .mobile-menu.active {
+   transform: translateX(0);
+  }
+ }
+
+ .mobile-main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ }
+
+ .mobile-main-menu li a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+ }
+ .mobile-main-menu li a:hover {
+    color: var(--main-color)
+ }
+
+ .mobile-sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: #fff;
+ }
+
+ .mobile-sub-menu li a {
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 1px solid #f5f5f5;
+ }
+
+ .mobile-menu_has_children>a {
+  position: relative;
+ }
+
+ .mobile-menu_has_children>a .sub-menu-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+ }
+
+ .mobile-menu_has_children.open>.mobile-sub-menu {
+  display: block;
+ }
+
+ .mobile-menu_has_children.open>a .sub-menu-icon {
+  /* Change plus to minus when open */
+  content: "-";
+ }
+  .mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+ }
+
+ .mobile-menu-close {
+  font-size: 2em;
+  cursor: pointer;
+ }
