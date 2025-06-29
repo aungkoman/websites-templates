@@ -2,3 +2,18 @@ header.header-section   a {
   font-size: 0.75rem !important; 
   
 }
+.container h1, .container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+
+}
+
+ol {
+    margin-left: 20px !important;
+}
+.container {
+  padding-top: 0;
+}
+.objectives {
+  margin-top: 20px;
+}
