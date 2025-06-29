@@ -18,6 +18,7 @@ body {
 h1 {
     text-align: center;
     color: #007bff;
+    margin-bottom: 20px !important;
 }
 
 h2 {
@@ -106,4 +107,10 @@ header ul li {
     font-weight: bold;
     z-index: 1;
     text-align: center;
+}
+h2.title {
+    text-align: center;
+    border-bottom: none;
+   
+
 }

@@ -4033,7 +4033,7 @@ footer.footer-section{
    top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
+   height: 100vh;
    overflow-y: auto;
    z-index: 1000;
    transform: translateX(-100%);
@@ -4041,14 +4041,16 @@ footer.footer-section{
   }
 
   .mobile-menu.active {
-   transform: translateX(0);
+   transform: translateX(0) !important;
   }
  }
 
- .mobile-main-menu {
+ ul.mobile-main-menu {
   list-style: none;
   padding: 0;
   margin: 0;
+  
+  
  }
 
  .mobile-main-menu li a {
