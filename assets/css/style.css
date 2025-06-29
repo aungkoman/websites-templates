@@ -4110,4 +4110,10 @@ footer.footer-section{
   font-size: 2em;
   cursor: pointer;
  }
+ .view-on-map {
+    text-decoration: underline;
+ }
+ .view-on-map:hover {
+    text-decoration: underline;
+ }
 
