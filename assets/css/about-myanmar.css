@@ -120,6 +120,4 @@ section {
 .breadcrumb-item.active {
     color: #333 !important;
 }
-ol {
-    margin-left: 20px !important;
-}
+

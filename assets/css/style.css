@@ -1207,6 +1207,7 @@ span {
 .breadcrumb-section {
     background-color: #fafafa;
     padding: 10px;
+    margin-left: 20px;
 }
 
 .breadcrumb {
