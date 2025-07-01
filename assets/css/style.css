@@ -1107,10 +1107,11 @@ span {
     padding-top: 245px;
     padding-bottom: 255px;
     position: relative;
-    background-image: url("../images/banner.png");
+    background-image: url("../cover-images/20.jpg");
     z-index: 2;
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    /* height: 300px; */
 }
 
 .banner-section::after {
@@ -4118,5 +4119,34 @@ footer.footer-section{
     text-decoration: underline;
  }
 
- 
+#language-selector,
+.form-select#language-selector {
+    border-radius: 8px;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+    min-width: 140px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#language-selector , #language-selector-mobile{
+  border-radius: 8px;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  font-size: 1em;
+  min-width: 120px;
+  margin-top: 10px;
+}
+
+    h2.title.text-shadow {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+
+
 

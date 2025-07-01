@@ -17,3 +17,26 @@ ol {
 .objectives {
   margin-top: 20px;
 }
+#language-selector,
+.form-select#language-selector {
+    border-radius: 8px;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+    min-width: 140px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#language-selector , #language-selector-mobile{
+  border-radius: 8px;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  font-size: 1em;
+  min-width: 120px;
+  margin-top: 10px;
+}
