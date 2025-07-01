@@ -1,0 +1,100 @@
+#news-cards .news-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+#news-cards .news-card:hover {
+  transform: translateY(-5px);
+}
+
+#news-cards .news-card .card-img-top {
+  height: auto; /* Adjust as needed */
+  width: 100%; /* Make sure the width is 100% of the card */
+  object-fit: contain;
+}
+
+#news-cards .news-card .card-body {
+  padding: 15px;
+}
+
+#news-cards .news-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+#news-cards .news-card .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+.news.banner-section {
+    padding-top: 245px;
+    padding-bottom: 255px;
+    position: relative;
+    background-image: url("../cover-images/17.jpg");
+    z-index: 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.news.banner-section::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+.news.banner-element {
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    bottom: -250px;
+    transform: translateY(-50%);
+}
+
+.news.banner-section--style {
+    background-image: url("../images/banner-2.png");
+    overflow: hidden;
+}
+
+.news.banner-content .title {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.news.banner-section--style .banner-content .title {
+    font-weight: 700;
+}
+
+.news.banner-content p {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news.banner-content--style p {
+    width: 100%;
+}
+
+.news.banner-content .cmn-btn {
+    margin: 55px 15px 0 15px;
+}
+
+.news.banner-content .cmn-btn:hover {
+    color: #fff;
+}
+
+.news.banner-section .cmn-btn-active {
+    color: #fff;
+}
+
