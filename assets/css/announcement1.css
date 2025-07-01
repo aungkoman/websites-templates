@@ -1,0 +1,43 @@
+h1.announcement-title {
+    font-size: 2rem !important;
+  
+}
+h2.announcement-title {
+    font-size: 1.8rem !important;
+   
+}
+
+   
+h2.title {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+
+/* Responsive Text Styling */
+@media (max-width: 768px) {
+  h1.announcement-title {
+    font-size: 1.75rem !important; /* Smaller on smaller screens */
+  }
+
+  h2.announcement-title {
+    font-size: 1.6rem !important; /* Smaller on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  h1.announcement-title {
+    font-size: 1.5rem !important; /* Even smaller on very small screens */
+  }
+
+  h2.announcement-title {
+    font-size: 1.4rem !important; /* Even smaller on very small screens */
+  }
+}
+.banner-section {
+   
+    background-image: url("../cover-images/20.jpg") !important;
+    
+}
+
