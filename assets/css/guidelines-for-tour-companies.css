@@ -1,0 +1,57 @@
+#guidelines-content {
+    margin-top: 30px;
+}
+
+/* Formal section styling */
+.business-section {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd; /* A subtle horizontal line */
+}
+
+.business-section h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.business-section p {
+    margin-bottom: 10px;
+}
+
+/* List styling */
+.business-section ul,
+.business-section ol {
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.business-section li {
+    margin-bottom: 8px;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .business-section h4 {
+        font-size: 1.5em;
+    }
+}
