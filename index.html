@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/language-select.css">
 </head>
 
 <body>
@@ -44,26 +45,51 @@
 
         <div class="header-top border-bottom">
             <div class="container">
-                <div class="row align-items-center d-xl-flex d-none d-md-flex" id="logo_for_web">
-                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo-with-text-cut.png" width="500px"
-                            height="500px" alt="Ministry of Hotels and Tourism"></a>
+                <div class="row align-items-center justify-content-between">
+                    <div class=" d-xl-flex d-none d-md-flex" id="logo_for_web">
+                        <a class="site-logo site-title" href="index.html">
+                            <img src="assets/images/logo-with-text-cut.png" width="500px" height="500px"
+                                alt="Ministry of Hotels and Tourism">
+                        </a>
+                    </div>
+                    <div class="d-xl-flex d-none d-md-flex">
+                        <select class="form-select" id="language-selector" onchange="changeLanguageWeb()">
+                            <option value="en" selected>English</option>
+                            <option value="mm">Myanmar</option>
+                        </select>
+                    </div>
                 </div>
-                <!-- <div class="row align-items-center d-xl-none d-flex" id="logo_for_mobile">
-                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo-with-text-cut.png"
-                            alt="Ministry of Hotels and Tourism" width="250px" height="250px"></a>
-                </div> -->
             </div>
         </div>
+
         <!--  top header section end -->
         <!--  bottom header section start-->
 
+
         <div class="header-bottom">
+
             <div class="container">
-                <div class="row align-items-center justify-content-between">
+                <div class="row d-flex">
                     <div class="logo-container">
                         <img src="assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px" height="300px">
                     </div>
-                    
+                    <div id="mobile-lang-switcher" class="d-block d-xl-none d-md-none ml-auto">
+                        <select class="form-select" id="language-selector-mobile" onchange="changeLanguage()"
+                            style="max-width: 160px;">
+                            <option value="en" selected>English</option>
+                            <option value="mm">Myanmar</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="row align-items-center justify-content-between">
+
+                    <!-- <div class="logo-container">
+                        <img src="assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px" height="300px">
+                    </div> -->
+
 
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -211,7 +237,7 @@
                             <li class="menu_has_children"><a href="coming.html">Guides & Resources<i
                                         class="fas fa-caret-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="coming.html">Tourism Legislation</a></li>
+                                    <li><a href="legislation.html">Tourism Legislation</a></li>
                                     <li><a href="coming.html">Tourism Statistics</a></li>
                                     <li><a href="coming.html">Tourism Publications</a></li>
                                     <li><a href="coming.html">ASEAN Tourism Standards</a></li>
@@ -233,7 +259,7 @@
                                     <li><a href="coming.html">Weather Forecast</a></li>
                                     <li><a href="coming.html">Upcoming Events</a></li>
                                     <li><a href="news.html">News</a></li>
-                                    <li><a href="coming.html">Announcements</a></li>
+                                    <li><a href="announcements.html">Announcements</a></li>
                                     <li><a href="coming.html">Travel Advisory</a></li>
                                 </ul>
                             </li>
@@ -290,6 +316,7 @@
                     <!-- Mobile Menu -->
                     <div class="mobile-menu" id="navbarSupportedContent">
                         <div class="mobile-menu-header">
+
                             <span class="mobile-menu-close">&times;</span>
                         </div>
                         <ul class="mobile-main-menu">
@@ -418,7 +445,7 @@
                             <li class="mobile-menu_has_children">
                                 <a href="coming.html">Guides & Resources <span class="sub-menu-icon">+</span></a>
                                 <ul class="mobile-sub-menu">
-                                    <li><a href="coming.html">Tourism Legislation</a></li>
+                                    <li><a href="legislation.html">Tourism Legislation</a></li>
                                     <li><a href="coming.html">Tourism Statistics</a></li>
                                     <li><a href="coming.html">Tourism Publications</a></li>
                                     <li><a href="coming.html">ASEAN Tourism Standards</a></li>
@@ -438,7 +465,7 @@
                                     <li><a href="coming.html">Weather Forecast</a></li>
                                     <li><a href="coming.html">Upcoming Events</a></li>
                                     <li><a href="news.html">News</a></li>
-                                    <li><a href="coming.html">Announcements</a></li>
+                                    <li><a href="announcements.html">Announcements</a></li>
                                     <li><a href="coming.html">Travel Advisory</a></li>
                                 </ul>
                             </li>
@@ -485,8 +512,10 @@
                             </li>
                         </ul>
                     </div>
+
                     <!-- Mobile Menu Section end -->
                 </div>
+
             </div>
         </div>
         <!-- end bottom header section -->
@@ -544,7 +573,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <ul class="about-item">
-                                    <li>8 UNESCO World Heritage Sites</li>
+                                    <!-- <li>8 UNESCO World Heritage Sites</li> -->
                                     <li>Over 1,000 miles of coastline</li>
                                 </ul>
                             </div>
@@ -557,7 +586,7 @@
     </section>
     <!-- about-section end -->
 
-  <a class="weatherwidget-io" href="https://forecast7.com/en/16d8796d20/yangon/" data-label_1=""
+    <a class="weatherwidget-io" href="https://forecast7.com/en/16d8796d20/yangon/" data-label_1=""
         data-label_2="WEATHER FORECAST" data-theme="original"> WEATHER FORECAST</a>
 
     <!-- software-tools-section start -->
@@ -573,7 +602,7 @@
                 </div>
             </div>
             <div class="row justify-content-center mb-30-none">
-                
+
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
                     <a href="https://hsp.tourism.gov.mm/home" target="_blank" class="software-item">
                         <div class="software-icon">
@@ -599,7 +628,8 @@
                             <i class="fas fa-hotel"></i>
                         </div>
                         <h3 class="title">Guest List Information System</h3>
-                        <p>This digital service streamlines the management and accessibility of all your event guest details.</p>
+                        <p>This digital service streamlines the management and accessibility of all your event guest
+                            details.</p>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
@@ -1227,7 +1257,7 @@
     <!-- blog-section end -->
 
 
-  
+
     <script>
         !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
     </script>
@@ -1256,7 +1286,7 @@
                             <li><a href="#">Map</a></li>
                             <li><a href="#">Air Ballons</a></li>
                             <li><a href="#">Statistics</a></li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -1265,7 +1295,7 @@
                         <h3 class="widget-title">Explore Our Site</h3>
                         <ul>
                             <li><a href="news.html">News</a></li>
-                            <li><a href="#">Announcements</a></li>
+                            <li><a href="announcements.html">Announcements</a></li>
                             <li><a href="#">Accommodation</a></li>
                             <li><a href="#">Tour</a></li>
                         </ul>
@@ -1347,65 +1377,91 @@
     <script src="assets/js/main.js"></script>
 
     <!-- for mobile menu -->
-   
- <script>
-  document.addEventListener('DOMContentLoaded', function() {
-   function isMobile() {
-    return window.innerWidth < 992;
-   }
 
-   const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
-   const navbarToggler = document.querySelector('.navbar-toggler');
-   const mobileMenu = document.querySelector('.mobile-menu');
-   const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobile() {
+                return window.innerWidth < 992;
+            }
 
-   mobileMenuLinks.forEach(function(parentLink) {
-    parentLink.addEventListener('click', function(e) {
-     if (isMobile()) {
-      e.preventDefault();
-      e.stopPropagation();
+            const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
 
-      const parentLi = this.parentElement;
-      const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
+            mobileMenuLinks.forEach(function (parentLink) {
+                parentLink.addEventListener('click', function (e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        e.stopPropagation();
 
-      // Close other open submenus at the same level
-      const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
-      siblings.forEach(function(sibling) {
-       sibling.classList.remove('open');
-       const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
-       if (siblingSub) {
-        siblingSub.style.display = 'none'; // Hide the submenu
-       }
-      });
+                        const parentLi = this.parentElement;
+                        const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
 
-      // Toggle the current submenu
-      if (submenu) {
-       if (submenu.style.display === 'block') {
-        submenu.style.display = 'none';
-        parentLi.classList.remove('open');
-        parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
-       } else {
-        submenu.style.display = 'block';
-        parentLi.classList.add('open');
-        parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
-       }
-      }
-     }
-    });
-   });
+                        // Close other open submenus at the same level
+                        const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
+                        siblings.forEach(function (sibling) {
+                            sibling.classList.remove('open');
+                            const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
+                            if (siblingSub) {
+                                siblingSub.style.display = 'none'; // Hide the submenu
+                            }
+                        });
 
-   // Mobile menu toggle button
-   navbarToggler.addEventListener('click', function(e) {
-    e.stopPropagation(); // Prevent event bubbling
-    mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
-   });
+                        // Toggle the current submenu
+                        if (submenu) {
+                            if (submenu.style.display === 'block') {
+                                submenu.style.display = 'none';
+                                parentLi.classList.remove('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
+                            } else {
+                                submenu.style.display = 'block';
+                                parentLi.classList.add('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+                            }
+                        }
+                    }
+                });
+            });
 
-   // Mobile menu close button
-   mobileMenuClose.addEventListener('click', function() {
-    mobileMenu.classList.remove('active');
-   });
-  });
- </script>
+            // Mobile menu toggle button
+            navbarToggler.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event bubbling
+                mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
+            });
+
+            // Mobile menu close button
+            mobileMenuClose.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#language-selector').niceSelect('destroy');
+            $('#language-selector-mobile').niceSelect('destroy');
+        });
+
+        function changeLanguageWeb() {
+            var lang = document.getElementById('language-selector').value;
+            if (lang === 'mm') {
+                window.location.href = 'mm/index.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+        function changeLanguage() {
+            var lang = document.getElementById('language-selector-mobile').value;
+            if (lang === 'mm') {
+                window.location.href = 'mm/index.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+
+
+
+
+    </script>
 
 </body>
 

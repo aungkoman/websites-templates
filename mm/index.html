@@ -40,22 +40,27 @@
         </div>
     </div> -->
 
-     <!-- header-section start -->
+    <!-- header-section start -->
     <header class="header-section">
         <!-- start top header section -->
 
         <!-- removed in header-top -> d-none d-xl-block -->
-        <div class="header-top  border-bottom">
+        <div class="header-top border-bottom">
             <div class="container header-container">
-                <div class="row align-items-center d-xl-flex d-none d-md-flex" id="logo_for_web">
-                    <a class="site-logo site-title" href="index.html"><img src="../assets/images/logo-with-text-cut.png"
-                            width="500px" height="500px" alt="Ministry of Hotels and Tourism"></a>
-
-
-
+                <div class="row align-items-center justify-content-between">
+                    <div class=" d-xl-flex d-none d-md-flex" id="logo_for_web">
+                        <a class="site-logo site-title" href="index.html">
+                            <img src="../assets/images/logo-with-text-cut.png" width="500px" height="500px"
+                                alt="Ministry of Hotels and Tourism">
+                        </a>
+                    </div>
+                    <div class="d-xl-flex d-none d-md-flex">
+                        <select class="form-select" id="language-selector" onchange="changeLanguageWeb()">
+                            <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                            <option value="mm" selected>မြန်မာဘာသာ</option>
+                        </select>
+                    </div>
                 </div>
-
-
             </div>
         </div>
         <!--  top header section end -->
@@ -63,10 +68,22 @@
 
         <div class="header-bottom">
             <div class="container header-container">
-                <div class="row align-items-center justify-content-between">
+                <div class="row d-flex">
                     <div class="logo-container">
-                        <img src="../assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px" height="300px">
+                        <img src="../assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px"
+                            height="300px">
                     </div>
+                    <div id="mobile-lang-switcher" class="d-block d-xl-none d-md-none ml-auto">
+                        <select class="form-select" id="language-selector-mobile" onchange="changeLanguage()"
+                            style="max-width: 160px;">
+                            <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                            <option value="mm" selected>မြန်မာဘာသာ</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="row align-items-center justify-content-between">
+
 
 
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -82,9 +99,11 @@
                                     <ul class="sub-menu">
                                         <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
                                         <li class="menu_has_children">
-                                            <a href="">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<i class="fas fa-caret-down"></i></a>
+                                            <a href="">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<i
+                                                    class="fas fa-caret-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a></li>
+                                                <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a>
+                                                </li>
                                                 <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
                                                 <li><a href="coming.html">ဆိုက်ရောက်ဗီဇာ</a></li>
                                             </ul>
@@ -101,9 +120,12 @@
                                         <li class="menu_has_children">
                                             <a href="">သတင်းပြန်ကြားရေးကောင်တာများ<i class="fas fa-caret-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား ကော်မတီများ</a></li>
-                                                <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a></li>
-                                                <li><a href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                                <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                        ကော်မတီများ</a></li>
+                                                <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a>
+                                                </li>
+                                                <li><a
+                                                        href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -112,7 +134,8 @@
                                             <a href="">သံရုံးများ<i class="fas fa-caret-down"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
-                                                <li><a href="coming.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a></li>
+                                                <li><a href="coming.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li><a href="coming.html">ဝန်ကြီးဌာနများ</a></li>
@@ -177,7 +200,7 @@
                                     <li class="menu_has_children">
                                         <a href="coming.html">တည်းခိုနေထိုင်ရေး<i class="fas fa-caret-down"></i></a>
                                         <ul class="sub-menu">
-                                            <li><a href="coming.html">  ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                            <li><a href="coming.html"> ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu_has_children">
@@ -217,7 +240,7 @@
                                 <ul class="sub-menu">
                                     <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
                                     <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
-                                    
+
                                     <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
                                     <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
                                     <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
@@ -253,28 +276,31 @@
                                     </li>
                                     <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
                                     <li class="menu_has_children">
-                                        <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<i class="fas fa-caret-down"></i></a>
+                                        <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<i
+                                                class="fas fa-caret-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
                                             <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
                                             <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
-                                            <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
-                                            
+                                            <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                    နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="menu_has_children">
-                                        <a href="coming.html">စာရင်းအင်းအချက်အလက်များ<i class="fas fa-caret-down"></i></a>
+                                        <a href="coming.html">စာရင်းအင်းအချက်အလက်များ<i
+                                                class="fas fa-caret-down"></i></a>
                                         <ul class="sub-menu">
                                             <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
-                                           
+
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="coming.html">ဝန်ထမ်းဖိုရမ်</a>
-                                        
+
                                     </li>
                                     <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
-                                    
+
                                     <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
                                 </ul>
                             </li>
@@ -283,7 +309,7 @@
 
                         </div>
                     </nav>
-                   <!-- Mobile Menu Section start -->
+                    <!-- Mobile Menu Section start -->
                     <!-- Mobile Menu -->
                     <div class="mobile-menu" id="navbarSupportedContent">
                         <div class="mobile-menu-header">
@@ -418,7 +444,8 @@
                                 </ul>
                             </li>
                             <li class="mobile-menu_has_children">
-                                <a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<span class="sub-menu-icon">+</span></a>
+                                <a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<span
+                                        class="sub-menu-icon">+</span></a>
                                 <ul class="mobile-sub-menu">
                                     <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
                                     <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
@@ -429,7 +456,7 @@
                                     <li><a href="coming.html">ဆောင်းပါးများ</a></li>
                                     <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
                                     <li><a href="coming.html">မြေပုံများ</a></li>
-                                    
+
                                 </ul>
                             </li>
                             <li class="mobile-menu_has_children">
@@ -453,17 +480,20 @@
                                     </li>
                                     <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
                                     <li class="mobile-menu_has_children">
-                                        <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<span class="sub-menu-icon">+</span></a>
+                                        <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<span
+                                                class="sub-menu-icon">+</span></a>
                                         <ul class="mobile-sub-menu">
                                             <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
                                             <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
                                             <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
-                                            <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
-                                           
+                                            <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                    နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="mobile-menu_has_children">
-                                        <a href="coming.html">စာရင်းအင်းအချက်အလက်များ <span class="sub-menu-icon">+</span></a>
+                                        <a href="coming.html">စာရင်းအင်းအချက်အလက်များ <span
+                                                class="sub-menu-icon">+</span></a>
                                         <ul class="mobile-sub-menu">
                                             <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
                                         </ul>
@@ -496,7 +526,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
                     <div class="banner-content">
-                        <h2 class="title">Discover the Golden Land of Myanmar</h2>
+                        <h2 class="title text-shadow">ရွှေရောင်လွှမ်းမြေ မြန်မာ့ဌာနီသို့ လှမ်းလာခဲ့ပါ</h2>
 
                     </div>
                 </div>
@@ -525,8 +555,15 @@
                 <div class="col-lg-6">
                     <div class="about-left-content">
                         <h2 class="title">မြန်မာ့ခရီးသွားမှ ကြိုဆိုပါတယ်</h2>
-                        <p>မြန်မာနိုင်ငံသည် ရွှေရတုမြေ (Golden Land) အဖြစ် ထင်ရှားပြီး မတူညီသော ယဉ်ကျေးမှုများ၊ ရှေးဟောင်းအမွေအနှစ်များနှင့် သဘာဝအလှတရားများဖြင့် ပြည့်နှက်နေသော်လည်း ယနေ့ထိ များစွာ မဖော်ထုတ်ရသေးသော ကမ္ဘာလှည့်ခရီးသွားများ၏ စုံမက်ဖွယ်နေရာတစ်ခုဖြစ်ပါသည်။</p>
-                        <p>ဟိုတယ်နှင့်ခရီးသွားလာရေးဝန်ကြီးဌာနသည် ဒေသခံအသိုင်းအဝိုင်းများ အကျိုးကျေးဇူးရရှိစေရန်နှင့် ကျွန်ုပ်တို့၏ ယဉ်ကျေးမှုဆိုင်ရာနှင့် သဘာဝအမွေအနှစ်များ ထိန်းသိမ်းကာကွယ်နိုင်ရန်အတွက် ရေရှည်တည်တံ့ခိုင်မြဲသော ခရီးသွားလုပ်ငန်းများ ဖွံ့ဖြိုးတိုးတက်စေရန် ကတိပြုလုပ်ဆောင်လျက်ရှိပါသည်။ ကျွန်ုပ်တို့၏ ရည်မှန်းချက်မှာ မြန်မာနိုင်ငံကို ခရီးသွားဧည့်သည်များအတွက် စစ်မှန်သော အတွေ့အကြုံများကို ပေးစွမ်းနိုင်သည့် မဖြစ်မနေလာရောက်သင့်သော ခရီးသွားဆိုင်ရာ ဦးတည်ရာနေရာတစ်ခုအဖြစ် ပုံဖော်ရန်ဖြစ်ပါသည်။</p>
+                        <p>မြန်မာနိုင်ငံသည် ရွှေရတုမြေ (Golden Land) အဖြစ် ထင်ရှားပြီး မတူညီသော ယဉ်ကျေးမှုများ၊
+                            ရှေးဟောင်းအမွေအနှစ်များနှင့် သဘာဝအလှတရားများဖြင့် ပြည့်နှက်နေသော်လည်း ယနေ့ထိ များစွာ
+                            မဖော်ထုတ်ရသေးသော ကမ္ဘာလှည့်ခရီးသွားများ၏ စုံမက်ဖွယ်နေရာတစ်ခုဖြစ်ပါသည်။</p>
+                        <p>ဟိုတယ်နှင့်ခရီးသွားလာရေးဝန်ကြီးဌာနသည် ဒေသခံအသိုင်းအဝိုင်းများ အကျိုးကျေးဇူးရရှိစေရန်နှင့်
+                            ကျွန်ုပ်တို့၏ ယဉ်ကျေးမှုဆိုင်ရာနှင့် သဘာဝအမွေအနှစ်များ ထိန်းသိမ်းကာကွယ်နိုင်ရန်အတွက်
+                            ရေရှည်တည်တံ့ခိုင်မြဲသော ခရီးသွားလုပ်ငန်းများ ဖွံ့ဖြိုးတိုးတက်စေရန်
+                            ကတိပြုလုပ်ဆောင်လျက်ရှိပါသည်။ ကျွန်ုပ်တို့၏ ရည်မှန်းချက်မှာ မြန်မာနိုင်ငံကို
+                            ခရီးသွားဧည့်သည်များအတွက် စစ်မှန်သော အတွေ့အကြုံများကို ပေးစွမ်းနိုင်သည့်
+                            မဖြစ်မနေလာရောက်သင့်သော ခရီးသွားဆိုင်ရာ ဦးတည်ရာနေရာတစ်ခုအဖြစ် ပုံဖော်ရန်ဖြစ်ပါသည်။</p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul class="about-item">
@@ -559,7 +596,8 @@
                     <div class="section-header">
                         <h2 class="section-title">ဝန်ကြီးဌာန ဒီဂျစ်တယ် ဝန်ဆောင်မှုများ</h2>
                         <span class="title-border"></span>
-                        <p>ခရီးသွားလုပ်ငန်းများနှင့် ခရီးသွားဧည့်သည်များအတွက် ကျွန်ုပ်တို့၏ အွန်လိုင်းပလက်ဖောင်းများနှင့် <br>ဒီဂျစ်တယ်ဝန်ဆောင်မှုများကို အခုပဲ အသုံးပြုလိုက်ပါ။</p>
+                        <p>ခရီးသွားလုပ်ငန်းများနှင့် ခရီးသွားဧည့်သည်များအတွက် ကျွန်ုပ်တို့၏
+                            အွန်လိုင်းပလက်ဖောင်းများနှင့် <br>ဒီဂျစ်တယ်ဝန်ဆောင်မှုများကို အခုပဲ အသုံးပြုလိုက်ပါ။</p>
                     </div>
                 </div>
             </div>
@@ -570,7 +608,8 @@
                             <img src="../assets/images/uec-image.jpg" alt="" height="30px" width="30px">
                         </div>
                         <h3 class="title">"မဲမသမာမှုနှင့် တရားမဲ့ပြုကျင့်မှုများ"</h3>
-                        <p>၂၀၂၀ ပြည့်နှစ် ပါတီစုံဒီမိုကရေစီ အထွေထွေရွေးကောက်ပွဲတွင် မဲအလွဲသုံးစားမှုနှင့် မမှန်မကန်လုပ်ဆောင်မှုများဆိုင်ရာ စုံစမ်းစစ်ဆေးတွေ့ရှိချက်များ</p>
+                        <p>၂၀၂၀ ပြည့်နှစ် ပါတီစုံဒီမိုကရေစီ အထွေထွေရွေးကောက်ပွဲတွင် မဲအလွဲသုံးစားမှုနှင့်
+                            မမှန်မကန်လုပ်ဆောင်မှုများဆိုင်ရာ စုံစမ်းစစ်ဆေးတွေ့ရှိချက်များ</p>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
@@ -579,7 +618,8 @@
                             <i class="fas fa-notes-medical"></i>
                         </div>
                         <h3 class="title">ကျန်းမာရေးနှင့် ဘေးအန္တရာယ်ကင်းရှင်းရေး လုပ်ထုံးလုပ်နည်းများ</h3>
-                        <p>ဆွဲဆောင်ဖွယ်ရာ မြန်မာပြည် ခရီးသွားဧည့်သည်များ ဘေးကင်းလုံခြုံစွာ လည်ပတ်နိုင်ရေး ကျန်းမာရေးနှင့် လုံခြုံရေး လမ်းညွှန်ချက်များ</p>
+                        <p>ဆွဲဆောင်ဖွယ်ရာ မြန်မာပြည် ခရီးသွားဧည့်သည်များ ဘေးကင်းလုံခြုံစွာ လည်ပတ်နိုင်ရေး
+                            ကျန်းမာရေးနှင့် လုံခြုံရေး လမ်းညွှန်ချက်များ</p>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
@@ -615,7 +655,8 @@
                             <i class="fas fa-headset"></i>
                         </div>
                         <h3 class="title">ခရီးသွားများအတွက် အကူအညီဝန်ဆောင်မှု</h3>
-                        <p>ခရီးသွားဝန်ဆောင်မှုများနှင့်ပတ်သက်သည့် အကြံပြုချက်များ သို့မဟုတ် တိုင်ကြားချက်များ ပေးပို့ရန်</p>
+                        <p>ခရီးသွားဝန်ဆောင်မှုများနှင့်ပတ်သက်သည့် အကြံပြုချက်များ သို့မဟုတ် တိုင်ကြားချက်များ ပေးပို့ရန်
+                        </p>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-30">
@@ -641,7 +682,7 @@
     </section>
     <!-- software-tools-section end -->
 
- <a class="weatherwidget-io" href="https://forecast7.com/en/16d8796d20/yangon/" data-label_1=""
+    <a class="weatherwidget-io" href="https://forecast7.com/en/16d8796d20/yangon/" data-label_1=""
         data-label_2="WEATHER FORECAST" data-theme="original"> WEATHER FORECAST</a>
     <!-- service-section start -->
     <section class="service-section pt-120 pb-120">
@@ -651,7 +692,9 @@
                     <div class="section-header">
                         <h2 class="section-title">မြန်မာ့အမွေအနှစ်များကို လေ့လာရှာဖွေပါ</h2>
                         <span class="title-border"></span>
-                        <p>ရှေးဟောင်းဘုရားပုထိုးများမှ စတင်ကာ သဘာဝအတိုင်း သန့်စင်သော ကမ်းခြေများအထိ မြန်မာနိုင်ငံသည် ခရီးသွားတိုင်းအတွက် မတူကွဲပြားသော အတွေ့အကြုံများကို ပေးစွမ်းပါသည်။ ကျွန်ုပ်တို့၏ အထင်ကရနေရာများစွာကို ရှာဖွေလိုက်ပါ။</p>
+                        <p>ရှေးဟောင်းဘုရားပုထိုးများမှ စတင်ကာ သဘာဝအတိုင်း သန့်စင်သော ကမ်းခြေများအထိ မြန်မာနိုင်ငံသည်
+                            ခရီးသွားတိုင်းအတွက် မတူကွဲပြားသော အတွေ့အကြုံများကို ပေးစွမ်းပါသည်။ ကျွန်ုပ်တို့၏
+                            အထင်ကရနေရာများစွာကို ရှာဖွေလိုက်ပါ။</p>
                     </div>
                 </div>
             </div>
@@ -668,7 +711,8 @@
                         </div>
                         <div class="service-content">
                             <h3 class="title">ပုဂံဘုရားပုထိုးလွင်ပြင်</h3>
-                            <p>၉ ရာစုမှ စတင်တည်ဆောက်ခဲ့သော ယူနက်စကို ကမ္ဘာ့အမွေအနှစ်နေရာ ပုဂံ၏ မြေပြန့်လွင်ပြင်တွင် ရှေးဟောင်းဘုရားပုထိုး ၂၀၀၀ ကျော်ကို အံ့ဩဖွယ် ကြည့်ရှုလေ့လာနိုင်ပါသည်။</p>
+                            <p>၉ ရာစုမှ စတင်တည်ဆောက်ခဲ့သော ယူနက်စကို ကမ္ဘာ့အမွေအနှစ်နေရာ ပုဂံ၏ မြေပြန့်လွင်ပြင်တွင်
+                                ရှေးဟောင်းဘုရားပုထိုး ၂၀၀၀ ကျော်ကို အံ့ဩဖွယ် ကြည့်ရှုလေ့လာနိုင်ပါသည်။</p>
                         </div>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
@@ -685,8 +729,11 @@
                         </div>
                         <div class="service-content">
                             <h3 class="title">အင်းလေးကန်
-</h3>
-                            <p>မြန်မာနိုင်ငံ၏ ဒုတိယအကြီးဆုံးကန်ဖြစ်သော အင်းလေးကန်တွင် အင်းသားလူမျိုးတို့၏ ထူးခြားသော ငါးဖမ်းယဉ်ကျေးမှုနှင့် ရေပေါ်ကျေးရွာများကို အတူတူ ရှုမြင်ခံစားနိုင်ပါသည်။ တောင်တန်းများဝန်းရံထားသော ဤကန်ကြီးသည် သဘာဝအလှနှင့် ယဉ်ကျေးမှုဆိုင်ရာ ဆွဲဆောင်မှုများစွာကို ပိုင်ဆိုင်ထားပါသည်။</p>
+                            </h3>
+                            <p>မြန်မာနိုင်ငံ၏ ဒုတိယအကြီးဆုံးကန်ဖြစ်သော အင်းလေးကန်တွင် အင်းသားလူမျိုးတို့၏ ထူးခြားသော
+                                ငါးဖမ်းယဉ်ကျေးမှုနှင့် ရေပေါ်ကျေးရွာများကို အတူတူ ရှုမြင်ခံစားနိုင်ပါသည်။
+                                တောင်တန်းများဝန်းရံထားသော ဤကန်ကြီးသည် သဘာဝအလှနှင့် ယဉ်ကျေးမှုဆိုင်ရာ
+                                ဆွဲဆောင်မှုများစွာကို ပိုင်ဆိုင်ထားပါသည်။</p>
                         </div>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
@@ -703,7 +750,9 @@
                         </div>
                         <div class="service-content">
                             <h3 class="title">ငပလီကမ်းခြေ</h3>
-                            <p>ဘင်္ဂလားပင်လယ်အော်တစ်လျှောက်ရှိ သဘာဝအတိုင်း သန့်စင်ဖြူစင်သော သဲသောင်ပြင်များပေါ်တွင် လှုပ်ယိမ်းနေသော ထန်းပင်များနှင့် ကြည်လင်တောက်ပသည့် ရေပြင်တို့နှင့်အတူ အနားယူအပန်းဖြေလိုက်ပါ။</p>
+                            <p>ဘင်္ဂလားပင်လယ်အော်တစ်လျှောက်ရှိ သဘာဝအတိုင်း သန့်စင်ဖြူစင်သော သဲသောင်ပြင်များပေါ်တွင်
+                                လှုပ်ယိမ်းနေသော ထန်းပင်များနှင့် ကြည်လင်တောက်ပသည့် ရေပြင်တို့နှင့်အတူ
+                                အနားယူအပန်းဖြေလိုက်ပါ။</p>
                         </div>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
@@ -720,7 +769,8 @@
                         </div>
                         <div class="service-content">
                             <h3 class="title">မန္တလေးတိုင်းဒေသကြီး</h3>
-                            <p>ရှေးဟောင်းမြို့တော်များ၊ ရိုးရာလက်မှုပညာများနှင့် ထင်ရှားကျော်ကြားသော ဦးပိန်တံတားတို့နှင့်အတူ မြန်မာနိုင်ငံ၏ ယဉ်ကျေးမှုနှလုံးသားကို ရှာဖွေလေ့လာလိုက်ပါ။</p>
+                            <p>ရှေးဟောင်းမြို့တော်များ၊ ရိုးရာလက်မှုပညာများနှင့် ထင်ရှားကျော်ကြားသော
+                                ဦးပိန်တံတားတို့နှင့်အတူ မြန်မာနိုင်ငံ၏ ယဉ်ကျေးမှုနှလုံးသားကို ရှာဖွေလေ့လာလိုက်ပါ။</p>
                         </div>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
@@ -737,7 +787,8 @@
                         </div>
                         <div class="service-content">
                             <h3 class="title">ရန်ကုန်</h3>
-                            <p>ကိုလိုနီခေတ် ဗိသုကာလက်ရာများနှင့် ခမ်းနားထည်ဝါသော ရွှေတိဂုံဘုရားတို့နှင့်အတူ စည်ကားသော မြို့တော်ဟောင်းကို စူးစမ်းလေ့လာလိုက်ပါ။</p>
+                            <p>ကိုလိုနီခေတ် ဗိသုကာလက်ရာများနှင့် ခမ်းနားထည်ဝါသော ရွှေတိဂုံဘုရားတို့နှင့်အတူ စည်ကားသော
+                                မြို့တော်ဟောင်းကို စူးစမ်းလေ့လာလိုက်ပါ။</p>
                         </div>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
@@ -754,7 +805,9 @@
                         </div>
                         <div class="service-content">
                             <h3 class="title">ကျိုက်ထီးရိုးစေတီတော်</h3>
-                            <p>မြန်မာနိုင်ငံ၏ ကမ္ဘာ့အံ့ဖွယ်တစ်ခုဖြစ်ပြီး အပြည်ပြည်ဆိုင်ရာ ဗုဒ္ဓဘာသာဝင်များ အထွတ်အမြတ်ထားရာ ကျိုက်ထီးရိုးဘုရားရှိ ရွှေရောင်ကျောက်တုံးကြီး၏ အံ့ဩဖွယ်ရာ မြင်ကွင်းကို ကြည်နူးခံစားလိုက်ပါ။</p>
+                            <p>မြန်မာနိုင်ငံ၏ ကမ္ဘာ့အံ့ဖွယ်တစ်ခုဖြစ်ပြီး အပြည်ပြည်ဆိုင်ရာ ဗုဒ္ဓဘာသာဝင်များ
+                                အထွတ်အမြတ်ထားရာ ကျိုက်ထီးရိုးဘုရားရှိ ရွှေရောင်ကျောက်တုံးကြီး၏ အံ့ဩဖွယ်ရာ မြင်ကွင်းကို
+                                ကြည်နူးခံစားလိုက်ပါ။</p>
                         </div>
                         <div class="service-overlay">
                             <div class="service-overlay-thumb">
@@ -784,26 +837,31 @@
                             <div class="col-lg-6 col-md-6 mb-30">
                                 <div class="choose-item">
                                     <h3 class="title">စစ်မှန်သော အတွေ့အကြုံများ</h3>
-                                    <p>မြန်မာပြည်သည် အစစ်အမှန်သော ယဉ်ကျေးမှုအတွေ့အကြုံများကို ပေးစွမ်းပြီး လူထူထပ်သော ခရီးသွားလုပ်ငန်း၏ သက်ရောက်မှုမှ လွတ်ကင်းနေဆဲဖြစ်သည်။</p>
+                                    <p>မြန်မာပြည်သည် အစစ်အမှန်သော ယဉ်ကျေးမှုအတွေ့အကြုံများကို ပေးစွမ်းပြီး လူထူထပ်သော
+                                        ခရီးသွားလုပ်ငန်း၏ သက်ရောက်မှုမှ လွတ်ကင်းနေဆဲဖြစ်သည်။</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 mb-30">
                                 <div class="choose-item">
                                     <h3 class="title">ကြွယ်ဝသော ယဉ်ကျေးမှုအမွေအနှစ်</h3>
-                                    <p>နှစ်ပေါင်း ၂၀၀၀ ကျော် သက်တမ်းရှိသော သမိုင်းကြောင်းနှင့်အတူ မြန်မာနိုင်ငံသည် ရှေးဟောင်းသုတေသနဆိုင်ရာ အမွေအနှစ် ရတနာမြောက်မြားစွာကို ပိုင်ဆိုင်ထားပါသည်။</p>
+                                    <p>နှစ်ပေါင်း ၂၀၀၀ ကျော် သက်တမ်းရှိသော သမိုင်းကြောင်းနှင့်အတူ မြန်မာနိုင်ငံသည်
+                                        ရှေးဟောင်းသုတေသနဆိုင်ရာ အမွေအနှစ် ရတနာမြောက်မြားစွာကို ပိုင်ဆိုင်ထားပါသည်။</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 mb-30">
                                 <div class="choose-item">
-                                    <h3 class="title">Natural Beauty</h3>
-                                    <p>From Himalayan peaks to tropical islands, Myanmar's landscapes are breathtaking.
+                                    <h3 class="title">သဘာဝ အလှတရား</h3>
+                                    <p>ဟိမဝန္တာတောင်တန်းများ၏ မြင့်မားသောထိပ်သီးများမှ အပူပိုင်းဒေသရှိ ကျွန်းစုများအထိ၊
+                                        မြန်မာနိုင်ငံ၏ သဘာဝရှုခင်းတို့သည် အလွန်တရာ လှပသော ခံစားမှုကို
+                                        ပေးစွမ်းနိုင်ပါသည်။
                                     </p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 mb-30">
                                 <div class="choose-item">
-                                    <h3 class="title">Warm Hospitality</h3>
-                                    <p>Myanmar people are renowned for their genuine warmth and friendliness.</p>
+                                    <h3 class="title">ကြင်နာသောဧည့်ဝတ်ကျေပွန်မှု</h3>
+                                    <p>မြန်မာလူမျိုးတို့၏ စစ်မှန်သောစေတနာနှင့် ဖော်ရွေပျူငှာမှုသည်
+                                        ကမ္ဘာတွင်ကျော်ကြားလေ့ရှိပါသည်။</p>
                                 </div>
                             </div>
                         </div>
@@ -813,14 +871,15 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 mb-30 pt-120 pb-120">
                     <div class="choose-content choose-content--style">
-                        <h2 class="title">Our Tourism Achievements</h2>
-                        <p>The Ministry of Hotels and Tourism has made significant progress in developing sustainable
-                            tourism infrastructure while preserving Myanmar's cultural heritage and natural environment
-                            for future generations.</p>
+                        <h2 class="title">ကျွန်ုပ်တို့၏ ခရီးသွားလှုပ်ရှားမှု ဆိုင်ရာ အောင်မြင်မှုများ</h2>
+                        <p>ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဝန်ကြီးဌာနသည် မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်နှင့် သဘာဝပတ်ဝန်းကျင်ကို
+                            အနာဂတ်မျိုးဆက်သစ်များအတွက် ထိန်းသိမ်းရင်း၊ ရေရှည်တည်တံ့သော ခရီးသွားလုပ်ငန်း
+                            အခြေခံအဆောက်အအုံများ ဖွံ့ဖြိုးတိုးတက်ရေး၌ သိသာထင်ရှားသော အောင်မြင်မှုများ ရရှိခဲ့ပါသည်။</p>
                         <ul class="choose-item--style">
-                            <li>Over 4.3 million international arrivals in 2019</li>
-                            <li>50% increase in hotel rooms since 2011</li>
-                            <li>8 sites on UNESCO's Tentative List</li>
+                            <li>၂၀၁၉ ခုနှစ်တွင် နိုင်ငံတကာမှ ဧည့်သည်ဦးရေ ၄.၃ သန်းကျော် ရောက်ရှိခဲ့ပါသည်။</li>
+                            <li>၂၀၁၁ ခုနှစ်မှ ယခုအချိန်အထိ ဟိုတယ်အခန်းအရေအတွက် ၅၀% တိုးတက်မှု ရှိခဲ့ပါသည်။</li>
+                            <li>မြန်မာနိုင်ငံရှိ ယဉ်ကျေးမှုဆိုင်ရာ အမွေအနှစ်နေရာများ ၁၂ ခုသည် ယူနက်စကို၏
+                                အကြံပြုစာရင်းတွင် ပါဝင်နေပါသည်။</li>
                         </ul>
                     </div>
                 </div>
@@ -849,24 +908,27 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="overview-content pt-120 pb-120">
-                        <h2 class="title">Tourism Development in Myanmar</h2>
-                        <p>The Ministry of Hotels and Tourism is implementing strategic plans to develop tourism
-                            infrastructure, improve service standards, and promote community-based tourism initiatives
-                            across Myanmar. Our focus is on sustainable growth that benefits local communities while
-                            preserving our cultural heritage and natural environment.</p>
+                        <h2 class="title">မြန်မာနိုင်ငံ၏ ခရီးသွားလုပ်ငန်း ဖွံ့ဖြိုးတိုးတက်ရေး</h2>
+                        <p>ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဝန်ကြီးဌာနသည် မြန်မာနိုင်ငံတစ်ဝှမ်းလုံး
+                            ခရီးသွားလုပ်ငန်းအခြေခံအဆောက်အအုံများ ဖွံ့ဖြိုးတိုးတက်ရေး၊ ဝန်ဆောင်မှုစံချိန်စံညွှန်းများ
+                            မြှင့်တင်ရေးနှင့် ဒေသခံအခြေပြု ခရီးသွားလုပ်ငန်းလုပ်ငန်းစဉ်များ အားကောင်းစေရန်အတွက်
+                            နည်းဗျူဟာမြောက် အစီအစဉ်များ အကောင်အထည်ဖော်ဆောင်ရွက်လျက်ရှိပါသည်။ ကျွန်ုပ်တို့၏
+                            အဓိကအာရုံစိုက်မှုမှာ ဒေသခံအသိုင်းအဝိုင်းများ အကျိုးကျေးဇူးခံစားရရှိစေရန်နှင့်
+                            ယဉ်ကျေးမှုအမွေအနှစ်များနှင့် သဘာဝပတ်ဝန်းကျင်ကို ထိန်းသိမ်းရန်အပြင် ရေရှည်တည်တံ့သော
+                            ဖွံ့ဖြိုးတိုးတက်မှုကို ရရှိစေရန်ဖြစ်ပါသည်။</p>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <ul class="overview-item">
-                                    <li>Improved visa policies</li>
-                                    <li>Enhanced air connectivity</li>
-                                    <li>Tourism zoning plans</li>
+                                    <li>ဗီဇာမူဝါဒများ ပြုပြင်မွမ်းမံမှု</li>
+                                    <li>လေကြောင်းဆက်သွယ်ရေး ပိုမိုကောင်းမွန်လာမှု</li>
+                                    <li>ခရီးသွားလုပ်ငန်း ဇုန်သတ်မှတ်ချက်များ</li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <ul class="overview-item">
-                                    <li>Community tourism projects</li>
-                                    <li>Heritage conservation</li>
-                                    <li>Digital tourism platforms</li>
+                                    <li>ဒေသခံအခြေပြု ခရီးသွားလုပ်ငန်းစီမံကိန်းများ</li>
+                                    <li>အမွေအနှစ်ထိန်းသိမ်းရေး</li>
+                                    <li>ဒစ်ဂျစ်တယ် ခရီးသွားလုပ်ငန်း ပလက်ဖောင်းများ</li>
                                 </ul>
                             </div>
                         </div>
@@ -904,20 +966,22 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 text-center">
                     <div class="section-header">
-                        <h2 class="section-title">Myanmar in Pictures</h2>
+                        <h2 class="section-title">ဓာတ်ပုံများထဲက မြန်မာ့အလှတရား</h2>
                         <span class="title-border"></span>
-                        <p>Explore the beauty and diversity of Myanmar through our photo gallery showcasing iconic
-                            landmarks and hidden gems.</p>
+                        <p>ကျွန်ုပ်တို့၏ ဓာတ်ပုံပြခန်းမှတစ်ဆင့် မြန်မာ့အလှတရားနှင့် စုံလင်မျိုးစုံသော ရှုခင်းများကို
+                            စူးစမ်းလေ့လာပါ။ ထင်ရှားကျော်ကြားသော လက္ခဏာများနှင့် ဖုံးကွယ်နေသည့် အံ့ဖွယ်ရတနာများကို
+                            ဖော်ပြထားပါသည်။</p>
                     </div>
                 </div>
             </div>
             <div class="portfolio-filter-wrapper wow fadeIn" data-wow-duration="2s">
                 <div class="button-group filter-btn-group">
-                    <button class="active" data-filter="*">All</button>
-                    <button data-filter=".desigen">Cultural</button>
-                    <button data-filter=".marketing">Nature</button>
-                    <button data-filter=".analysis">Beaches</button>
-                    <button data-filter=".research">Festivals</button>
+                    <button class="active" data-filter="*">အားလုံး</button>
+                    <button data-filter=".desigen">ယဉ်ကျေးမှုဆိုင်ရာ
+                    </button>
+                    <button data-filter=".marketing">သဘာဝရှုခင်း</button>
+                    <button data-filter=".analysis">ကမ်းခြေများ</button>
+                    <button data-filter=".research">ပွဲတော်များ</button>
                 </div>
                 <!-- <div class="grid grid--style">
                     <div class="grid-item grid-item--style marketing analysis">
@@ -981,8 +1045,8 @@
                             <img src="../assets/images/bagan-at-sunrise.jpg" class="img-fluid w-100 rounded"
                                 alt="Bagan Temples" style="height:250px; object-fit:cover;">
                             <div class="project-overlay-text text-center">
-                                <h3 class="title"><a href="gallery.html">Bagan at Sunrise</a></h3>
-                                <span>Ancient Temples</span>
+                                <h3 class="title"><a href="gallery.html">ပုဂံနေထွက်ချိန်</a></h3>
+                                <span>ရှေးဟောင်းဘုရားပုထိုး<span>
                             </div>
                         </div>
                     </div>
@@ -991,8 +1055,8 @@
                             <img src="../assets/images/inle-lake-fisherman.jpg" class="img-fluid w-100 rounded"
                                 alt="Inle Lake" style="height:250px; object-fit:cover;">
                             <div class="project-overlay-text text-center">
-                                <h3 class="title"><a href="gallery.html">Inle Lake Fishermen</a></h3>
-                                <span>Unique Culture</span>
+                                <h3 class="title"><a href="gallery.html">အင်းလေးကန် ငါးဖမ်းသမားများ</a></h3>
+                                <span>တစ်မူထူးခြားသော ရိုးရာဓလေ့</span>
                             </div>
                         </div>
                     </div>
@@ -1001,8 +1065,8 @@
                             <img src="../assets/images/ngapali-sunset.jpg" class="img-fluid w-100 rounded"
                                 alt="Ngapali Beach" style="height:250px; object-fit:cover;">
                             <div class="project-overlay-text text-center">
-                                <h3 class="title"><a href="gallery.html">Ngapali Sunset</a></h3>
-                                <span>Pristine Beaches</span>
+                                <h3 class="title"><a href="gallery.html">ငပလီကမ်းခြေ၏ နေဝင်ဆည်းလည်း</a></h3>
+                                <span>သဘာဝအတိုင်း သန့်ပြန့်လှပသော ကမ်းခြေများ</span>
                             </div>
                         </div>
                     </div>
@@ -1011,8 +1075,8 @@
                             <img src="../assets/images/kyaiktiyo-pagoda.jfif" class="img-fluid w-100 rounded"
                                 alt="Golden Rock" style="height:250px; object-fit:cover;">
                             <div class="project-overlay-text text-center">
-                                <h3 class="title"><a href="gallery.html">Kyaiktiyo Pagoda</a></h3>
-                                <span>Sacred Sites</span>
+                                <h3 class="title"><a href="gallery.html">ကျိုက်ထီးရိုးစေတီတော်</a></h3>
+                                <span>သန့်ရှင်းမြင့်မြတ်သော ဘုရားပုထိုးများ</span>
                             </div>
                         </div>
                     </div>
@@ -1021,8 +1085,8 @@
                             <img src="../assets/images/ubein-bridge.jfif" class="img-fluid w-100 rounded" alt="Mandalay"
                                 style="height:250px; object-fit:cover;">
                             <div class="project-overlay-text text-center">
-                                <h3 class="title"><a href="gallery.html">U Bein Bridge</a></h3>
-                                <span>Iconic Landmarks</span>
+                                <h3 class="title"><a href="gallery.html">ဦးပိန် တံတား</a></h3>
+                                <span>ဂန္ထဝင်အထိမ်းအမှတ်နေရာများ</span>
                             </div>
                         </div>
                     </div>
@@ -1031,8 +1095,8 @@
                             <img src="../assets/images/shwedagon-pagoda.jpg" class="img-fluid w-100 rounded"
                                 alt="Shwedagon" style="height:250px; object-fit:cover;">
                             <div class="project-overlay-text text-center">
-                                <h3 class="title"><a href="gallery.html">Shwedagon Pagoda</a></h3>
-                                <span>Spiritual Heart</span>
+                                <h3 class="title"><a href="gallery.html">ရွှေတိဂုံစေတီတော်</a></h3>
+                                <span>ဘာသာရေး အထိမ်းအမှတ်</span>
                             </div>
                         </div>
                     </div>
@@ -1051,8 +1115,8 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="call-action-content">
-                        <h3 class="title">Stay Updated</h3>
-                        <span class="sub-title">Subscribe to Myanmar Tourism News</span>
+                        <h3 class="title">နောက်ဆုံးရသတင်းများရယူရန်</h3>
+                        <span class="sub-title">မြန်မာခရီးသွားလုပ်ငန်းသတင်းများ ရယူရန် စာရင်းသွင်းပါ</span>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -1075,42 +1139,51 @@
             <div class="row mb-30-none">
                 <div class="col-lg-6 mb-30">
                     <div class="faq-left-content">
-                        <h2 class="title">Traveler Information</h2>
+                        <h2 class="title">ခရီးသွားများအတွက် အချက်အလက်များ</h2>
                         <div class="faq-wrapper">
                             <div class="faq-item active open">
-                                <h3 class="faq-title"><span class="title">Visa Requirements</span><span
+                                <h3 class="faq-title"><span class="title">ဗီဇာရရှိရန် လိုအပ်သောအချက်အလက်များ</span><span
                                         class="right-icon"></span></h3>
                                 <div class="faq-content">
-                                    <p>Most visitors require a visa to enter Myanmar. Tourist visas can be obtained
-                                        online through the e-Visa system or at Myanmar embassies. The e-Visa allows
-                                        stays of up to 28 days for tourism purposes.</p>
+                                    <p>ဧည့်သည်အများစုသည် မြန်မာနိုင်ငံသို့ဝင်ရောက်ရန် ဗီဇာလိုအပ်ပါသည်။ ခရီးသွားဗီဇာကို
+                                        အီးဗီဇာစနစ်မှတစ်ဆင့် အွန်လိုင်းလျှောက်ထားနိုင်သလို မြန်မာသံရုံးများတွင်လည်း
+                                        ရယူနိုင်ပါသည်။ အီးဗီဇာဖြင့် ခရီးသွားရည်ရွယ်ချက်ဖြင့် ၂၈ ရက်အထိ
+                                        နေထိုင်ခွင့်ပြုပါသည်။</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">Best Time to Visit</span><span
+                                <h3 class="faq-title"><span class="title">လည်ပတ်ရန် အကောင်းဆုံးအချိန်</span><span
                                         class="right-icon"></span></h3>
                                 <div class="faq-content">
-                                    <p>The cool, dry season from November to February is generally the best time to
-                                        visit most parts of Myanmar. Beach destinations are best from November to April,
-                                        while trekking in northern regions is ideal from October to March.</p>
+                                    <p>မြန်မာနိုင်ငံ၏ အအေးပိုင်းနှင့် ခြောက်သွေ့သော လများဖြစ်သည့် နိုဝင်ဘာမှ
+                                        ဖေဖော်ဝါရီအထိကာလသည် နေရာအများစုသို့ သွားရောက်လည်ပတ်ရန်
+                                        အကောင်းဆုံးအချိန်ဖြစ်ပါသည်။ ကမ်းခြေများသို့မူ နိုဝင်ဘာမှ ဧပြီအထိ သွားရောက်ရန်
+                                        သင့်တော်ပြီး မြောက်ပိုင်းဒေသများတွင် လမ်းလျှောက်ခရီးထွက်ရန် အောက်တိုဘာမှ
+                                        မတ်လအထိကာလက အကောင်းဆုံးဖြစ်ပါသည်။</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">Cultural Etiquette</span><span
-                                        class="right-icon"></span></h3>
+                                <h3 class="faq-title"><span class="title">ယဉ်ကျေးမှုဆိုင်ရာ
+                                        လိုက်နာကျင့်သုံးရမည့်အချက်များ</span><span class="right-icon"></span></h3>
                                 <div class="faq-content">
-                                    <p>When visiting temples, dress modestly (covered shoulders and knees), remove shoes
-                                        and socks, and avoid touching Buddha images. Always ask permission before taking
-                                        photos of people. Use your right hand when giving or receiving items.</p>
+                                    <p>ဘုရားစေတီများသို့ သွားရောက်လည်ပတ်သည့်အခါ -
+
+                                        ရိုသေလေးစားမှုဖြင့် ဝတ်စားဆင်ယင်ပါ (ပခုံးနှင့်ဒူးများ ဖုံးအုပ်ပါ)
+
+                                        ဖိနပ်နှင့်ခြေအိတ်များ ချွတ်ပါ
+
+                                        ဗုဒ္ဓရုပ်ပွားတော်များကို မထိပါနှင့်
+
+                                        ဓာတ်ပုံရိုက်မည်ဆိုပါက လူများထံ ခွင့်တောင်းပါ
+
+                                        အရာဝတ္ထုများကို လက်ယာဖြင့်သာ ယူပါ/ပေးပါ</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <h3 class="faq-title"><span class="title">Health & Safety</span><span
+                                <h3 class="faq-title"><span class="title">ကျန်းမာရေးနှင့် ဘေးအန္တရာယ်ကင်းရှင်းရေး</span><span
                                         class="right-icon"></span></h3>
                                 <div class="faq-content">
-                                    <p>Consult your doctor about recommended vaccinations before traveling. Drink only
-                                        bottled or purified water. Myanmar is generally safe for travelers, but take
-                                        normal precautions with valuables.</p>
+                                    <p>ခရီးမသွားမီ ထိုးသင့်သော ကာကွယ်ဆေးများအတွက် ဆရာဝန်နှင့် တိုင်ပင်ဆွေးနွေးပါ။ သောက်ရေသန့် သို့မဟုတ် သန့်စင်ပြီးရေကိုသာ သောက်သုံးပါ။ မြန်မာနိုင်ငံသည် ခရီးသွားများအတွက် ယေဘုယျအားဖြင့် ဘေးကင်းသော်လည်း အဖိုးတန်ပစ္စည်းများနှင့် ပတ်သက်၍ ပုံမှန်သတိထား ဆောင်ရွက်ပါ။</p>
                                 </div>
                             </div>
                         </div>
@@ -1135,10 +1208,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 text-center">
                     <div class="section-header">
-                        <h2 class="section-title">Latest Tourism News</h2>
+                        <h2 class="section-title">ခရီးသွားလာရေး သတင်းများ</h2>
                         <span class="title-border"></span>
-                        <p>Stay informed about the latest developments, events, and initiatives in Myanmar's tourism
-                            sector.</p>
+                        <p>မြန်မာ့ခရီးသွားလုပ်ငန်းကဏ္ဍရှိ နောက်ဆုံးပေါ် တိုးတက်ပြောင်းလဲမှုများ၊ ပွဲလမ်းသဘင်များနှင့် လုပ်ငန်းစီမံချက်များအကြောင်းကို သိရှိနားလည်အောင် ဆောင်ရွက်ပါ။</p>
                     </div>
                 </div>
             </div>
@@ -1152,14 +1224,12 @@
                                         <img src="../assets/images/hotel.jpg" alt="Sustainable Tourism">
                                     </div>
                                     <div class="blog-content">
-                                        <h3 class="title"><a href="blog-details.html">New Sustainable Tourism
-                                                Initiatives Launched</a></h3>
-                                        <p>The Ministry has introduced new guidelines for community-based tourism
-                                            projects aimed at preserving cultural heritage while creating economic
-                                            opportunities in rural areas.</p>
+                                        <h3 class="title"><a href="blog-details.html">ရေရှည်တည်တံ့သော ခရီးသွားလုပ်ငန်း အစပျိုးမှုအသစ်များ စတင်လိုက်ပြီ။</a></h3>
+                                        <p>ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဝန်ကြီးဌာနသည် ကျေးလက်ဒေသဖွံ့ဖြိုးရေးနှင့် ယဉ်ကျေးမှုအမွေအနှစ်များ ထိန်းသိမ်းရေးအတွက် ဒေသခံအခြေပြု ခရီးသွားလုပ်ငန်းစီမံချက်များ အတွက် လမ်းညွှန်ချက်အသစ်များ ထုတ်ပြန်ခဲ့သည်။</p>
                                         <div class="meta-post d-flex flex-wrap justify-content-between">
-                                            <span class="meta-user">Ministry News</span>
-                                            <span class="meta-user">15 Jan 2023</span>
+                                            <span class="meta-user">ဝန်ကြီးဌာနသတင်း
+</span>
+                                            <!-- <span class="meta-user">၂၀၂၅ ခုနှစ်၊ ဇန်နဝါရီလ ၁၅ ရက်</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1170,14 +1240,11 @@
                                         <img src="../assets/images/visa.jpg" alt="Tourism Recovery">
                                     </div>
                                     <div class="blog-content">
-                                        <h3 class="title"><a href="blog-details.html">Tourism Recovery Plan
-                                                Announced</a></h3>
-                                        <p>Post-pandemic recovery strategies focus on quality tourism, digital
-                                            transformation, and enhanced health safety protocols to rebuild visitor
-                                            confidence.</p>
+                                        <h3 class="title"><a href="blog-details.html">ခရီးသွားလုပ်ငန်း ပြန်လည်ထူထောင်ရေး စီမံချက် ကြေညာ</a></h3>
+                                        <p>ကပ်ရောဂါကြောင့် ထိခိုက်ခဲ့သော ခရီးသွားလုပ်ငန်းအား အရည်အသွေးမြင့် ခရီးသွားလုပ်ငန်း၊ ဒစ်ဂျစ်တယ်အသွင်ကူးပြောင်းရေးနှင့် ကျန်းမာရေးလုံခြုံမှုစည်းမျဉ်းများ မြှင့်တင်ခြင်းဖြင့် ပြန်လည်တည်ဆောက်ရန် ဗျူဟာများ ချမှတ်ထားပါသည်။ ဤကြိုးပမ်းမှုများသည် ဧည့်သည်များ၏ ယုံကြည်မှုကို ပြန်လည်ရရှိစေရန် ရည်ရွယ်ပါသည်။</p>
                                         <div class="meta-post d-flex flex-wrap justify-content-between">
-                                            <span class="meta-user">Industry Update</span>
-                                            <span class="meta-user">05 Dec 2022</span>
+                                            <span class="meta-user">လုပ်ငန်းကဏ္ဍ နောက်ဆုံးရအခြေအနေ</span>
+                                            <!-- <span class="meta-user">၂၀၂၄ ခုနှစ်၊ ဒီဇင်ဘာလ ၅ ရက်</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1188,13 +1255,11 @@
                                         <img src="../assets/images/shwedagon.jpg" alt="New Air Routes">
                                     </div>
                                     <div class="blog-content">
-                                        <h3 class="title"><a href="blog-details.html">New International Air Routes to
-                                                Myanmar</a></h3>
-                                        <p>Several airlines have announced new direct flights to Yangon and Mandalay,
-                                            improving connectivity with key Asian and Middle Eastern markets.</p>
+                                        <h3 class="title"><a href="blog-details.html">မြန်မာနိုင်ငံသို့ နိုင်ငံတကာ လေကြောင်းခရီးစဉ်အသစ်များ</a></h3>
+                                        <p>လေကြောင်းလိုင်းအချို့မှ ရန်ကုန်နှင့် မန္တလေးသို့ တိုက်ရိုက်ခရီးစဉ်အသစ်များ စတင်မည်ဟု ကြေညာခဲ့ပြီး၊ အာရှနှင့် အရှေ့အလယ်ပိုင်းဒေသ အဓိကဈေးကွက်များသို့ လေကြောင်းဆက်သွယ်ရေး ပိုမိုကောင်းမွန်လာမည် ဖြစ်ပါသည်။</p>
                                         <div class="meta-post d-flex flex-wrap justify-content-between">
-                                            <span class="meta-user">Transport News</span>
-                                            <span class="meta-user">22 Nov 2022</span>
+                                            <span class="meta-user">သယ်ယူပို့ဆောင်ရေး သတင်းများ</span>
+                                            <!-- <span class="meta-user">၂၀၂၄ ခုနှစ်၊ နိုဝင်ဘာလ ၂၂ ရက်</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1209,12 +1274,12 @@
     <!-- blog-section end -->
 
 
-   
+
     <script>
         !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
     </script>
 
-            <!-- footer-section start -->
+    <!-- footer-section start -->
     <footer class="footer-section pt-120 pb-120">
         <div class="container footer-container">
             <div class="row mb-30-none">
@@ -1238,7 +1303,7 @@
                             <li><a href="#">မြေပုံများ</a></li>
                             <li><a href="#">မိုးပျံပူဖောင်းများ</a></li>
                             <li><a href="#">စာရင်းအင်းအချက်အလက်များ</a></li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -1258,8 +1323,8 @@
                         <!-- <h3 class="widget-title">Contact Us</h3> -->
                         <ul class="footer-widget-content">
                             <li>
-  <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၄၅၈</p>
- </li>
+                                <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၄၅၈</p>
+                            </li>
                             <li>
                                 <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၂၄၇</p>
                             </li>
@@ -1305,7 +1370,7 @@
     <!-- footer-section end -->
 
 
-       <!-- jquery -->
+    <!-- jquery -->
     <script src="../assets/js/jquery-3.3.1.min.js"></script>
     <!-- migarate-jquery -->
     <script src="../assets/js/jquery-migrate-3.0.0.js"></script>
@@ -1329,65 +1394,88 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- for mobile menu -->
-   
- <script>
-  document.addEventListener('DOMContentLoaded', function() {
-   function isMobile() {
-    return window.innerWidth < 992;
-   }
 
-   const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
-   const navbarToggler = document.querySelector('.navbar-toggler');
-   const mobileMenu = document.querySelector('.mobile-menu');
-   const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobile() {
+                return window.innerWidth < 992;
+            }
 
-   mobileMenuLinks.forEach(function(parentLink) {
-    parentLink.addEventListener('click', function(e) {
-     if (isMobile()) {
-      e.preventDefault();
-      e.stopPropagation();
+            const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
 
-      const parentLi = this.parentElement;
-      const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
+            mobileMenuLinks.forEach(function (parentLink) {
+                parentLink.addEventListener('click', function (e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        e.stopPropagation();
 
-      // Close other open submenus at the same level
-      const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
-      siblings.forEach(function(sibling) {
-       sibling.classList.remove('open');
-       const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
-       if (siblingSub) {
-        siblingSub.style.display = 'none'; // Hide the submenu
-       }
-      });
+                        const parentLi = this.parentElement;
+                        const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
 
-      // Toggle the current submenu
-      if (submenu) {
-       if (submenu.style.display === 'block') {
-        submenu.style.display = 'none';
-        parentLi.classList.remove('open');
-        parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
-       } else {
-        submenu.style.display = 'block';
-        parentLi.classList.add('open');
-        parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
-       }
-      }
-     }
-    });
-   });
+                        // Close other open submenus at the same level
+                        const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
+                        siblings.forEach(function (sibling) {
+                            sibling.classList.remove('open');
+                            const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
+                            if (siblingSub) {
+                                siblingSub.style.display = 'none'; // Hide the submenu
+                            }
+                        });
 
-   // Mobile menu toggle button
-   navbarToggler.addEventListener('click', function(e) {
-    e.stopPropagation(); // Prevent event bubbling
-    mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
-   });
+                        // Toggle the current submenu
+                        if (submenu) {
+                            if (submenu.style.display === 'block') {
+                                submenu.style.display = 'none';
+                                parentLi.classList.remove('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
+                            } else {
+                                submenu.style.display = 'block';
+                                parentLi.classList.add('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+                            }
+                        }
+                    }
+                });
+            });
 
-   // Mobile menu close button
-   mobileMenuClose.addEventListener('click', function() {
-    mobileMenu.classList.remove('active');
-   });
-  });
- </script>
+            // Mobile menu toggle button
+            navbarToggler.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event bubbling
+                mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
+            });
+
+            // Mobile menu close button
+            mobileMenuClose.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#language-selector').niceSelect('destroy');
+            $('#language-selector-mobile').niceSelect('destroy');
+        });
+
+        function changeLanguageWeb() {
+            var lang = document.getElementById('language-selector').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+        function changeLanguage() {
+            var lang = document.getElementById('language-selector-mobile').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+
+    </script>
 
 </body>
 
