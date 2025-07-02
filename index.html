@@ -529,7 +529,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
                     <div class="banner-content">
-                        <h2 class="title">Discover the Golden Land of Myanmar</h2>
+                        <h2 class="title text-shadow">Discover the Golden Land of Myanmar</h2>
 
                     </div>
                 </div>
@@ -1183,7 +1183,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 text-center">
                     <div class="section-header">
-                        <h2 class="section-title">Latest Tourism News</h2>
+                        <h2 class="section-title">Tourism News</h2>
                         <span class="title-border"></span>
                         <p>Stay informed about the latest developments, events, and initiatives in Myanmar's tourism
                             sector.</p>
@@ -1255,6 +1255,66 @@
         </div>
     </section>
     <!-- blog-section end -->
+
+     <!-- latest news section start -->
+      <section class="latest-news-slider-section pt-120 pb-120">
+    <div class="container">
+        <h2 class="title text-center mb-5">Latest News</h2>
+        <div class="latest-news-slider-wrapper">
+            <div class="swiper latest-news-swiper">
+                <div class="swiper-wrapper">
+                    <!-- News Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="latest-news-card">
+                            <img src="assets/images/news1.jpg" alt="News Title 1" class="latest-news-img">
+                            <div class="latest-news-content">
+                                <h5 class="latest-news-title">Myanmar participates in Russia's 5th “Let's Travel!” International Travel
+    Forum opening event</h5>
+                                <p class="latest-news-date">June 11, 2025</p>
+                                <p class="latest-news-summary">MYANMAR delegation led by Union Minister for Hotels andTourism U Kyaw Soe
+    Win attended...</p>
+                                <a href="news-detail.html?id=1" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="latest-news-card">
+                            <img src="assets/images/news2.jpg" alt="News Title 2" class="latest-news-img">
+                            <div class="latest-news-content">
+                                <h5 class="latest-news-title">Homes for flood victims handed over</h5>
+                                <p class="latest-news-date">May 04, 2025</p>
+                                <p class="latest-news-summary">UNION Minister for Hotels and Tourism U Kyaw Soe Win, accompanied by relevant officials, attended the handover...</p>
+                                <a href="news-detail.html?id=2" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Slide 3 -->
+                    <!-- <div class="swiper-slide">
+                        <div class="latest-news-card">
+                            <img src="assets/images/news/news3.jpg" alt="News Title 3" class="latest-news-img">
+                            <div class="latest-news-content">
+                                <h5 class="latest-news-title">News Title 3</h5>
+                                <p class="latest-news-date">June 20, 2025</p>
+                                <p class="latest-news-summary">A third news summary. You can add as many news cards as you need.</p>
+                                <a href="news-detail.html?id=3" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- Slider Pagination -->
+                <div class="swiper-pagination latest-news-pagination"></div>
+                <!-- Slider Navigation -->
+                <div class="swiper-button-prev latest-news-prev"></div>
+                <div class="swiper-button-next latest-news-next"></div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="news.html" class="btn btn-outline-primary">View All News</a>
+        </div>
+    </div>
+</section>
+     <!-- latest news section end -->
 
 
 
@@ -1444,7 +1504,7 @@
         function changeLanguageWeb() {
             var lang = document.getElementById('language-selector').value;
             if (lang === 'mm') {
-                window.location.href = 'mm/index.html';
+                window.location.href = 'mm/coming.html';
             } else {
                 window.location.href = 'index.html';
             }
@@ -1452,12 +1512,32 @@
         function changeLanguage() {
             var lang = document.getElementById('language-selector-mobile').value;
             if (lang === 'mm') {
-                window.location.href = 'mm/index.html';
+                window.location.href = 'mm/coming.html';
             } else {
                 window.location.href = 'index.html';
             }
         }
 
+
+        // swiper for latest news section
+var latestNewsSwiper = new Swiper('.latest-news-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    
+    pagination: {
+        el: '.latest-news-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.latest-news-next',
+        prevEl: '.latest-news-prev',
+    },
+    breakpoints: {
+        991: { slidesPerView: 2 },
+        767: { slidesPerView: 1 }
+    }
+});
 
 
 
