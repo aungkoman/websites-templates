@@ -1,147 +1,57 @@
-#evisa-info {
-  margin-bottom: 2rem;
-}
-
-#evisa-info h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #007bff; 
-  text-align: center;
-}
-
-#evisa-info p.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-.evisa-list {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
-}
-
-.evisa-list li {
-  margin-bottom: 0.75rem;
-}
-
-.evisa-sublist {
-  list-style-type: lower-alpha;
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.evisa-table {
-  width: 100%;
-  margin-top: 1rem;
-}
-
-/* Optional: Zebra striping and hover effect */
-.evisa-table tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.evisa-table tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.075);
-}
-
-
-
-.evisa.banner-section {
-    padding-top: 245px;
-    padding-bottom: 255px;
-    position: relative;
-    background-image: url("../cover-images/15.jpg");
-    z-index: 2;
-    background-size: cover;
-    background-position: center;
-}
-
-.evisa.banner-section::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: #000;
-    opacity: 0.1;
-}
-
-.evisa.banner-element {
-    position: absolute;
-    right: 150px;
-    top: 50%;
-    bottom: -250px;
-    transform: translateY(-50%);
-}
-
-.evisa.banner-section--style {
-    background-image: url("../images/banner-2.png");
-    overflow: hidden;
-}
-
-.evisa.banner-content .title {
-    font-size: 60px;
-    color: #fff;
-    font-weight: 700;
-}
-
-.evisa.banner-section--style .banner-content .title {
-    font-weight: 700;
-}
-
-.evisa.banner-content p {
-    font-size: 18px;
-    color: #fff;
+#visa-exemption-content {
     margin-top: 30px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.evisa.banner-content--style p {
-    width: 100%;
+/* Formal section styling */
+.business-section {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
 }
 
-.evisa.banner-content .cmn-btn {
-    margin: 55px 15px 0 15px;
+.business-section h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 15px;
 }
 
-.evisa.banner-content .cmn-btn:hover {
-    color: #fff;
+.business-section p {
+    margin-bottom: 10px;
 }
 
-.evisa.banner-section .cmn-btn-active {
-    color: #fff;
+/* List styling */
+.business-section ul,
+.business-section ol {
+    padding-left: 30px;
+    margin-bottom: 15px;
 }
 
-.evisa.inner-banner-section {
-    position: relative;
-    background-image: url("../images/about.png");
-    z-index: 2;
-    background-size: cover;
-    background-position: center;
+.business-section li {
+    margin-bottom: 8px;
 }
 
-.evisa.inner-banner-section::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: #000;
-    opacity: 0.8;
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-.evisa.inner-banner-content {
-    margin-top: -12px;
-    margin-bottom: -10px;
+a:hover {
+    text-decoration: underline;
 }
 
-.evisa.inner-banner-content .title {
-    font-size: 60px;
-    color: #fff;
-    line-height: 1.2;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .business-section h4 {
+        font-size: 1.5em;
+    }
 }

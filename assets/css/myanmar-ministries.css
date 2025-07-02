@@ -1,0 +1,77 @@
+
+
+
+.table-responsive {
+    overflow-x: auto; 
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529; 
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6; 
+    text-align: left;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa; 
+    font-weight: bold;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.table tbody+tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table td a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.table td a:hover {
+    text-decoration: underline; 
+}
+
+#ministries-table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#ministries-table h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.5rem;
+        font-size: 0.9em;
+    }
+}
