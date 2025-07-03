@@ -1,75 +1,42 @@
-#tourism-publications-content {
-    margin-top: 30px;
+.publication-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Publication section styling */
-.publication-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #fff;
-    overflow: hidden; /* Important:  Prevent image overflow */
+.publication-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.publication-section h4 {
-    color: #0056b3;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 8px;
-}
-
-.publication-section img {
-    max-width: 50%; /* Reduce image size */
+.publication-card img {
+    width: 100%;
     height: auto;
-    margin-bottom: 15px;
-    display: block; /* Ensure proper margin */
-    margin-left: auto;
-    margin-right: auto; /* Center the image */
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
-.publication-section p {
-    line-height: 1.6;
-    color: #555;
-    text-align: center; /* Center the download link */
+.publication-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+    flex-grow: 1;
 }
 
-.publication-section a {
-    color: #fff; /* White text */
-    background-color: #007bff; /* Blue background */
-    padding: 10px 20px; /* Add padding for better appearance */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none;
-    font-weight: bold; /* Make the text bold */
-    display: inline-block; /* Ensures padding and other styles are applied correctly */
-    margin-top: 10px; /* Add some space above the button */
-    border: 2px solid #007bff; /* Add a border */
-}
-
-.publication-section a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+.publication-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
     color: #fff;
-    border-color: #0056b3;
-    text-decoration: none; /* Remove underline on hover */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .publication-section {
-        padding: 15px;
-    }
-
-    .publication-section h4 {
-        font-size: 1.3em;
-    }
-
-    .publication-section img {
-        max-width: 75%; /* Make image larger on smaller screens */
-    }
+.publication-card a:hover {
+    background-color: #0056b3;
 }
