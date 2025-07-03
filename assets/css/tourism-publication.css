@@ -1,0 +1,75 @@
+#tourism-publications-content {
+    margin-top: 30px;
+}
+
+/* Publication section styling */
+.publication-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    overflow: hidden; /* Important:  Prevent image overflow */
+}
+
+.publication-section h4 {
+    color: #0056b3;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.publication-section img {
+    max-width: 50%; /* Reduce image size */
+    height: auto;
+    margin-bottom: 15px;
+    display: block; /* Ensure proper margin */
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+.publication-section p {
+    line-height: 1.6;
+    color: #555;
+    text-align: center; /* Center the download link */
+}
+
+.publication-section a {
+    color: #fff; /* White text */
+    background-color: #007bff; /* Blue background */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    font-weight: bold; /* Make the text bold */
+    display: inline-block; /* Ensures padding and other styles are applied correctly */
+    margin-top: 10px; /* Add some space above the button */
+    border: 2px solid #007bff; /* Add a border */
+}
+
+.publication-section a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+    border-color: #0056b3;
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .publication-section {
+        padding: 15px;
+    }
+
+    .publication-section h4 {
+        font-size: 1.3em;
+    }
+
+    .publication-section img {
+        max-width: 75%; /* Make image larger on smaller screens */
+    }
+}
