@@ -1,0 +1,58 @@
+
+
+/* Visa information sections */
+.visa-info-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+}
+
+.visa-info-section h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0056b3; /* Primary color */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+.visa-info-section p {
+    margin-bottom: 10px;
+}
+
+/* List styles */
+.visa-info-section ol,
+.visa-info-section ul {
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.visa-info-section li {
+    margin-bottom: 8px;
+}
+
+/* Link styles */
+.visa-info-section a {
+    color: #007bff !important;
+    text-decoration: none;
+}
+
+.visa-info-section a:hover {
+    text-decoration: underline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .visa-info-section h4 {
+        font-size: 1.5em;
+    }
+}
