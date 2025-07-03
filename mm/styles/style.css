@@ -43,3 +43,11 @@ ol {
 .software-icon{
   font-size: 20px !important;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-section .header-top {
+        display: none; /* Hide the desktop language selector */
+    }
+    #mobile-lang-switcher {
+        display: block !important; /* Show the mobile language selector */
+    }
+}

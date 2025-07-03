@@ -4218,8 +4218,40 @@ footer.footer-section{
         min-height: 340px;
     }
 }
+#language-selector,
+.form-select#language-selector {
+    border-radius: 8px;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+    min-width: 140px;
+    outline: none;
+    transition: border-color 0.2s;
+}
 
-
+#language-selector , #language-selector-mobile{
+  border-radius: 8px;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  font-size: 1em;
+  min-width: 120px;
+  margin-top: 10px;
+}
+.software-icon{
+  font-size: 20px !important;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-section .header-top {
+        display: none; /* Hide the desktop language selector */
+    }
+    #mobile-lang-switcher {
+        display: block !important; /* Show the mobile language selector */
+    }
+}
 
 
 
