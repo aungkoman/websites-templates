@@ -4,15 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tourism Police Offices - Ministry of Hotels and Tourism</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/tourism-publication.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ministry of Hotels and Tourism, Myanmar</title>
+    <link rel="stylesheet" href="assets/css/why-invest.css">
     <!-- fontawesome css link -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <!-- flaticon css -->
@@ -33,14 +27,76 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
 </head>
+<style>
+#tourism-legislation-content {
+    margin-top: 30px;
+}
+
+.legislation-section {
+    /* Reduced padding for smaller screens */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%; /* Ensure equal height */
+}
+
+.legislation-section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.legislation-section img.legislation-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.legislation-section h2 {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    margin-bottom: 5px; /* Reduced margin */
+    color: #0056b3;
+}
+
+.legislation-section p {
+    font-size: 0.9rem; /* Smaller font size for description */
+    margin-bottom: 10px;
+}
+
+.legislation-section a.download-button {
+    display: inline-block;
+    padding: 6px 12px; /* Smaller button */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+.legislation-section a.download-button:hover {
+    background-color: #0056b3;
+}
+</style>
 
 <body>
 
+
+    <!-- preloader -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="preloader-thumb">
+            <img src="assets/images/propeller.png" alt="image">
+        </div>
+    </div> -->
+
     <!-- header-section start -->
-    <header class="header-section">
+  <header class="header-section">
     <!-- start top header section -->
     <div class="header-top border-bottom">
         <div class="container header-container">
@@ -267,7 +323,7 @@
                                             <li><a href="coming.html">Doing Business in Myanmar</a></li>
                                             <li><a href="investment-law.html">Myanmar Investment Law</a></li>
                                             <li><a href="coming.html">Tourism Invesment Opportunities</a></li>
-                                            <li><a href="#">Why Invest in Myanmar</a></li>
+                                            <li><a href="why-invest.html">Why Invest in Myanmar</a></li>
                                             <li><a href="foreign-investment-in-hotels.html">Foreign Investment in Hotels and commercial
                                                     complexes</a></li>
                                         </ul>
@@ -469,7 +525,7 @@
                                             <li><a href="coming.html">Doing Business in Myanmar</a></li>
                                             <li><a href="investment-law.html">Myanmar Investment Law</a></li>
                                             <li><a href="tourism-investment-opportunity.html">Tourism Investment Opportunities</a></li>
-                                            <li><a href="#">Why Invest in Myanmar</a></li>
+                                            <li><a href="why-invest.html">Why Invest in Myanmar</a></li>
                                             <li><a href="foreign-investment-in-hotels.html">Foreign Investment in Hotels and commercial
                                                     complexes</a></li>
                                         </ul>
@@ -505,14 +561,15 @@
     <!-- end bottom header section -->
 </header>
     <!-- header-section end -->
-    
-     <!-- banner-section start -->
+
+
+    <!-- banner-section start -->
     <section class="news1 banner-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
                     <div class="banner-content">
-                        <h2 class="title text-shadow">Tourism Publications </h2>
+                        <h2 class="title text-shadow">Tourism Legislation</h2>
 
                     </div>
                 </div>
@@ -520,54 +577,93 @@
         </div>
     </section>
     <!-- banner-section end -->
-    <nav aria-label="breadcrumb" class="breadcrumb-section">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                    Tourism Publications
-                </li>
-            </ol>
-        </nav>
 
- <div class="container">
-    <h1 class="text-center">Tourism Publications</h1>
+      <nav aria-label="breadcrumb" class="breadcrumb-section">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            Tourism Legislation
 
-    <section id="tourism-publications-content" class="mt-5">
+        </li>
+    </ol>
+</nav>
+    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
+    <a href="#" class="scrollToTop"><img src="assets/images/plane-up-solid.svg" alt="image"></a>
+
+  
+
+
+<div class="container">
+    <h1 class="text-center">Tourism Legislation</h1>
+
+    <section id="tourism-legislation-content" class="mt-5">
         <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="publication-card">
-                    <img src="assets/images/domestic-tourism-survey.png" alt="Domestic Tourism Survey Image"
-                        class="img-fluid">
-                    <h4>DOMESTIC TOURISM SURVEY OF MYANMAR 2024</h4>
-                    <a href="assets/pdf/Domestic-Tourism-Survey-2024.pdf" target="_blank">Download PDF</a>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="legislation-section">
+                    <img src="assets/images/Myanmar Tourism Law.png" alt="Myanmar Tourism Law"
+                        class="legislation-image">
+                    <h2>Myanmar Tourism Law</h2>
+                    <p>Download the Myanmar Tourism Law PDF:</p>
+                    <a href="#" class="btn btn-primary download-button" target="_blank">Download PDF</a>
                 </div>
             </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="publication-card">
-                    <img src="assets/images/inbound-tourism-survey.png" alt="Inbound Tourism Survey Image"
-                        class="img-fluid">
-                    <h4>INBOUND TOURISM SURVEY OF MYANMAR, 2024</h4>
-                    <a href="assets/pdf/Inbound-Tourism-Survey-2024.pdf" target="_blank">Download PDF</a>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="legislation-section">
+                    <img src="assets/images/Myanmar Tourism Rules(2020).png" alt="Myanmar Tourism Rules (2020)"
+                        class="legislation-image">
+                    <h2>Myanmar Tourism Rules (2020)</h2>
+                    <p>Download the Myanmar Tourism Rules (2020) PDF:</p>
+                    <a href="#" class="btn btn-primary download-button" target="_blank">Download PDF</a>
                 </div>
             </div>
 
-            <!-- Add more publication cards here -->
+      
+
+           
         </div>
     </section>
 </div>
+    
+
+ 
+
+    
+
+
+ 
+
+
+    
 
 
 
-    <!-- main section end -->
 
-    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
-    <a href="#" class="scrollToTop"><img src="assets/images/plane-up-solid.svg" alt="image"></a>
-     <!-- footer-section start -->
+
+  
+
+
+
+
+   
+
+
+   
+
+
+ 
+
+
+  
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
+
+    <!-- footer-section start -->
     <footer class="footer-section pt-120 pb-120">
-        <div class="container footer-container">
+        <div class="container">
             <div class="row mb-30-none">
                 <!-- <div class="col-lg-3 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
@@ -598,7 +694,7 @@
                         <h3 class="widget-title">Explore Our Site</h3>
                         <ul>
                             <li><a href="news.html">News</a></li>
-                            <li><a href="announcements.html">Announcements</a></li>
+                            <li><a href="#">Announcements</a></li>
                             <li><a href="#">Accommodation</a></li>
                             <li><a href="#">Tour</a></li>
                         </ul>
@@ -648,12 +744,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>© 2023 Ministry of Hotel and Tourism, Myanmar. All Rights Reserved.</p>
+                    <p>© 2023 Ministry of Hotels and Tourism, Myanmar. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </div> -->
     <!-- footer-section end -->
+
 
     <!-- jquery -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
@@ -677,8 +774,10 @@
     <script src="assets/js/jquery.paroller.min.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
+
     <!-- for mobile menu -->
-    <script>
+   
+ <script>
         document.addEventListener('DOMContentLoaded', function () {
             function isMobile() {
                 return window.innerWidth < 992;
@@ -783,8 +882,8 @@ var latestNewsSwiper = new Swiper('.latest-news-swiper', {
 
     </script>
 
-
-
 </body>
+
+<!-- index.html  30 Nov 2019 03:18:45 GMT -->
 
 </html>
