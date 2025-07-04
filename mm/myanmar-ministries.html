@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ministry of Hotels and Tourism, Myanmar</title>
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="../assets/font/flaticon.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!-- nice-select css -->
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/fav.png" type="image/x-icon">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- main style css link in mm folder -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<style>
+    .ministries-section {
+    padding: 20px;
+}
+
+.ministries-section .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ministries-section .table-responsive {
+    overflow-x: auto;
+}
+
+.ministries-section .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ministries-section .table th,
+.ministries-section .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ministries-section .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.ministries-section .table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.ministries-section .table a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<body>
+
+
+    <!-- preloader -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="preloader-thumb">
+            <img src="assets/images/propeller.png" alt="image">
+        </div>
+    </div> -->
+
+    <!-- header-section start -->
+  
+    <header class="header-section">
+    <!-- start top header section -->
+    <div class="header-top border-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class=" d-xl-flex d-none d-md-flex" id="logo_for_web">
+                    <a class="site-logo site-title" href="index.html">
+                        <img src="../assets/images/logo-with-text-cut.png" width="500px" height="500px"
+                            alt="Ministry of Hotels and Tourism">
+                    </a>
+                </div>
+                <div class="d-xl-flex d-none d-md-flex">
+                    <select class="form-select" id="language-selector" onchange="changeLanguageWeb()">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  top header section end -->
+    <!--  bottom header section start-->
+
+    <div class="header-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo-container">
+                    <img src="../assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px"
+                        height="300px">
+                </div>
+                <div id="mobile-lang-switcher" class="d-block d-xl-none d-md-none ml-auto">
+                    <select class="form-select" id="language-selector-mobile" onchange="changeLanguage()"
+                        style="max-width: 160px;">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="collapse navbar-collapse">
+                        <!-- removed in collapse id="navbarSupportedContent" -->
+                        <ul class="navbar-nav main-menu ml-auto">
+                            <li class="menu_has_children"><a href="">အချက်အလက်<i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<i
+                                                class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a>
+                                            </li>
+                                            <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                            <li><a href="visa-on-arrival.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဆောင်ရန်/ ရှောင်ရန်အချက်များ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                            <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="">သတင်းပြန်ကြားရေးကောင်တာများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                    ကော်မတီများ</a></li>
+                                            <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a>
+                                            </li>
+                                            <li><a
+                                                    href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">သံရုံးများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                            <li><a href="foreign-embassies.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tourism-publication.html">ဝန်ကြီးဌာနများ</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="menu_has_children"><a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<i
+                                        class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">မြောက်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ကချင်</a></li>
+                                            <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                            <li><a href="coming.html">ချင်း</a></li>
+                                            <li><a href="coming.html">ရှမ်း</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">အလယ်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မကွေး</a></li>
+                                            <li><a href="coming.html">နေပြည်တော်</a></li>
+                                            <li><a href="coming.html">မန္တလေး</a></li>
+                                            <li><a href="coming.html">ရခိုင်</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">တောင်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                            <li><a href="coming.html">ကယား</a></li>
+                                            <li><a href="coming.html">ကရင်</a></li>
+                                            <li><a href="coming.html">ပဲခူး</a></li>
+                                            <li><a href="coming.html">ရန်ကုန်</a></li>
+                                            <li><a href="coming.html">မွန်</a></li>
+
+                                            <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                        </ul>
+                                    </li>
+
+
+                            </li>
+
+                        </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu_has_children"><a href="coming.html">၀န်ဆောင်မှုများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html"> ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu_has_children">
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="">
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu_has_children">
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="tourism-publication.html">စာအုပ်စာစောင်များ</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="menu_has_children" id="our-role-menu"><a href="coming.html">လုပ်ငန်းတာဝန်<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="coming.html">ဝန်ထမ်းဖိုရမ်</a>
+
+                                </li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
+
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
+                            </ul>
+                        </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- Mobile Menu Section start -->
+                <!-- Mobile Menu -->
+                <div class="mobile-menu" id="navbarSupportedContent">
+                    <div class="mobile-menu-header">
+                        <span class="mobile-menu-close">&times;</span>
+                    </div>
+                    <ul class="mobile-main-menu">
+                        <li class="mobile-menu_has_children">
+                            <a href="#">အချက်အလက်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a></li>
+                                        <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                        <li><a href="visa-on-arrival.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဆောင်ရန်/ ရှောင်ရန်အချက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                        <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သတင်းပြန်ကြားရေးကောင်တာများ <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                ကော်မတီများ</a></li>
+                                        <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a></li>
+                                        <li><a
+                                                href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သံရုံးများ<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဝန်ကြီးဌာနများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">မြောက်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ကချင်</a></li>
+                                        <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                        <li><a href="coming.html">ချင်း</a></li>
+                                        <li><a href="coming.html">ရှမ်း</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">အလယ်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မကွေး</a></li>
+                                        <li><a href="coming.html">နေပြည်တော်</a></li>
+                                        <li><a href="coming.html">မန္တလေး</a></li>
+                                        <li><a href="coming.html">ရခိုင်</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">တောင်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                        <li><a href="coming.html">ကယား</a></li>
+                                        <li><a href="coming.html">ကရင်</a></li>
+                                        <li><a href="coming.html">ပဲခူး</a></li>
+                                        <li><a href="coming.html">ရန်ကုန်</a></li>
+                                        <li><a href="coming.html">မွန်</a></li>
+                                        <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">၀န်ဆောင်မှုများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ <span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လုပ်ငန်းတာဝန်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Training Courses</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="coming.html">ဝန်ထမ်းဖိုရမ်</a></li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu Section end -->
+            </div>
+        </div>
+    </div>
+    <!-- end bottom header section -->
+</header>
+    <!-- header-section end -->
+
+
+    <!-- banner-section start -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="banner-content">
+                        <h2 class="title text-shadow">ရွှေရောင်လွှမ်းမြေ မြန်မာ့ဌာနီသို့ လှမ်းလာခဲ့ပါ</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
+
+
+    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
+    <a href="#" class="scrollToTop"><img src="../assets/images/plane-up-solid.svg" alt="image"></a>
+
+          <nav aria-label="breadcrumb" class="breadcrumb-section">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html"><i class="fas fa-home"></i> မူလစာမျက်နှာသို့</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            ဝန်ကြီးဌာနများ
+        </li>
+    </ol>
+</nav>
+
+   
+<div class="container">
+    <h1 class="text-center">ဝန်ကြီးဌာနများ</h1>
+        <!-- header-section end -->
+
+    <section class="ministries-section pt-120 pb-120">
+        <div class="container">
+            
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>စဉ်</th>
+                            <th>ဝန်ကြီးဌာန</th>
+                            <th>Website လိပ်စာ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ပို့ဆောင်ရေးနှင့်ဆက်သွယ်ရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.motc.gov.mm">https://www.motc.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ကာကွယ်ရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mod.gov.mm">https://www.mod.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ပြည်ထဲရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.moha.gov.mm">https://www.moha.gov.mm</a><br>
+                                <a href="https://policeforce.gov.mm">https://policeforce.gov.mm</a><br>
+                                <a href="https://gad.gov.mm">https://gad.gov.mm</a><br>
+                                <a href="https://bsi.gov.mm">https://bsi.gov.mm</a><br>
+                                <a href="https://prisonsdepartment.gov.mm">https://prisonsdepartment.gov.mm</a><br>
+                                <a href="https://www.fsd.gov.mm">https://www.fsd.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>စီမံကိန်းနှင့်ဘဏ္ဍာရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mopf.gov.mm">https://www.mopf.gov.mm</a><br>
+                                <a href="https://www.mmftb.gov.mm">https://www.mmftb.gov.mm</a><br>
+                                <a href="https://www.cbm.gov.mm">https://www.cbm.gov.mm</a><br>
+                                <a href="https://ird.gov.mm">https://ird.gov.mm</a><br>
+                                <a href="https://customs.gov.mm">https://customs.gov.mm</a><br>
+                                <a href="https://www.mminsurance.gov.mm">https://www.mminsurance.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>နိုင်ငံခြားရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mofa.gov.mm">https://www.mofa.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၁)</td>
+                            <td><a href="https://sacministry.gov.mm">https://sacministry.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၂)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၃)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၄)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>နယ်စပ်ရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moba.gov.mm">https://www.moba.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>ရင်းနှီးမြှုပ်နှံမှုနှင့်နိုင်ငံခြားစီးပွားဆက်သွယ်ရေး ဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mifer.gov.mm">https://www.mifer.gov.mm</a><br>
+                                <a href="https://www.dica.gov.mm">https://www.dica.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>ဥပဒေရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mola.gov.mm">https://www.mola.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>ပြန်ကြားရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.moi.gov.mm">https://www.moi.gov.mm</a><br>
+                                <a href="https://www.mrtv.gov.mm">https://www.mrtv.gov.mm</a><br>
+                                <a href="https://www.moi.gov.mm/iprd">https://www.moi.gov.mm/iprd</a><br>
+                                <a href="https://moi.gov.mm/ppd">https://moi.gov.mm/ppd</a><br>
+                                <a href="https://moi.gov.mm/npe">https://moi.gov.mm/npe</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>သာသနာရေးနှင့်ယဉ်ကျေးမှုဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mora.gov.mm">https://www.mora.gov.mm</a><br>
+                                <a href="https://www.kbrl.gov.mm">https://www.kbrl.gov.mm</a><br>
+                                <a href="https://www.mahana.org.mm">https://www.mahana.org.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>စိုက်ပျိုးရေးမွေးမြူရေးနှင့်ဆည်မြောင်းဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moali.gov.mm">https://www.moali.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>သမဝါယမနှင့် ကျေးလက်ဖွံ့ဖြိုးရေး ဝန်ကြီးဌာန</td>
+                            <td><a href="https://mcrd.gov.mm">https://mcrd.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>သယံဇာတနှင့်သဘာဝပတ်ဝန်းကျင် ထိန်းသိမ်းရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.monrec.gov.mm">https://www.monrec.gov.mm</a><br>
+                                <a href="https://www.mining.gov.mm">https://www.mining.gov.mm</a><br>
+                                <a href="https://www.mte.com.mm">https://www.mte.com.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>လျှပ်စစ်စွမ်းအားဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moep.gov.mm">https://www.moep.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>စွမ်းအင်ဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.energy.gov.mm">https://www.energy.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>စက်မှုဝန်ကြီးဌာန</td>
+                            <td><a href="https://industry.gov.mm">https://industry.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>လူဝင်မှုကြီးကြပ်ရေးနှင့် ပြည်သူ့အင်အားဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mip.gov.mm">https://www.mip.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>အလုပ်သမားဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mol.gov.mm">https://www.mol.gov.mm</a><br>
+                                <a href="https://www.ssb.gov.mm">https://www.ssb.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>စီးပွားရေးနှင့်ကူးသန်းရောင်းဝယ်ရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.commerce.gov.mm">https://www.commerce.gov.mm</a><br>
+                                <a href="https://www.myanmartradenet.com.mm">https://www.myanmartradenet.com.mm</a><br>
+                                <a href="https://www.servicetrade.gov.mm">https://www.servicetrade.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>ပညာရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moe.gov.mm">https://www.moe.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>သိပ္ပံနှင့်နည်းပညာဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.most.gov.mm">https://www.most.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>ကျန်းမာရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mohs.gov.mm">https://www.mohs.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>အားကစားနှင့်လူငယ်ရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://mosya.gov.mm">https://mosya.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>ဆောက်လုပ်ရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.construction.gov.mm">https://www.construction.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>လူမှုဝန်ထမ်းကယ်ဆယ်ရေးနှင့်ပြန်လည်နေရာချထားရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.moswrr.gov.mm">https://www.moswrr.gov.mm</a><br>
+                                <a href="https://www.dsw.gov.mm">https://www.dsw.gov.mm</a><br>
+                                <a href="https://www.ddm.gov.mm">https://www.ddm.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>ဟိုတယ်နှင့်ခရီးသွားလာရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.tourism.gov.mm">https://www.tourism.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>တိုင်းရင်းသားလူမျိုးများရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://portal.moea.gov.mm">https://portal.moea.gov.mm</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="section-title text-center mt-5">အစိုးရအဖွဲ့အစည်းများ</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>စဉ်</th>
+                            <th>အဖွဲ့အစည်း</th>
+                            <th>Website လိပ်စာ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ပြည်ထောင်စုတရားလွှတ်တော်ချုပ်ရုံး</td>
+                            <td><a href="https://www.unionsupremecourt.gov.mm">https://www.unionsupremecourt.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>နိုင်ငံတော်ဖွဲ့စည်းပုံအခြေခံဥဒေဆိုင်ရာခုံရုံး</td>
+                            <td><a href="https://www.constitutionaltribunal.gov.mm">https://www.constitutionaltribunal.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ပြည်ထောင်စုရွေးကောက်ပွဲကော်မရှင်</td>
+                            <td><a href="https://www.uec.gov.mm">https://www.uec.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ပြည်ထောင်စုစာရင်းစစ်ချုပ်ရုံး</td>
+                            <td><a href="https://www.oagmac.gov.mm">https://www.oagmac.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ပြည်ထောင်စုရာထူးဝန်အဖွဲ့ရုံး (UCSB)</td>
+                            <td><a href="https://www.ucsb.gov.mm">https://www.ucsb.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Myanmar National Portal</td>
+                            <td><a href="https://www.myanmar.gov.mm">https://www.myanmar.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>နေပြည်တော်ကောင်စီ</td>
+                            <td><a href="https://www.nptdc.gov.mm">https://www.nptdc.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>မြန်မာနိုင်ငံတော်ဗဟိုဘဏ်</td>
+                            <td><a href="https://cbm.gov.mm">https://cbm.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>အဂတိလိုက်စားမှုတိုက်ဖျက်ရေးကော်မရှင်ရုံး</td>
+                            <td><a href="https://www.accm.gov.mm/acc">https://www.accm.gov.mm/acc</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>မြန်မာနိုင်ငံအမျိုးသားလူ့အခွင့်အရေးကော်မရှင်ရုံး</td>
+                            <td><a href="https://mnhrc.org.mm">https://mnhrc.org.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>ကချင်ပြည်နယ်အစိုးရအဖွဲ့</td>
+                            <td><a href="https://kachinstate.gov.mm">https://kachinstate.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>ကယားပြည်နယ်အစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.kayahstate.gov.mm">https://www.kayahstate.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>စစ်ကိုင်းတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.sagaingregion.gov.mm">https://www.sagaingregion.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>ပဲခူးတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://bagoregion.gov.mm">https://bagoregion.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>မန္တလေးတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="http://mandalayregion.gov.mm">http://mandalayregion.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>ရန်ကုန်တိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.yangon.gov.mm">https://www.yangon.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>ရှမ်းပြည်နယ်အစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.shanstategovernment.com">https://www.shanstategovernment.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>ဧရာဝတီတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.ayeyarwadyregion.gov.mm">https://www.ayeyarwadyregion.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>19</td>
+                            <td>အခွန်အယူခံခုံအဖွဲ့</td>
+                            <td><a href="https://www.ratb.gov.mm">https://www.ratb.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>20</td>
+                            <td>အမျိုးသားစည်းလုံးညီညွတ်ရေးနှင့်ငြိမ်းချမ်းရေး
+                                ဖော်ဆောင်မှုညှိနှိုင်းရေးကော်မတီ</td>
+                            <td><a href="https://nspnc.gov.mm">https://nspnc.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>21</td>
+                            <td>တစ်နိုင်ငံလုံးပစ်ခတ်တိုက်ခိုက်မှုရပ်စဲရေးသဘောတူစာချုပ်</td>
+                            <td><a href="https://nca.gov.mm">https://nca.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>22</td>
+                            <td>ဝန်ဆောင်မှုကုန်သွယ်ရေးနှင့် ရင်းနှီးမြှုပ်နှံမှု အချက်အလက်များ
+                                ဘဏ္ဍာတိုက်</td>
+                            <td><a href="https://www.servicetrade.gov.mm">https://www.servicetrade.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>23</td>
+                            <td>မိုးလေဝသနှင့်ဇလဗေဒညွှန်ကြားမှုဦးစီးဌာန</td>
+                            <td><a href="https://www.moezala.gov.mm">https://www.moezala.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>24</td>
+                            <td>E-Mandalay</td>
+                            <td><a href="https://www.emandalay.gov.mm">https://www.emandalay.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>25</td>
+                            <td>မြန်မာဥပဒေသတင်းအချက်အလက်စနစ်</td>
+                            <td><a href="https://mlis.gov.mm">https://mlis.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>26</td>
+                            <td>နေပြည်တော်စည်ပင်သာယာရေးကော်မတီ</td>
+                            <td><a href="https://www.nptdc.gov.mm">https://www.nptdc.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>27</td>
+                            <td>ရန်ကုန်မြို့တော်စည်ပင်သာယာရေးကော်မတီ</td>
+                            <td><a href="https://www.ycdc.gov.mm">https://www.ycdc.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>28</td>
+                            <td>မန္တလေးမြို့တော်စည်ပင်သာယာရေးကော်မတီ</td>
+                            <td><a href="https://www.emcdc.com">https://www.emcdc.com</a></td>
+                        </tr>
+                         <tr>
+                            <td>29</td>
+                            <td>မြန်မာနိုင်ငံအမျိုးသားစာကြည့်တိုက်(နေပြည်တော်)</td>
+                            <td><a href="https://eresources.nlmnpt.gov.mm">https://eresources.nlmnpt.gov.mm</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+ 
+
+   
+ 
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+ 
+
+
+
+ 
+
+    <!-- footer-section start -->
+    <footer class="footer-section pt-120 pb-120">
+        <div class="container footer-container">
+            <div class="row mb-30-none">
+                <!-- <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Tourism Sectors</h3>
+                        <ul>
+                            <li><a href="#">Hotel Industry</a></li>
+                            <li><a href="#">Tour Operations</a></li>
+                            <li><a href="#">Transport Services</a></li>
+                            <li><a href="#">Tour Guide Licensing</a></li>
+                            <li><a href="#">Community Tourism</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <!-- <h3 class="widget-title">Quick Links</h3> -->
+                        <ul>
+                            <li><a href="#">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ</a></li>
+                            <li><a href="#">မြေပုံများ</a></li>
+                            <li><a href="#">မိုးပျံပူဖောင်းများ</a></li>
+                            <li><a href="#">စာရင်းအင်းအချက်အလက်များ</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <!-- <h3 class="widget-title">Explore Our Site</h3> -->
+                        <ul>
+                            <li><a href="#">သတင်းများ</a></li>
+                            <li><a href="#">ကြေညာချက်များ</a></li>
+                            <li><a href="#">တည်းခိုနေထိုင်ရေး</a></li>
+                            <li><a href="#">ခရီးသွားလာရေး</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <!-- <h3 class="widget-title">Contact Us</h3> -->
+                        <ul class="footer-widget-content">
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၄၅၈</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၂၄၇</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> ၁၅၅၁</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Ministry of Hotels and Tourism, Office No. 33,
+                                    Nay Pyi Taw, Myanmar</p>
+                            </li>
+                        </ul>
+                        <ul class="footer-social">
+                            <li><a href="https://facebook.com/tourismmyanmar.com.mm" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/VisitMyanmar_MM" class="active" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCYYysRno81dDb7Tyhxz3OEQ" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://linkedin.com/in/tourismmyanmar"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="https://instagram.com/tourismmyanmar" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+
+                            <li><a href="https://t.me/myanmarbeenchanted" target="_blank"><i
+                                        class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="https://pinterest.com/tourisminmyanmar" target="_blank"><i
+                                        class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="privacy-area wow fadeIn" data-wow-duration="0.5" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>© 2023 Ministry of Hotels and Tourism, Myanmar. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- footer-section end -->
+
+
+    <!-- jquery -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <!-- migarate-jquery -->
+    <script src="../assets/js/jquery-migrate-3.0.0.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="../assets/js/jquery.magnific-popup.js"></script>
+    <!-- isotope -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <!-- nice-select js-->
+    <script src="../assets/js/jquery.nice-select.js"></script>
+    <!-- swipper js -->
+    <script src="../assets/js/swiper.min.js"></script>
+    <!-- waypoints js link -->
+    <script src="../assets/js/jquery.waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <!-- paroller js -->
+    <script src="../assets/js/jquery.paroller.min.js"></script>
+    <!-- main -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- for mobile menu -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobile() {
+                return window.innerWidth < 992;
+            }
+
+            const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+
+            mobileMenuLinks.forEach(function (parentLink) {
+                parentLink.addEventListener('click', function (e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        const parentLi = this.parentElement;
+                        const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
+
+                        // Close other open submenus at the same level
+                        const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
+                        siblings.forEach(function (sibling) {
+                            sibling.classList.remove('open');
+                            const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
+                            if (siblingSub) {
+                                siblingSub.style.display = 'none'; // Hide the submenu
+                            }
+                        });
+
+                        // Toggle the current submenu
+                        if (submenu) {
+                            if (submenu.style.display === 'block') {
+                                submenu.style.display = 'none';
+                                parentLi.classList.remove('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
+                            } else {
+                                submenu.style.display = 'block';
+                                parentLi.classList.add('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Mobile menu toggle button
+            navbarToggler.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event bubbling
+                mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
+            });
+
+            // Mobile menu close button
+            mobileMenuClose.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#language-selector').niceSelect('destroy');
+            $('#language-selector-mobile').niceSelect('destroy');
+        });
+
+        function changeLanguageWeb() {
+            var lang = document.getElementById('language-selector').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+        function changeLanguage() {
+            var lang = document.getElementById('language-selector-mobile').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+
+    </script>
+
+</body>
+
+<!-- index.html  30 Nov 2019 03:18:45 GMT -->
+
+</html>

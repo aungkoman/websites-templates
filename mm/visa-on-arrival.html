@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ministry of Hotels and Tourism, Myanmar</title>
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="../assets/font/flaticon.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!-- nice-select css -->
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/fav.png" type="image/x-icon">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- main style css link in mm folder -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<style>
+ .visa-on-arrival-section {
+    padding: 20px;
+}
+
+.visa-on-arrival-section .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.visa-on-arrival-section .visa-info {
+    margin-bottom: 30px;
+    padding: 15px;
+    
+}
+
+.visa-on-arrival-section .visa-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.visa-on-arrival-section .visa-info ol {
+    padding-left: 20px;
+}
+
+.visa-on-arrival-section .visa-info li {
+    margin-bottom: 5px;
+}
+
+.visa-on-arrival-section .visa-info ul {
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+.visa-on-arrival-section .visa-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.visa-on-arrival-section .visa-info a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<body>
+
+
+    <!-- preloader -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="preloader-thumb">
+            <img src="assets/images/propeller.png" alt="image">
+        </div>
+    </div> -->
+
+    <!-- header-section start -->
+  
+       <header class="header-section">
+    <!-- start top header section -->
+    <div class="header-top border-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class=" d-xl-flex d-none d-md-flex" id="logo_for_web">
+                    <a class="site-logo site-title" href="index.html">
+                        <img src="../assets/images/logo-with-text-cut.png" width="500px" height="500px"
+                            alt="Ministry of Hotels and Tourism">
+                    </a>
+                </div>
+                <div class="d-xl-flex d-none d-md-flex">
+                    <select class="form-select" id="language-selector" onchange="changeLanguageWeb()">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  top header section end -->
+    <!--  bottom header section start-->
+
+    <div class="header-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo-container">
+                    <img src="../assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px"
+                        height="300px">
+                </div>
+                <div id="mobile-lang-switcher" class="d-block d-xl-none d-md-none ml-auto">
+                    <select class="form-select" id="language-selector-mobile" onchange="changeLanguage()"
+                        style="max-width: 160px;">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="collapse navbar-collapse">
+                        <!-- removed in collapse id="navbarSupportedContent" -->
+                        <ul class="navbar-nav main-menu ml-auto">
+                            <li class="menu_has_children"><a href="">အချက်အလက်<i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<i
+                                                class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a>
+                                            </li>
+                                            <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                            <li><a href="coming.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဆောင်ရန်/ ရှောင်ရန်အချက်များ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                            <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="">သတင်းပြန်ကြားရေးကောင်တာများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                    ကော်မတီများ</a></li>
+                                            <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a>
+                                            </li>
+                                            <li><a
+                                                    href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">သံရုံးများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                            <li><a href="foreign-embassies.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tourism-publication.html">ဝန်ကြီးဌာနများ</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="menu_has_children"><a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<i
+                                        class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">မြောက်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ကချင်</a></li>
+                                            <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                            <li><a href="coming.html">ချင်း</a></li>
+                                            <li><a href="coming.html">ရှမ်း</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">အလယ်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မကွေး</a></li>
+                                            <li><a href="coming.html">နေပြည်တော်</a></li>
+                                            <li><a href="coming.html">မန္တလေး</a></li>
+                                            <li><a href="coming.html">ရခိုင်</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">တောင်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                            <li><a href="coming.html">ကယား</a></li>
+                                            <li><a href="coming.html">ကရင်</a></li>
+                                            <li><a href="coming.html">ပဲခူး</a></li>
+                                            <li><a href="coming.html">ရန်ကုန်</a></li>
+                                            <li><a href="coming.html">မွန်</a></li>
+
+                                            <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                        </ul>
+                                    </li>
+
+
+                            </li>
+
+                        </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu_has_children"><a href="coming.html">၀န်ဆောင်မှုများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html"> ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu_has_children">
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="">
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu_has_children">
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="tourism-publication.html">စာအုပ်စာစောင်များ</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="menu_has_children" id="our-role-menu"><a href="coming.html">လုပ်ငန်းတာဝန်<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="coming.html">ဝန်ထမ်းဖိုရမ်</a>
+
+                                </li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
+
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
+                            </ul>
+                        </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- Mobile Menu Section start -->
+                <!-- Mobile Menu -->
+                <div class="mobile-menu" id="navbarSupportedContent">
+                    <div class="mobile-menu-header">
+                        <span class="mobile-menu-close">&times;</span>
+                    </div>
+                    <ul class="mobile-main-menu">
+                        <li class="mobile-menu_has_children">
+                            <a href="#">အချက်အလက်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a></li>
+                                        <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                        <li><a href="coming.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဆောင်ရန်/ ရှောင်ရန်အချက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                        <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သတင်းပြန်ကြားရေးကောင်တာများ <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                ကော်မတီများ</a></li>
+                                        <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a></li>
+                                        <li><a
+                                                href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သံရုံးများ<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဝန်ကြီးဌာနများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">မြောက်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ကချင်</a></li>
+                                        <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                        <li><a href="coming.html">ချင်း</a></li>
+                                        <li><a href="coming.html">ရှမ်း</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">အလယ်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မကွေး</a></li>
+                                        <li><a href="coming.html">နေပြည်တော်</a></li>
+                                        <li><a href="coming.html">မန္တလေး</a></li>
+                                        <li><a href="coming.html">ရခိုင်</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">တောင်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                        <li><a href="coming.html">ကယား</a></li>
+                                        <li><a href="coming.html">ကရင်</a></li>
+                                        <li><a href="coming.html">ပဲခူး</a></li>
+                                        <li><a href="coming.html">ရန်ကုန်</a></li>
+                                        <li><a href="coming.html">မွန်</a></li>
+                                        <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">၀န်ဆောင်မှုများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ <span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လုပ်ငန်းတာဝန်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Training Courses</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="coming.html">ဝန်ထမ်းဖိုရမ်</a></li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu Section end -->
+            </div>
+        </div>
+    </div>
+    <!-- end bottom header section -->
+</header>
+    <!-- header-section end -->
+
+
+    <!-- banner-section start -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="banner-content">
+                        <h2 class="title text-shadow">ရွှေရောင်လွှမ်းမြေ မြန်မာ့ဌာနီသို့ လှမ်းလာခဲ့ပါ</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
+
+
+    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
+    <a href="#" class="scrollToTop"><img src="../assets/images/plane-up-solid.svg" alt="image"></a>
+
+<nav aria-label="breadcrumb" class="breadcrumb-section">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html"><i class="fas fa-home"></i> မူလစာမျက်နှာသို့</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                ဆိုက်ရောက်ဗီဇာ
+            </li>
+        </ol>
+    </nav>
+
+   
+ <div class="container">
+        <section class="visa-on-arrival-section pt-120 pb-120">
+            <h2 class="section-title text-center">ဆိုက်ရောက်ဗီဇာအကြောင်း</h2>
+            <div class="visa-info">
+                <h3>ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတနိုင်ငံနှင့် တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေးဒေသမှ
+                    နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက်
+                    ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival အား(၂၁–၁၀–၂၀၂၄) ရက်နေ့မှစ၍
+                    ခွင့်ပြုပေးသွားမည်ဖြစ်ကြောင်း အသိပေးခြင်း</h3>
+                <ol>
+                    <li>မြန်မာနိုင်ငံအတွင်းသို့ လေကြောင်းခရီးဖြင့် ဝင်ရောက်လာသည့် ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတ
+                        နိုင်ငံ နှင့် တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေးဒေသမှ နိုင်ငံကူးလက်မှတ်
+                        ကိုင်ဆောင်သူ ကမ္ဘာလှည့် ခရီးသည်များ အတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On
+                        Arrival ကို (၂၁-၁၀-၂၀၂၄) ရက်နေ့မှစတင်၍ စမ်းသပ်ကာလ (၁)နှစ် အားသတ်မှတ်ပြီး ခွင့်ပြု
+                        ဆောင်ရွက်ပေးသွားမည် ဖြစ်ပါသည်။</li>
+                    <li>ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတနိုင်ငံနှင့် တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေး
+                        ဒေသမှ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသွားများ အပြည်ပြည်ဆိုင်ရာလေဆိပ်များ
+                        သို့ ဝင်ရောက်လာပါက ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)အား အောက်ပါအတိုင်း ခွင့်ပြုဆောင်ရွက်
+                        သွားမည် ဖြစ်ပါသည်-
+                        <ul>
+                            <li>(က) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ရောက်ရှိလာပါက ဆိုက်ရောက်ဗီဇာလျှောက်လွှာ အား
+                                အခမဲ့ ရယူ၍ (၁.၂ x ၁.၅) လက်မ Colour Photo (၂) ပုံနှင့်အတူ လျှောက်လွှာ ပုံစံ
+                                ဖြည့်သွင်းရမည် ဖြစ်ပါသည်။</li>
+                            <li>( ခ ) ဆိုက်ရောက်ဗီဇာအခငွေ တစ်ဦးလျှင် အမေရိကန်ဒေါ်လာ (၅၀)ကောက်ခံ၍ နေခွင့်ရက်
+                                ပေါင်း (၃၀)ရက် ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                            <li>( ဂ ) အလည်အပတ် ဝင်ရောက်ခြင်းအတွက်သာဖြစ်၍ ကမ္ဘာလှည့်ဗီဇာ (Tourist Visa)
+                                တစ်မျိုးတည်းသာ ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                            <li>(ဃ) နိုင်ငံကူးလက်မှတ်သက်တမ်း အနည်းဆုံး (၆)လ ရှိရမည်ဖြစ်ပြီး(၆)လအောက် ဖြစ်ပါက
+                                ပြည်ဝင်ခွင့် မပြုဘဲ ခရီးသည် လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်
+                                တင်ပို့ခြင်းခံရမည် ဖြစ်ပါသည်။</li>
+                            <li>( င ) နေခွင့်သက်တမ်း တိုးမြှင့်ပေးရန် လျှောက်ထားခြင်းကို ခွင့်ပြုမည် မဟုတ်ပါ။</li>
+                            <li>( စ ) နေထိုင်ခွင့်သတ်မှတ်ရက်ထက် ကျော်လွန်နေထိုင်ပါက သတ်မှတ်ရက်လွန် ဒဏ်ကြေး
+                                အခငွေ ပေးဆောင်ရမည်ဖြစ်ပါသည်။</li>
+                        </ul>
+                    </li>
+                    <li>ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)ဖြင့် ဝင်ရောက်လာသော ဂျပန်နိုင်ငံ၊ ကိုရီးယားသမ္မတနိုင်ငံနှင့်
+                        တရုတ်ပြည်သူ့သမ္မတနိုင်ငံ၏ မကာအိုအထူးအုပ်ချုပ်ရေးဒေသမှ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ
+                        များသည် အောက်ဖော်ပြပါ စည်းကမ်းချက် များကို လိုက်နာနေထိုင်ရပါမည် –
+                        <ul>
+                            <li>(က) မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေ၊ လုပ်ထုံးလုပ်နည်းများကို လေးစားလိုက်နာရမည် ဖြစ်ပါ
+                                သည်။</li>
+                            <li>( ခ ) မြန်မာနိုင်ငံအတွင်း လုံခြုံရေးအရ တားမြစ်ကန့်သတ်ထားသော နယ်မြေမှအပ နိုင်ငံခြား
+                                သားများသွားလာခွင့်ရှိသည့် နေရာများကို လွတ်လပ်စွာသွားလာနိုင်သည်။</li>
+                            <li>( ဂ ) ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)ဖြင့် ဝင်ရောက်ရန် ရောက်ရှိလာသူသည် သက်ဆိုင်ရာ
+                                လုံခြုံရေးဌာန/အဖွဲ့အစည်းများမှ ခွင့်မပြုလျှင်သော်လည်းကောင်း၊ လူဝင်မှုကြီးကြပ်ရေး
+                                ဦးစီးဌာန၏ အမည်မည်းစာရင်း (Black List) တွင် ပါဝင်ပါက ပြည်ဝင်ခွင့်အား
+                                ငြင်းပယ်သွားမည်ဖြစ်ပြီး ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်း ဖြင့် ပြန်လည်
+                                တင်ပို့ခြင်း ခံရမည်ဖြစ်ပါသည်။</li>
+                            <li>(ဃ) အပြည်ပြည်ဆိုင်ရာလေဆိပ်မှ ဆိုက်ရောက်ဗီဇာဖြင့် ဝင်ရောက်လာသူသည် မည်သည့်
+                                အပြည်ပြည်ဆိုင်ရာ လေဆိပ်များမှမဆို ပြန်လည်ထွက်ခွာနိုင်မည် ဖြစ်ပါသည်။</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Learn More</p>
+                <a href="http://www.mip.gov.mm/">http://www.mip.gov.mm/</a>
+            </div>
+
+            <div class="visa-info">
+                <h3>ဟောင်ကောင်အထူးအုပ်ချုပ်ရေးဒေသနိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက်
+                    ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival အား
+                    (၁၁-၃-၂၀၂၄) ရက်နေ့မှစ၍ ခွင့်ပြုပေးသွားမည်ဖြစ်ကြောင်း အသိပေးခြင်း</h3>
+                <ol>
+                    <li>မြန်မာနိုင်ငံအတွင်းသို့ လေကြောင်းခရီးဖြင့် ဝင်ရောက်လာသည့် ဟောင်ကောင်အထူး
+                        အုပ်ချုပ်ရေးဒေသ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်ခရီးသည်များအတွက်
+                        ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On Arrival ကို (၁၁-၃-၂၀၂၄) ရက်နေ့မှစတင်၍
+                        စမ်းသပ်ကာလ (၁)နှစ် သတ်မှတ်ပြီး ကျန်းမာရေးဝန်ကြီးဌာနမှ ထုတ်ပြန်ထားရှိသော ကိုဗစ်-၁၉
+                        ရောဂါ ကာကွယ်၊ ထိန်းချုပ်၊ ကုသရေး စည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များနှင့်အညီ ခွင့်ပြု
+                        ဆောင်ရွက်ပေးသွားမည် ဖြစ်ပါ သည်။</li>
+                    <li>ဟောင်ကောင်အထူးအုပ်ချုပ်ရေးဒေသ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူ ကမ္ဘာလှည့်
+                        ခရီးသွားများ အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ဝင်ရောက်လာပါက ဆိုက်ရောက်ဗီဇာ
+                        (ကမ္ဘာလှည့်)အား အောက်ပါ အတိုင်း ခွင့်ပြုဆောင်ရွက်သွားမည် ဖြစ်ပါသည်-
+                        <ul>
+                            <li>(က) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ရောက်ရှိလာပါက ဆိုက်ရောက်ဗီဇာလျှောက်လွှာ အား
+                                အခမဲ့ ရယူ၍ (၁.၂ x ၁.၅) လက်မ Colour Photo (၂) ပုံနှင့်အတူ လျှောက်လွှာ ပုံစံ
+                                ဖြည့်သွင်းရမည် ဖြစ်ပါသည်။</li>
+                            <li>(ခ) ဆိုက်ရောက်ဗီဇာအခငွေ တစ်ဦးလျှင် အမေရိကန်ဒေါ်လာ (၅၀)ကောက်ခံ၍ နေခွင့် ရက်ပေါင်း
+                                (၃၀)ရက် ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                            <li>(ဂ) အလည်အပတ် ဝင်ရောက်ခြင်းအတွက်သာဖြစ်၍ ကမ္ဘာလှည့်ဗီဇာ (Tourist Visa)
+                                တစ်မျိုးတည်းသာ ခွင့်ပြုသွားမည် ဖြစ်ပါသည်။</li>
+                            <li>(ဃ) နိုင်ငံကူးလက်မှတ်သက်တမ်း အနည်းဆုံး (၆) လ ရှိရမည်ဖြစ်ပြီး (၆) လအောက် ဖြစ်ပါက
+                                ပြည်ဝင်ခွင့်မပြုဘဲ ခရီးသည် လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်
+                                တင်ပို့ခြင်းခံရမည်ဖြစ်ပါသည်။</li>
+                            <li>(င) နေခွင့်သက်တမ်း တိုးမြှင့်ပေးရန် လျှောက်ထားခြင်းကို ခွင့်ပြုမည် မဟုတ်ပါ။</li>
+                            <li>(စ) နေထိုင်ခွင့် သတ်မှတ်ရက်ထက် ကျော်လွန်နေထိုင်ပါက သတ်မှတ်ရက်လွန် ဒဏ်ကြေး အခငွေ
+                                ပေးဆောင်ရမည်ဖြစ်ပါသည်။</li>
+                        </ul>
+                    </li>
+                    <li>ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) ဖြင့် ဝင်ရောက်လာသော ဟောင်ကောင် အထူး
+                        အုပ်ချုပ်ရေးဒေသ နိုင်ငံကူးလက်မှတ်ကိုင်ဆောင်သူများသည် အောက်ဖော်ပြပါ စည်းကမ်းများ
+                        ကို လိုက်နာနေထိုင်ရပါမည် –
+                        <ul>
+                            <li>(က) မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေ၊ လုပ်ထုံးလုပ်နည်းများကို လေးစားလိုက်နာရမည် ဖြစ်ပါ
+                                သည်။</li>
+                            <li>(ခ) မြန်မာနိုင်ငံအတွင်း လုံခြုံရေးအရ တားမြစ်ကန့်သတ်ထားသော နယ်မြေမှအပ နိုင်ငံခြားသားများ
+                                သွားလာခွင့်ရှိသည့် နေရာများကို လွတ်လပ်စွာ သွားလာနိုင်သည်။</li>
+                            <li>(ဂ) ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်)ဖြင့် ဝင်ရောက်ရန် ရောက်ရှိလာသူသည် သက်ဆိုင်ရာ
+                                လုံခြုံရေးဌာန/ အဖွဲ့အစည်းများမှ ခွင့်မပြုလျှင်သော်လည်းကောင်း၊ လူဝင်မှုကြီးကြပ်ရေး
+                                ဦးစီးဌာန၏ အမည်မည်းစာရင်း (Black List) တွင် ပါဝင်ပါက ပြည်ဝင်ခွင့်အား
+                                ငြင်းပယ်သွားမည်ဖြစ်ပြီး ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်
+                                တင်ပို့ခြင်း ခံရမည်ဖြစ်ပါသည်။</li>
+                            <li>(ဃ) အပြည်ပြည်ဆိုင်ရာလေဆိပ်မှ ဆိုက်ရောက်ဗီဇာဖြင့် ဝင်ရောက်လာသူသည် မည်သည့်
+                                အပြည်ပြည်ဆိုင်ရာ လေဆိပ်များမှမဆို ပြန်လည်ထွက်ခွာနိုင်မည် ဖြစ်ပါသည်။</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Learn More</p>
+                <a href="http://www.mip.gov.mm/">http://www.mip.gov.mm/</a>
+            </div>
+
+            <div class="visa-info">
+                <h3>တရုတ်နိုင်ငံသားနှင့် အိန္ဒိယနိုင်ငံသား ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဆိုက်ရောက်ဗီဇာ
+                    (ကမ္ဘာလှည့်) Tourist Visa On Arrival အား
+                    ခွင့်ပြုပေးသွားမည်ဖြစ်ကြောင်း အသိပေးခြင်း</h3>
+                <ol>
+                    <li>မြန်မာနိုင်ငံအတွင်းသို့ လေကြောင်းခရီးဖြင့် ဝင်ရောက်လာသည့် တရုတ်နိုင်ငံနှင့်
+                        အိန္ဒိယနိုင်ငံသား ကမ္ဘာလှည့်ခရီးသည်များအတွက် ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) Tourist Visa On
+                        Arrival ကို (၃၀.၀၈.၂၀၂၃) ရက်မှ စတင်၍ စမ်းသပ်ကာလ (၁) နှစ် သတ်မှတ်ပြီး
+                        ကျန်းမာရေးဝန်ကြီးဌာနမှ ထုတ်ပြန်ထားရှိသော ကိုဗစ်-၁၉ ရောဂါကာကွယ်၊ ထိန်းချုပ်၊
+                        ကုသရေးစည်းမျဉ်းစည်းကမ်း သတ်မှတ်ချက်များနှင့်အညီ ခွင့်ပြုဆောင်ရွက်ပေးသွားမည်
+                        ဖြစ်ပါသည်။</li>
+                    <li>တရုတ်နိုင်ငံနှင့် အိန္ဒိယနိုင်ငံသား ကမ္ဘာလှည့်ခရီးသွားများ အပြည်ပြည်ဆိုင်ရာလေဆိပ်သို့
+                        ဝင်ရောက်လာပါက ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) အား အောက်ပါအတိုင်း ခွင့်ပြုဆောင်ရွက်သွားမည်
+                        ဖြစ်ပါသည်-
+                        <ul>
+                            <li>(က) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များသို့ ရောက်ရှိလာပါက ဆိုက်ရောက်ဗီဇာလျှောက်လွှာ အား
+                                အခမဲ့ရယူ၍ (၁.၂ x ၁.၅) လက်မ Colour Photo (၂) ပုံနှင့်အတူ လျှောက်လွာ ပုံစံ
+                                ဖြည့်သွင်းရမည် ဖြစ်ပါသည်။</li>
+                            <li>(ခ) ဆိုက်ရောက်ဗီဇာအခငွေ (၁) ဦးလျှင် အမေရိကန်ဒေါ်လာ (၅၀) ကောက်ခံ၍ နေခွင့် (၃၀ ရက်)
+                                ခွင့်ပြုသွားမည်ဖြစ်ပါသည်။</li>
+                            <li>(ဂ) အလည်အပတ် ဝင်ရောက်ခြင်းအတွက်သာဖြစ်၍ ကမ္ဘာလှည့်ဗီဇာ (Tourist Visa)
+                                တစ်မျိုးတည်းသာ ခွင့်ပြုသွားမည်ဖြစ်ပါသည်။</li>
+                            <li>(ဃ) နိုင်ငံကူးလက်မှတ်သက်တမ်း အနည်းဆုံး (၆) လ ရှိရမည်ဖြစ်ပြီး (၆) လ အောက် ဖြစ်ပါက
+                                ပြည်ဝင်ခွင့်မပြုဘဲ ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်
+                                တင်ပို့ခြင်းခံရမည် ဖြစ်ပါသည်။</li>
+                            <li>(င) နေခွင့်သက်တမ်း တိုးမြှင့်ပေးရန် လျှောက်ထားခြင်းကို ခွင့်ပြုမည်မဟုတ်ပါ။</li>
+                            <li>(စ) နေထိုင်ခွင့်သတ်မှတ်ရက်ထက် ကျော်လွန်နေထိုင်ပါက သတ်မှတ်ရက်လွန်ဒဏ်ကြေး အခငွေ
+                                ပေးဆောင်ရမည် ဖြစ်ပါသည်။</li>
+                        </ul>
+                    </li>
+                    <li> ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) ဖြင့် ဝင်ရောက်လာသော တရုတ်နိုင်ငံနှင့်
+                        အိန္ဒိယနိုင်ငံသားများသည် အောက်ဖော်ပြပါစည်းကမ်းများကို လိုက်နာနေထိုင်ရပါမည်-
+                        <ul>
+                            <li>(က) မြန်မာနိုင်ငံ၏ တည်ဆဲဥပဒေ၊ လုပ်ထုံးလုပ်နည်းများကို လေးစားလိုက်နာရမည်ဖြစ်
+                                ပါသည်။</li>
+                            <li>(ခ) မြန်မာနိုင်ငံအတွင်း လုံခြုံရေးအရ တားမြစ်ကန့်သတ်ထားသော နယ်မြေမှအပ နိုင်ငံခြားသားများ
+                                သွားလာခွင့်ရှိသည့်နေရာများကို လွတ်လပ်စွာ သွားလာနိုင်သည်။</li>
+                            <li>(ဂ) ဆိုက်ရောက်ဗီဇာ (ကမ္ဘာလှည့်) ဖြင့် ဝင်ရောက်ရန် ရောက်ရှိလာသူသည် သက်ဆိုင်ရာ
+                                လုံခြုံရေးဌာန/ အဖွဲ့အစည်းများမှ ခွင့်မပြုလျှင်သော်လည်းကောင်း၊ လူဝင်မှုကြီးကြပ်ရေး
+                                ဦးစီးဌာန၏ အမည်မည်းစာရင်း (Blacklist) တွင် ပါဝင်ပါက ပြည်ဝင်ခွင့်အား
+                                ငြင်းပယ်သွားမည်ဖြစ်ပြီး ခရီးသည်လိုက်ပါလာသည့် လေကြောင်းလိုင်းဖြင့် ပြန်လည်တင်ပို့ခြင်း
+                                ခံရမည်ဖြစ်ပါသည်။</li>
+                            <li>(ဃ) အပြည်ပြည်ဆိုင်ရာလေဆိပ်များမှ ဆိုက်ရောက်ဗီဇာဖြင့် ဝင်ရောက်လာသူသည် မည်သည့်
+                                အပြည်ပြည်ဆိုင်ရာဝင်/ထွက်ပေါက်များမှမဆို ပြန်လည်ထွက်ခွာနိုင်မည် ဖြစ်ပါသည်။</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Learn More</p>
+                <a href="http://www.mip.gov.mm/">http://www.mip.gov.mm/</a>
+            </div>
+        </section>
+    </div>
+
+
+ 
+
+   
+ 
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+ 
+
+
+
+ 
+
+    <!-- footer-section start -->
+    <footer class="footer-section pt-120 pb-120">
+        <div class="container footer-container">
+            <div class="row mb-30-none">
+                <!-- <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Tourism Sectors</h3>
+                        <ul>
+                            <li><a href="#">Hotel Industry</a></li>
+                            <li><a href="#">Tour Operations</a></li>
+                            <li><a href="#">Transport Services</a></li>
+                            <li><a href="#">Tour Guide Licensing</a></li>
+                            <li><a href="#">Community Tourism</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <!-- <h3 class="widget-title">Quick Links</h3> -->
+                        <ul>
+                            <li><a href="#">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ</a></li>
+                            <li><a href="#">မြေပုံများ</a></li>
+                            <li><a href="#">မိုးပျံပူဖောင်းများ</a></li>
+                            <li><a href="#">စာရင်းအင်းအချက်အလက်များ</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <!-- <h3 class="widget-title">Explore Our Site</h3> -->
+                        <ul>
+                            <li><a href="#">သတင်းများ</a></li>
+                            <li><a href="#">ကြေညာချက်များ</a></li>
+                            <li><a href="#">တည်းခိုနေထိုင်ရေး</a></li>
+                            <li><a href="#">ခရီးသွားလာရေး</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <!-- <h3 class="widget-title">Contact Us</h3> -->
+                        <ul class="footer-widget-content">
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၄၅၈</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၂၄၇</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> ၁၅၅၁</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Ministry of Hotels and Tourism, Office No. 33,
+                                    Nay Pyi Taw, Myanmar</p>
+                            </li>
+                        </ul>
+                        <ul class="footer-social">
+                            <li><a href="https://facebook.com/tourismmyanmar.com.mm" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/VisitMyanmar_MM" class="active" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCYYysRno81dDb7Tyhxz3OEQ" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://linkedin.com/in/tourismmyanmar"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="https://instagram.com/tourismmyanmar" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+
+                            <li><a href="https://t.me/myanmarbeenchanted" target="_blank"><i
+                                        class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="https://pinterest.com/tourisminmyanmar" target="_blank"><i
+                                        class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="privacy-area wow fadeIn" data-wow-duration="0.5" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>© 2023 Ministry of Hotels and Tourism, Myanmar. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- footer-section end -->
+
+
+    <!-- jquery -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <!-- migarate-jquery -->
+    <script src="../assets/js/jquery-migrate-3.0.0.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="../assets/js/jquery.magnific-popup.js"></script>
+    <!-- isotope -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <!-- nice-select js-->
+    <script src="../assets/js/jquery.nice-select.js"></script>
+    <!-- swipper js -->
+    <script src="../assets/js/swiper.min.js"></script>
+    <!-- waypoints js link -->
+    <script src="../assets/js/jquery.waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <!-- paroller js -->
+    <script src="../assets/js/jquery.paroller.min.js"></script>
+    <!-- main -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- for mobile menu -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobile() {
+                return window.innerWidth < 992;
+            }
+
+            const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+
+            mobileMenuLinks.forEach(function (parentLink) {
+                parentLink.addEventListener('click', function (e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        const parentLi = this.parentElement;
+                        const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
+
+                        // Close other open submenus at the same level
+                        const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
+                        siblings.forEach(function (sibling) {
+                            sibling.classList.remove('open');
+                            const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
+                            if (siblingSub) {
+                                siblingSub.style.display = 'none'; // Hide the submenu
+                            }
+                        });
+
+                        // Toggle the current submenu
+                        if (submenu) {
+                            if (submenu.style.display === 'block') {
+                                submenu.style.display = 'none';
+                                parentLi.classList.remove('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
+                            } else {
+                                submenu.style.display = 'block';
+                                parentLi.classList.add('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Mobile menu toggle button
+            navbarToggler.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event bubbling
+                mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
+            });
+
+            // Mobile menu close button
+            mobileMenuClose.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#language-selector').niceSelect('destroy');
+            $('#language-selector-mobile').niceSelect('destroy');
+        });
+
+        function changeLanguageWeb() {
+            var lang = document.getElementById('language-selector').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+        function changeLanguage() {
+            var lang = document.getElementById('language-selector-mobile').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+
+    </script>
+
+</body>
+
+<!-- index.html  30 Nov 2019 03:18:45 GMT -->
+
+</html>
