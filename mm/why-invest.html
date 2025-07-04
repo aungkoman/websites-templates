@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ministry of Hotels and Tourism, Myanmar</title>
-    <link rel="stylesheet" href="../assets/css/why-invest.css">
     <!-- fontawesome css link -->
     <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
     <!-- flaticon css -->
@@ -25,9 +24,51 @@
     <link rel="stylesheet" href="../assets/css/animate.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- main style css link in mm folder -->
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- responsive css link -->
     <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
+<style>
+    .ministries-section {
+    padding: 20px;
+}
+
+.ministries-section .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ministries-section .table-responsive {
+    overflow-x: auto;
+}
+
+.ministries-section .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ministries-section .table th,
+.ministries-section .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ministries-section .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.ministries-section .table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.ministries-section .table a:hover {
+    text-decoration: underline;
+}
+</style>
 
 <body>
 
@@ -40,468 +81,486 @@
     </div> -->
 
     <!-- header-section start -->
+  
     <header class="header-section">
-        <!-- start top header section -->
-
-        <div class="header-top border-bottom">
-            <div class="container">
-                <div class="row align-items-center d-xl-flex d-none d-md-flex" id="logo_for_web">
-                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo-with-text-cut.png" width="500px"
-                            height="500px" alt="Ministry of Hotels and Tourism"></a>
+    <!-- start top header section -->
+    <div class="header-top border-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class=" d-xl-flex d-none d-md-flex" id="logo_for_web">
+                    <a class="site-logo site-title" href="index.html">
+                        <img src="../assets/images/logo-with-text-cut.png" width="500px" height="500px"
+                            alt="Ministry of Hotels and Tourism">
+                    </a>
                 </div>
-                <!-- <div class="row align-items-center d-xl-none d-flex" id="logo_for_mobile">
-                    <a class="site-logo site-title" href="index.html"><img src="assets/images/logo-with-text-cut.png"
-                            alt="Ministry of Hotels and Tourism" width="250px" height="250px"></a>
-                </div> -->
+                <div class="d-xl-flex d-none d-md-flex">
+                    <select class="form-select" id="language-selector" onchange="changeLanguageWeb()">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
             </div>
         </div>
-        <!--  top header section end -->
-        <!--  bottom header section start-->
+    </div>
+    <!--  top header section end -->
+    <!--  bottom header section start-->
 
-        <div class="header-bottom">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="logo-container">
-                        <img src="assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px" height="300px">
-                    </div>
-                    
+    <div class="header-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo-container">
+                    <img src="../assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px"
+                        height="300px">
+                </div>
+                <div id="mobile-lang-switcher" class="d-block d-xl-none d-md-none ml-auto">
+                    <select class="form-select" id="language-selector-mobile" onchange="changeLanguage()"
+                        style="max-width: 160px;">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="collapse navbar-collapse">
+                        <!-- removed in collapse id="navbarSupportedContent" -->
+                        <ul class="navbar-nav main-menu ml-auto">
+                            <li class="menu_has_children"><a href="">အချက်အလက်<i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<i
+                                                class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a>
+                                            </li>
+                                            <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                            <li><a href="visa-on-arrival.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဆောင်ရန်/ ရှောင်ရန်အချက်များ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                            <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="">သတင်းပြန်ကြားရေးကောင်တာများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                    ကော်မတီများ</a></li>
+                                            <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a>
+                                            </li>
+                                            <li><a
+                                                    href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">သံရုံးများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                            <li><a href="foreign-embassies.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tourism-publication.html">ဝန်ကြီးဌာနများ</a></li>
+                                </ul>
+                            </li>
 
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fas fa-bars"></span>
-                    </button>
-                    <nav class="navbar navbar-expand-lg p-0">
-                        <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav main-menu ml-auto">
-                                <li class="menu_has_children"><a href="#">Vital Info<i
-                                            class="fas fa-caret-down"></i></a>
+
+                            <li class="menu_has_children"><a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<i
+                                        class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">မြောက်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ကချင်</a></li>
+                                            <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                            <li><a href="coming.html">ချင်း</a></li>
+                                            <li><a href="coming.html">ရှမ်း</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">အလယ်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မကွေး</a></li>
+                                            <li><a href="coming.html">နေပြည်တော်</a></li>
+                                            <li><a href="coming.html">မန္တလေး</a></li>
+                                            <li><a href="coming.html">ရခိုင်</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">တောင်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                            <li><a href="coming.html">ကယား</a></li>
+                                            <li><a href="coming.html">ကရင်</a></li>
+                                            <li><a href="coming.html">ပဲခူး</a></li>
+                                            <li><a href="coming.html">ရန်ကုန်</a></li>
+                                            <li><a href="coming.html">မွန်</a></li>
+
+                                            <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                        </ul>
+                                    </li>
+
+
+                            </li>
+
+                        </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu_has_children"><a href="coming.html">၀န်ဆောင်မှုများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး<i class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
-                                        <li><a href="about-myanmar.html">About Myanmar</a></li>
-                                        <li class="menu_has_children">
-                                            <a href="">Visa Requirements<i class="fas fa-caret-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="coming.html">Electronic Visa</a></li>
-                                                <li><a href="visa-exemption.html">Visa Exemption</a></li>
-                                                <li><a href="visa-on-arrival.html">Visa on Arrival</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="guidelines-for-tour-companies.html">Guidelines for Tour Companies</a></li>
-                                        <!-- <li class="menu_has_children">
-                                            <a href="">Traveller Tips<i class="fas fa-caret-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="coming.html">Traveller Tips</a></li>
-                                                <li><a href="coming.html">Required Documents for Applying Tours</a>
-                                                </li>
-                                            </ul>
-                                        </li> -->
-                                        <li class="menu_has_children">
-                                            <a href="">Helpdesk<i class="fas fa-caret-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="branch-offices.html">Branch Offices</a></li>
-                                                <li><a href="information-counters.html">Information Counters</a></li>
-                                                <li><a href="tourism-police-offices.html">Tourism Police Offices</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- <li><a href="coming.html">Attraction Entry Free</a></li> -->
-                                        <li class="menu_has_children">
-                                            <a href="">Embassies & Missions<i class="fas fa-caret-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="myanmar-missions.html">Myanmar Missions</a></li>
-                                                <li><a href="coming.html">Foreign Embassies in Myanmar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="myanmar-ministries.html">Myanmar Ministries</a></li>
+                                        <li><a href="coming.html"> ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
                                     </ul>
                                 </li>
-
-
-                                <li class="menu_has_children"><a href="coming.html">Explorer Myanmar<i
-                                            class="fas fa-caret-down"></i></a>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး<i class="fas fa-caret-down"></i></a>
                                     <ul class="sub-menu">
                                         <li class="menu_has_children">
-                                            <a href="#">North Myanmar<i class="fas fa-caret-down"></i></a>
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="coming.html">Kachin</a></li>
-                                                <li><a href="coming.html">Sagaing</a></li>
-                                                <li><a href="coming.html">Chin</a></li>
-                                                <li><a href="coming.html">Shan</a></li>
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
                                             </ul>
+                                        </li>
+                                        <li class="">
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
                                         </li>
                                         <li class="menu_has_children">
-                                            <a href="coming.html">Central Myanmar<i class="fas fa-caret-down"></i></a>
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="coming.html">Magway</a></li>
-                                                <li><a href="coming.html">Nay Pyi Taw</a></li>
-                                                <li><a href="coming.html">Mandalay</a></li>
-                                                <li><a href="coming.html">Rakhine</a></li>
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu_has_children">
-                                            <a href="coming.html">South Myanmar<i class="fas fa-caret-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="coming.html">Ayeyarwady</a></li>
-                                                <li><a href="coming.html">Kayah</a></li>
-                                                <li><a href="coming.html">Kayin</a></li>
-                                                <li><a href="coming.html">Bago</a></li>
-                                                <li><a href="coming.html">Yangon</a></li>
-                                                <li><a href="coming.html">Mon</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
 
-                                                <li><a href="coming.html">Tanintharyi</a></li>
-                                            </ul>
-                                        </li>
 
+                        <li class="menu_has_children"><a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="tourism-publication.html">စာအုပ်စာစောင်များ</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="menu_has_children" id="our-role-menu"><a href="coming.html">လုပ်ငန်းတာဝန်<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="coming.html">ဝန်ထမ်းဖိုရမ်</a>
 
                                 </li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
 
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
                             </ul>
-                            </li>
+                        </li>
 
-
-                            <li class="menu_has_children"><a href="coming.html">Highlight<i
-                                        class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="coming.html">Festivals</a></li>
-                                    <li><a href="coming.html">Ecotourism</a></li>
-                                    <li><a href="coming.html">Community Based Tourism</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="menu_has_children"><a href="coming.html">Services<i
-                                        class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li class="menu_has_children">
-                                        <a href="coming.html">Accommodation<i class="fas fa-caret-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="coming.html">Hotels & Resorts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu_has_children">
-                                        <a href="coming.html">Tours<i class="fas fa-caret-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li class="menu_has_children">
-                                                <a href="coming.html">Tour Companies<i
-                                                        class="fas fa-caret-down"></i></a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="coming.html">Inbound Tour Companies</a></li>
-                                                    <li><a href="coming.html">Outbound Tour Companies</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu_has_children">
-                                                <a href="coming.html">Tour Guides<i class="fas fa-caret-down"></i></a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="coming.html">National Tour Guides</a></li>
-                                                    <li><a href="coming.html">Regional Tour Guides</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu_has_children">
-                                                <a href="coming.html">Transportation<i
-                                                        class="fas fa-caret-down"></i></a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="coming.html">Cruises & Others</a></li>
-                                                    <li><a href="coming.html">Hot-Air Ballons</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li class="menu_has_children"><a href="coming.html">Guides & Resources<i
-                                        class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="coming.html">Tourism Legislation</a></li>
-                                    <li><a href="coming.html">Tourism Statistics</a></li>
-                                    <li><a href="tourism-publication.html">Tourism Publications</a></li>
-                                    <li><a href="coming.html">ASEAN Tourism Standards</a></li>
-                                    <li><a href="coming.html">Myamar Be Enchanted</a></li>
-                                    <!-- <li><a href="coming.html">Myanmar Let The Journey Begin</a></li> -->
-                                    <li><a href="coming.html">Brochures & Pamphlets</a></li>
-                                    <!-- <li><a href="coming.html">Visitors Guide Book</a></li>
-                                    <li><a href="coming.html">Articles</a></li>
-                                    <li><a href="coming.html">Video & Photos</a></li>
-                                    <li><a href="coming.html">Maps</a></li> -->
-                                </ul>
-                            </li>
-
-
-                            <li class="menu_has_children"><a href="coming.html">News & Announcements<i
-                                        class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <!-- <li><a href="coming.html">Health And Travel Latest News From Myanmar</a></li> -->
-                                    <li><a href="coming.html">Weather Forecast</a></li>
-                                    <li><a href="coming.html">Upcoming Events</a></li>
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="announcements.html">Announcements</a></li>
-                                    <li><a href="coming.html">Travel Advisory</a></li>
-                                </ul>
-                            </li>
-
-
-
-                            <li class="menu_has_children" id="our-role-menu"><a href="coming.html">Our Role<i
-                                        class="fas fa-caret-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="duties.html">Duties & Responsibilites</a></li>
-                                    <li><a href="objectives.html">Objectives</a></li>
-                                    <li><a href="six-policies.html">Six Policies of Ministry of Hotels and Tourism</a>
-                                    </li>
-                                    <li><a href="coming.html">Tnternational Cooperation</a></li>
-                                    <li class="menu_has_children">
-                                        <a href="coming.html">Tourism Business<i class="fas fa-caret-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="coming.html">Doing Business in Myanmar</a></li>
-                                            <li><a href="investment-law.html">Myanmar Investment Law</a></li>
-                                            <li><a href="coming.html">Tourism Invesment Opportunities</a></li>
-                                            <li><a href="#">Why Invest in Myanmar</a></li>
-                                            <li><a href="foreign-investment-in-hotels.html">Foreign Investment in Hotels and commercial
-                                                    complexes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu_has_children">
-                                        <a href="coming.html">Arrivals<i class="fas fa-caret-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="coming.html">Tourism Statistics</a></li>
-                                            <li><a href="coming.html">Arrivals 2024</a></li>
-                                            <li><a href="coming.html">Arrivals 2023</a></li>
-                                            <li><a href="coming.html">Arrivals 2022</a></li>
-                                            <li><a href="coming.html">Arrivals 2021</a></li>
-                                            <li><a href="coming.html">Arrivals 2020</a></li>
-                                            <li><a href="coming.html">Arrivals 2019</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu_has_children">
-                                        <a href="coming.html">Training<i class="fas fa-caret-down"></i></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="coming.html"> Training Courses</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="coming.html">Contact Person</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                </ul>
-                            </li>
-
-                            </ul>
-
-                        </div>
-                    </nav>
-                    <!-- Mobile Menu Section start -->
-                    <!-- Mobile Menu -->
-                    <div class="mobile-menu" id="navbarSupportedContent">
-                        <div class="mobile-menu-header">
-                            <span class="mobile-menu-close">&times;</span>
-                        </div>
-                        <ul class="mobile-main-menu">
-                            <li class="mobile-menu_has_children">
-                                <a href="#">Vital Info <span class="sub-menu-icon">+</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="about-myanmar.html">About Myanmar</a></li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="#">Visa Requirements <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Electronic Visa</a></li>
-                                            <li><a href="visa-exemption.html">Visa Exemption</a></li>
-                                            <li><a href="visa-on-arrival.html">Visa on Arrival</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="guidelines-for-tour-companies.html">Guidelines for Tour Companies</a></li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="#">Traveller Tips <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Traveller Tips</a></li>
-                                            <li><a href="coming.html">Required Documents for Applying Tours</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="#">Helpdesk <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="branch-offices.html">Branch Offices</a></li>
-                                            <li><a href="information-counters.html">Information Counters</a></li>
-                                            <li><a href="tourism-police-offices.html">Tourism Police Offices</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="coming.html">Attraction Entry Free</a></li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="#">Embassies & Missions <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="myanmar-missions.html">Myanmar Missions</a></li>
-                                            <li><a href="coming.html">Foreign Embassies in Myanmar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="myanmar-ministries.html">Myanmar Ministries</a></li>
-                                </ul>
-                            </li>
-                            <li class="mobile-menu_has_children">
-                                <a href="coming.html">Explorer Myanmar <span class="sub-menu-icon">+</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li class="mobile-menu_has_children">
-                                        <a href="#">North Myanmar <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Kachin</a></li>
-                                            <li><a href="coming.html">Sagaing</a></li>
-                                            <li><a href="coming.html">Chin</a></li>
-                                            <li><a href="coming.html">Shan</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="coming.html">Central Myanmar <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Magway</a></li>
-                                            <li><a href="coming.html">Nay Pyi Taw</a></li>
-                                            <li><a href="coming.html">Mandalay</a></li>
-                                            <li><a href="coming.html">Rakhine</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="coming.html">South Myanmar <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Ayeyarwady</a></li>
-                                            <li><a href="coming.html">Kayah</a></li>
-                                            <li><a href="coming.html">Kayin</a></li>
-                                            <li><a href="coming.html">Bago</a></li>
-                                            <li><a href="coming.html">Yangon</a></li>
-                                            <li><a href="coming.html">Mon</a></li>
-                                            <li><a href="coming.html">Tanintharyi</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="mobile-menu_has_children">
-                                <a href="coming.html">Highlight <span class="sub-menu-icon">+</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="coming.html">Festivals</a></li>
-                                    <li><a href="coming.html">Ecotourism</a></li>
-                                    <li><a href="coming.html">Community Based Tourism</a></li>
-                                </ul>
-                            </li>
-                            <li class="mobile-menu_has_children">
-                                <a href="coming.html">Services <span class="sub-menu-icon">+</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li class="mobile-menu_has_children">
-                                        <a href="coming.html">Accommodation <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Hotels & Resorts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="coming.html">Tours <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li class="mobile-menu_has_children">
-                                                <a href="coming.html">Tour Companies <span
-                                                        class="sub-menu-icon">+</span></a>
-                                                <ul class="mobile-sub-menu">
-                                                    <li><a href="coming.html">Inbound Tour Companies</a></li>
-                                                    <li><a href="coming.html">Outbound Tour Companies</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mobile-menu_has_children">
-                                                <a href="coming.html">Tour Guides <span
-                                                        class="sub-menu-icon">+</span></a>
-                                                <ul class="mobile-sub-menu">
-                                                    <li><a href="coming.html">National Tour Guides</a></li>
-                                                    <li><a href="coming.html">Regional Tour Guides</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mobile-menu_has_children">
-                                                <a href="coming.html">Transportation <span
-                                                        class="sub-menu-icon">+</span></a>
-                                                <ul class="mobile-sub-menu">
-                                                    <li><a href="coming.html">Cruises & Others</a></li>
-                                                    <li><a href="coming.html">Hot-Air Balloons</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="mobile-menu_has_children">
-                                <a href="coming.html">Guides & Resources <span class="sub-menu-icon">+</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="coming.html">Tourism Legislation</a></li>
-                                    <li><a href="coming.html">Tourism Statistics</a></li>
-                                    <li><a href="tourism-publication.html">Tourism Publications</a></li>
-                                    <li><a href="coming.html">ASEAN Tourism Standards</a></li>
-                                    <li><a href="coming.html">Myanmar Be Enchanted</a></li>
-                                    <!-- <li><a href="coming.html">Myanmar Let The Journey Begin</a></li> -->
-                                    <li><a href="coming.html">Brochures & Pamphlets</a></li>
-                                    <!-- <li><a href="coming.html">Visitors Guide Book</a></li> -->
-                                    <!-- <li><a href="coming.html">Articles</a></li> -->
-                                    <!-- <li><a href="coming.html">Video & Photos</a></li> -->
-                                    <li><a href="coming.html">Maps</a></li>
-                                </ul>
-                            </li>
-                            <li class="mobile-menu_has_children">
-                                <a href="coming.html">News & Announcements <span class="sub-menu-icon">+</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="coming.html">Health And Travel Latest News From Myanmar</a></li>
-                                    <li><a href="coming.html">Weather Forecast</a></li>
-                                    <li><a href="coming.html">Upcoming Events</a></li>
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="announcements.html">Announcements</a></li>
-                                    <li><a href="coming.html">Travel Advisory</a></li>
-                                </ul>
-                            </li>
-                            <li class="mobile-menu_has_children">
-                                <a href="coming.html">Our Role <span class="sub-menu-icon">+</span></a>
-                                <ul class="mobile-sub-menu">
-                                    <li><a href="duties.html">Duties & Responsibilities</a></li>
-                                    <li><a href="objectives.html">Objectives</a></li>
-                                    <li><a href="six-policies.html">Six Policies of Ministry of Hotels and Tourism</a>
-                                    </li>
-                                    <!-- <li><a href="coming.html">International Cooperation</a></li> -->
-                                    <li class="mobile-menu_has_children">
-                                        <a href="coming.html">Tourism Business <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Doing Business in Myanmar</a></li>
-                                            <li><a href="investment-law.html">Myanmar Investment Law</a></li>
-                                            <li><a href="tourism-investment-opportunity.html">Tourism Investment Opportunities</a></li>
-                                            <li><a href="#">Why Invest in Myanmar</a></li>
-                                            <li><a href="foreign-investment-in-hotels.html">Foreign Investment in Hotels and commercial
-                                                    complexes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="coming.html">Statistics <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Tourism Statistics</a></li>
-                                            <li><a href="coming.html">Arrivals 2024</a></li>
-                                            <li><a href="coming.html">Arrivals 2023</a></li>
-                                            <li><a href="coming.html">Arrivals 2022</a></li>
-                                            <li><a href="coming.html">Arrivals 2021</a></li>
-                                            <li><a href="coming.html">Arrivals 2020</a></li>
-                                            <li><a href="coming.html">Arrivals 2019</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mobile-menu_has_children">
-                                        <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
-                                        <ul class="mobile-sub-menu">
-                                            <li><a href="coming.html">Training Courses</a></li>
-                                        </ul>
-                                    </li>
-                                    <!-- <li><a href="coming.html">Contact Person</a></li> -->
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                </ul>
-                            </li>
                         </ul>
+
                     </div>
-                    <!-- Mobile Menu Section end -->
+                </nav>
+                <!-- Mobile Menu Section start -->
+                <!-- Mobile Menu -->
+                <div class="mobile-menu" id="navbarSupportedContent">
+                    <div class="mobile-menu-header">
+                        <span class="mobile-menu-close">&times;</span>
+                    </div>
+                    <ul class="mobile-main-menu">
+                        <li class="mobile-menu_has_children">
+                            <a href="#">အချက်အလက်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a></li>
+                                        <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                        <li><a href="visa-on-arrival.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဆောင်ရန်/ ရှောင်ရန်အချက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                        <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သတင်းပြန်ကြားရေးကောင်တာများ <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                ကော်မတီများ</a></li>
+                                        <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a></li>
+                                        <li><a
+                                                href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သံရုံးများ<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဝန်ကြီးဌာနများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">မြောက်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ကချင်</a></li>
+                                        <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                        <li><a href="coming.html">ချင်း</a></li>
+                                        <li><a href="coming.html">ရှမ်း</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">အလယ်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မကွေး</a></li>
+                                        <li><a href="coming.html">နေပြည်တော်</a></li>
+                                        <li><a href="coming.html">မန္တလေး</a></li>
+                                        <li><a href="coming.html">ရခိုင်</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">တောင်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                        <li><a href="coming.html">ကယား</a></li>
+                                        <li><a href="coming.html">ကရင်</a></li>
+                                        <li><a href="coming.html">ပဲခူး</a></li>
+                                        <li><a href="coming.html">ရန်ကုန်</a></li>
+                                        <li><a href="coming.html">မွန်</a></li>
+                                        <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">၀န်ဆောင်မှုများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ <span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လုပ်ငန်းတာဝန်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Training Courses</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="coming.html">ဝန်ထမ်းဖိုရမ်</a></li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+                <!-- Mobile Menu Section end -->
             </div>
         </div>
-        <!-- end bottom header section -->
-    </header>
+    </div>
+    <!-- end bottom header section -->
+</header>
     <!-- header-section end -->
 
 
     <!-- banner-section start -->
-    <section class="news1 banner-section">
+    <section class="banner-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9 text-center">
                     <div class="banner-content">
-                        <h2 class="title text-shadow">Why Invest in Myanmar</h2>
+                        <h2 class="title text-shadow">ရွှေရောင်လွှမ်းမြေ မြန်မာ့ဌာနီသို့ လှမ်းလာခဲ့ပါ</h2>
 
                     </div>
                 </div>
@@ -510,273 +569,413 @@
     </section>
     <!-- banner-section end -->
 
-      <nav aria-label="breadcrumb" class="breadcrumb-section">
+
+    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
+    <a href="#" class="scrollToTop"><img src="../assets/images/plane-up-solid.svg" alt="image"></a>
+
+          <nav aria-label="breadcrumb" class="breadcrumb-section">
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="index.html"><i class="fas fa-home"></i> မူလစာမျက်နှာသို့</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
-            Why Invest in Myanmar
-
+            ဝန်ကြီးဌာနများ
         </li>
     </ol>
 </nav>
-    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
-    <a href="#" class="scrollToTop"><img src="assets/images/plane-up-solid.svg" alt="image"></a>
 
-  
-
-
+   
 <div class="container">
-    <h1 class="text-center">Why Invest in Myanmar</h1>
+    <h1 class="text-center">ဝန်ကြီးဌာနများ</h1>
+        <!-- header-section end -->
 
-    <section id="why-invest-content" class="mt-5">
-        <div class="invest-section">
-            <h2>Experience Growth in a Growing Economy</h2>
-            <p>Investors are welcomed by the Directorate of Investments and Company Administration (DICA) to participate in
-                seizing business opportunities that would aid in the growth of a New Myanmar while realising the goals of
-                national development.</p>
-            <ul>
-                <li>Myanmar’s economy has continuously grown at approximately 8% since 2012. Over FY 2014-15, a gross
-                    domestic product (GDP) increase of 8.7% has been mainly driven by developments and investments in the
-                    telecommunication sector (57.5%*), extractive industries (50.5%*), oil and gas (36.1%*), construction
-                    (15.9%*), manufacturing (9.7%*), as well as growth in key service industries (e.g. tourism).
-                    (*=percentage increase of the absolute GDP contribution of the sector).</li>
-                <li>Myanmar’s growth strategy is built using a combination of policies to simultaneously allow modernisation
-                    in the industry, agriculture and infrastructure, a diversification of the export basis and the expansion of
-                    value-added production for domestic and international markets.</li>
-                <li>Three coastal Special Economic Zones in Thilawa, Kyaukphyu and Dawei with investment incentives, along
-                    with simplified processes for investors and industrial facilities at international standards will become
-                    “growth engines” of the New Myanmar. Growth along economic corridors with old (Yangon and Mandalay) and
-                    new development nodes (e.g. Bago, Hpa An, Sittwe, Myitkyina and border towns) is also</li>
-                <li>The economic growth has caused the emergence of a growing middle class and per-capita consumption of
-                    10.9% (during FY 2013-14), opening opportunities for the Fast-Moving Consumer Goods (FMCG) industry and
-                    service industries (e.g. private education institutions, entertainment).</li>
-            </ul>
-        </div>
+    <section class="ministries-section pt-120 pb-120">
+        <div class="container">
+            
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>စဉ်</th>
+                            <th>ဝန်ကြီးဌာန</th>
+                            <th>Website လိပ်စာ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ပို့ဆောင်ရေးနှင့်ဆက်သွယ်ရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.motc.gov.mm">https://www.motc.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ကာကွယ်ရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mod.gov.mm">https://www.mod.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ပြည်ထဲရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.moha.gov.mm">https://www.moha.gov.mm</a><br>
+                                <a href="https://policeforce.gov.mm">https://policeforce.gov.mm</a><br>
+                                <a href="https://gad.gov.mm">https://gad.gov.mm</a><br>
+                                <a href="https://bsi.gov.mm">https://bsi.gov.mm</a><br>
+                                <a href="https://prisonsdepartment.gov.mm">https://prisonsdepartment.gov.mm</a><br>
+                                <a href="https://www.fsd.gov.mm">https://www.fsd.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>စီမံကိန်းနှင့်ဘဏ္ဍာရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mopf.gov.mm">https://www.mopf.gov.mm</a><br>
+                                <a href="https://www.mmftb.gov.mm">https://www.mmftb.gov.mm</a><br>
+                                <a href="https://www.cbm.gov.mm">https://www.cbm.gov.mm</a><br>
+                                <a href="https://ird.gov.mm">https://ird.gov.mm</a><br>
+                                <a href="https://customs.gov.mm">https://customs.gov.mm</a><br>
+                                <a href="https://www.mminsurance.gov.mm">https://www.mminsurance.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>နိုင်ငံခြားရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mofa.gov.mm">https://www.mofa.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၁)</td>
+                            <td><a href="https://sacministry.gov.mm">https://sacministry.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၂)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၃)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>နိုင်ငံတော်စီမံအုပ်ချုပ်ရေးကောင်စီဥက္ကဋ္ဌရုံးဝန်ကြီးဌာန (၄)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>နယ်စပ်ရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moba.gov.mm">https://www.moba.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>ရင်းနှီးမြှုပ်နှံမှုနှင့်နိုင်ငံခြားစီးပွားဆက်သွယ်ရေး ဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mifer.gov.mm">https://www.mifer.gov.mm</a><br>
+                                <a href="https://www.dica.gov.mm">https://www.dica.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>ဥပဒေရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mola.gov.mm">https://www.mola.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>ပြန်ကြားရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.moi.gov.mm">https://www.moi.gov.mm</a><br>
+                                <a href="https://www.mrtv.gov.mm">https://www.mrtv.gov.mm</a><br>
+                                <a href="https://www.moi.gov.mm/iprd">https://www.moi.gov.mm/iprd</a><br>
+                                <a href="https://moi.gov.mm/ppd">https://moi.gov.mm/ppd</a><br>
+                                <a href="https://moi.gov.mm/npe">https://moi.gov.mm/npe</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>သာသနာရေးနှင့်ယဉ်ကျေးမှုဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mora.gov.mm">https://www.mora.gov.mm</a><br>
+                                <a href="https://www.kbrl.gov.mm">https://www.kbrl.gov.mm</a><br>
+                                <a href="https://www.mahana.org.mm">https://www.mahana.org.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>စိုက်ပျိုးရေးမွေးမြူရေးနှင့်ဆည်မြောင်းဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moali.gov.mm">https://www.moali.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>သမဝါယမနှင့် ကျေးလက်ဖွံ့ဖြိုးရေး ဝန်ကြီးဌာန</td>
+                            <td><a href="https://mcrd.gov.mm">https://mcrd.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>သယံဇာတနှင့်သဘာဝပတ်ဝန်းကျင် ထိန်းသိမ်းရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.monrec.gov.mm">https://www.monrec.gov.mm</a><br>
+                                <a href="https://www.mining.gov.mm">https://www.mining.gov.mm</a><br>
+                                <a href="https://www.mte.com.mm">https://www.mte.com.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>လျှပ်စစ်စွမ်းအားဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moep.gov.mm">https://www.moep.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>စွမ်းအင်ဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.energy.gov.mm">https://www.energy.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>စက်မှုဝန်ကြီးဌာန</td>
+                            <td><a href="https://industry.gov.mm">https://industry.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>လူဝင်မှုကြီးကြပ်ရေးနှင့် ပြည်သူ့အင်အားဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mip.gov.mm">https://www.mip.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>အလုပ်သမားဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.mol.gov.mm">https://www.mol.gov.mm</a><br>
+                                <a href="https://www.ssb.gov.mm">https://www.ssb.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>စီးပွားရေးနှင့်ကူးသန်းရောင်းဝယ်ရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.commerce.gov.mm">https://www.commerce.gov.mm</a><br>
+                                <a href="https://www.myanmartradenet.com.mm">https://www.myanmartradenet.com.mm</a><br>
+                                <a href="https://www.servicetrade.gov.mm">https://www.servicetrade.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>ပညာရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.moe.gov.mm">https://www.moe.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>သိပ္ပံနှင့်နည်းပညာဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.most.gov.mm">https://www.most.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>ကျန်းမာရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.mohs.gov.mm">https://www.mohs.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>အားကစားနှင့်လူငယ်ရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://mosya.gov.mm">https://mosya.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>ဆောက်လုပ်ရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.construction.gov.mm">https://www.construction.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>လူမှုဝန်ထမ်းကယ်ဆယ်ရေးနှင့်ပြန်လည်နေရာချထားရေးဝန်ကြီးဌာန</td>
+                            <td>
+                                <a href="https://www.moswrr.gov.mm">https://www.moswrr.gov.mm</a><br>
+                                <a href="https://www.dsw.gov.mm">https://www.dsw.gov.mm</a><br>
+                                <a href="https://www.ddm.gov.mm">https://www.ddm.gov.mm</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>ဟိုတယ်နှင့်ခရီးသွားလာရေးဝန်ကြီးဌာန</td>
+                            <td><a href="https://www.tourism.gov.mm">https://www.tourism.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>တိုင်းရင်းသားလူမျိုးများရေးရာဝန်ကြီးဌာန</td>
+                            <td><a href="https://portal.moea.gov.mm">https://portal.moea.gov.mm</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <div class="invest-section">
-            <h2>Location & Connectivity: Moving Towards New Crossroads of Asia</h2>
-            <p>Myanmar is the ideal platform to access regional markets, global factor markets, and product markets. The
-                improving infrastructure, particularly in power infrastructure, road, rail, air and ports is highly prioritised
-                by the Government in order to establish efficient supply chains for future economic growth.</p>
-            <ul>
-                <li>Going beyond domestic markets, Myanmar has gained access to China, India, ASEAN and other international
-                    markets through the ports along the Bay of Bengal and Andaman Sea.</li>
-                <li>After the international isolation that has prevented the modernisation and expansion of Myanmar’s
-                    infrastructural networks, the Government is now preparing to become Asia’s “crossroads” through
-                    investments into:
-                    <ul>
-                        <li>Major domestic highways and transnational road links to Thailand (i.e. from Hpa An and Dawei Special
-                            Economic Zone (SEZ)), China (i.e. from Mandalay) and India (i.e. from Mandalay and the Kaladan
-                            Multi-Modal Transit Transport Project).</li>
-                        <li>A modernised rail network and dry port facilities in Ywarthargyi (near Yangon) and Myitnge (near
-                            Mandalay).</li>
-                        <li>Power infrastructure to expand installed capacity (4,422 MW in 2014) and annual production (12,247
-                            GWh) as well as transmission systems according to the National Electrification Plan that foresees a
-                            full electrification including remote areas by 2030.</li>
-                    </ul>
-                </li>
-                <li>Myanmar is continuously integrated into regional production networks through its ASEAN Economic Community
-                    membership as well as the ASEAN-China Free Trade Area (ACFTA) while internationally enjoying preferential
-                    tariff schemes as a least developed country (LDC).</li>
-            </ul>
-        </div>
-
-        <div class="invest-section">
-            <h2>Supporting Reforms of New Myanmar</h2>
-            <p>As Myanmar undergoes political and economic transformation to become a democratic, federal and peaceful
-                national state, responsible investments are fundamental for sustainable and inclusive economic development.</p>
-            <ul>
-                <li>A National Comprehensive Development Plan (NCDP) is formulated following international practices to
-                    identify policy directions for sustainable economic development and to alleviate poverty in Myanmar.</li>
-                <li>A sector-specific National Export Strategy (NES) is being implemented to strengthen trade and investment in
-                    potential industries with strong global demand (e.g. rice, textiles and garments, tourism). Myanmar as a
-                    least developed country (LDC) has preferential tariff arranged to facilitate access into major
-                    international markets.</li>
-                <li>The Government is committed to encourage investments that bring a positive impact on the country’s society
-                    and environment. Investments in some sectors are prohibited, restricted or may require specific
-                    approvals, processes, joint venturing or Environmental and Social Impact Assessments (EIA/SIA) as
-                    protective measures over the communities, environment and the progress of peace and national
-                    reconciliation.</li>
-                <li>DICA highly encourages foreign companies to seize investment opportunities in less-developed parts of the
-                    country and to consider business opportunities that facilitate the economic inclusion of Myanmar’s citizens
-                    in remote parts of the country, like Chin State.</li>
-            </ul>
-        </div>
-
-        <div class="invest-section">
-            <h2>Investing Into Myanmar’s Society</h2>
-            <p>Myanmar has all the right potentials for sustainable growth. The country is rich in natural resources and lands
-                as well as young members of the population equipped with a great set of skills and motivation to bring
-                positive change to the country.</p>
-            <ul>
-                <li>In the past, Myanmar’s society has proved to be highly capable of bringing considerable changes. The
-                    citizens are adaptable and flexible in terms of understanding new technology, gaining new skills and being
-                    competent in a fast-learning society.</li>
-                <li>In Yangon and other urban centres of Myanmar, the society is open and welcoming towards the influence of
-                    foreign cultures, creating a harmonious mix of traditional life and modernity.</li>
-                <li>According to the Myanmar Population and Housing Census (2014), Myanmar is home to 51.4 million people
-                    consisting of a young population with a share of 65.6% within working age (15-64 years).</li>
-                <li>The population has a high literacy rate of 93% and wide basic English competency. Vocational training
-                    programmes offered by private sectors may close gaps in skill training with ease.</li>
-                <li>Myanmar has taken great lengths to solidify the education sector in the country. Compared to 2012, public
-                    spending in education in 2014 has increased by 49%. The Government is also leading a Comprehensive
-                    Education Sector Review (CESR) to better comprehend the current status of education as well as developing
-                    a National Education Sector Plan (NESP) which will guide the implementation of policies and programmes.
-                </li>
-            </ul>
-        </div>
-
-        <div class="invest-section">
-            <h2>Profiting From Business-Enabling Environment</h2>
-            <p>The Government of Myanmar attracts investors by creating business-enabling environments that encourage
-                investment promotion and protection.</p>
-            <ul>
-                <li>Several Bilateral Investment Treaties (BITs) and other International Investment Agreements (IIAs) have been
-                    concluded to date. Please find an updated list</li>
-                <li>Eight countries have come to an agreement regarding the avoidance of double taxation (India, Laos, Malaysia,
-                    Korea, Singapore, Thailand, United Kingdom and Vietnam).</li>
-                <li>To allow easier business operations in Myanmar, various laws have been revised to facilitate investment, such
-                    as the Foreign Investment Law (granting taxation benefits, land use rights etc.), the Myanmar Citizen
-                    Investment Law and the Arbitration Law. Further legal Letchanges to a better business-enabling environment
-                    are currently in the making (e.g. Banks and Financial Institutions Law of Myanmar and a combined Myanmar
-                    Investment Law).</li>
-                <li>Preparations for a “National Framework for Public-Private Partnerships” (PPP) are being made to aid in the
-                    growth and improvement of private sectors in the infrastructure development. Transparent procedures in
-                    public tenders will be included to allow cost-efficient public service provision and modernis.</li>
-                <li>The Government aims to build an open and transparent business environment by transforming the
-                    telecommunications industry into an open market as well as the first competitive tender processes (for
-                    instance, for a gas-fired power plant in Myingyan, Mandalay Region).</li>
-            </ul>
-        </div>
-
-        <div class="invest-section">
-            <h2>Myanmar population</h2>
-            <p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>State / Region</th>
-                        <th>Total Population</th>
-                        <th>Average Population (%)</th>
-                        <th>State/Region urban population</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Yangon Region</td>
-                        <td>7,360,703</td>
-                        <td>14.6</td>
-                        <td>70.1</td>
-                    </tr>
-                    <tr>
-                        <td>Ayeyarwady Region</td>
-                        <td>6,184,829</td>
-                        <td>123</td>
-                        <td>14.1</td>
-                    </tr>
-                    <tr>
-                        <td>Mandalay Region</td>
-                        <td>6,165,723</td>
-                        <td>12.3</td>
-                        <td>34.8</td>
-                    </tr>
-                    <tr>
-                        <td>Shan State</td>
-                        <td>5,824,432</td>
-                        <td>11.6</td>
-                        <td>24.0</td>
-                    </tr>
-                    <tr>
-                        <td>Sagaing Region</td>
-                        <td>5,325,347</td>
-                        <td>10.6</td>
-                        <td>17.1</td>
-                    </tr>
-                    <tr>
-                        <td>Bago Region</td>
-                        <td>4,867,373</td>
-                        <td>9.7</td>
-                        <td>22.0</td>
-                    </tr>
-                    <tr>
-                        <td>Magway Region</td>
-                        <td>3,917,055</td>
-                        <td>7.8</td>
-                        <td>15.0</td>
-                    </tr>
-                    <tr>
-                        <td>Rakhine State</td>
-                        <td>2,098,807</td>
-                        <td>4.2</td>
-                        <td>16.9</td>
-                    </tr>
-                    <tr>
-                        <td>Mon State</td>
-                        <td>2,054,393</td>
-                        <td>4.1</td>
-                        <td>27.9</td>
-                    </tr>
-                    <tr>
-                        <td>Kachin State</td>
-                        <td>1,642,841</td>
-                        <td>3.3</td>
-                        <td>36.1</td>
-                    </tr>
-                    <tr>
-                        <td>Kayin State</td>
-                        <td>1,504,326</td>
-                        <td>3.0</td>
-                        <td>21.9</td>
-                    </tr>
-                    <tr>
-                        <td>Tanintharyi Region</td>
-                        <td>1,408,401</td>
-                        <td>2.8</td>
-                        <td>24.0</td>
-                    </tr>
-                    <tr>
-                        <td>Nay Pyi Taw</td>
-                        <td>1,160,242</td>
-                        <td>2.3</td>
-                        <td>32.3</td>
-                    </tr>
-                    <tr>
-                        <td>Chin State</td>
-                        <td>478,801</td>
-                        <td>1.0</td>
-                        <td>20.8</td>
-                    </tr>
-                    <tr>
-                        <td>Kayar State</td>
-                        <td>286,627</td>
-                        <td>0.6</td>
-                        <td>25.3</td>
-                    </tr>
-                    <tr>
-                        <td>TOTAL</td>
-                        <td>50,279,900</td>
-                        <td>100.0%</td>
-                        <td>29.6%</td>
-                    </tr>
-                </tbody>
-            </table>
-            </p>
+            <h2 class="section-title text-center mt-5">အစိုးရအဖွဲ့အစည်းများ</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>စဉ်</th>
+                            <th>အဖွဲ့အစည်း</th>
+                            <th>Website လိပ်စာ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ပြည်ထောင်စုတရားလွှတ်တော်ချုပ်ရုံး</td>
+                            <td><a href="https://www.unionsupremecourt.gov.mm">https://www.unionsupremecourt.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>နိုင်ငံတော်ဖွဲ့စည်းပုံအခြေခံဥဒေဆိုင်ရာခုံရုံး</td>
+                            <td><a href="https://www.constitutionaltribunal.gov.mm">https://www.constitutionaltribunal.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ပြည်ထောင်စုရွေးကောက်ပွဲကော်မရှင်</td>
+                            <td><a href="https://www.uec.gov.mm">https://www.uec.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ပြည်ထောင်စုစာရင်းစစ်ချုပ်ရုံး</td>
+                            <td><a href="https://www.oagmac.gov.mm">https://www.oagmac.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ပြည်ထောင်စုရာထူးဝန်အဖွဲ့ရုံး (UCSB)</td>
+                            <td><a href="https://www.ucsb.gov.mm">https://www.ucsb.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Myanmar National Portal</td>
+                            <td><a href="https://www.myanmar.gov.mm">https://www.myanmar.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>နေပြည်တော်ကောင်စီ</td>
+                            <td><a href="https://www.nptdc.gov.mm">https://www.nptdc.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>မြန်မာနိုင်ငံတော်ဗဟိုဘဏ်</td>
+                            <td><a href="https://cbm.gov.mm">https://cbm.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>အဂတိလိုက်စားမှုတိုက်ဖျက်ရေးကော်မရှင်ရုံး</td>
+                            <td><a href="https://www.accm.gov.mm/acc">https://www.accm.gov.mm/acc</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>မြန်မာနိုင်ငံအမျိုးသားလူ့အခွင့်အရေးကော်မရှင်ရုံး</td>
+                            <td><a href="https://mnhrc.org.mm">https://mnhrc.org.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>ကချင်ပြည်နယ်အစိုးရအဖွဲ့</td>
+                            <td><a href="https://kachinstate.gov.mm">https://kachinstate.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>ကယားပြည်နယ်အစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.kayahstate.gov.mm">https://www.kayahstate.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>စစ်ကိုင်းတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.sagaingregion.gov.mm">https://www.sagaingregion.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>ပဲခူးတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://bagoregion.gov.mm">https://bagoregion.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>မန္တလေးတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="http://mandalayregion.gov.mm">http://mandalayregion.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>ရန်ကုန်တိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.yangon.gov.mm">https://www.yangon.gov.mm</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>ရှမ်းပြည်နယ်အစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.shanstategovernment.com">https://www.shanstategovernment.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>ဧရာဝတီတိုင်းဒေသကြီးအစိုးရအဖွဲ့</td>
+                            <td><a href="https://www.ayeyarwadyregion.gov.mm">https://www.ayeyarwadyregion.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>19</td>
+                            <td>အခွန်အယူခံခုံအဖွဲ့</td>
+                            <td><a href="https://www.ratb.gov.mm">https://www.ratb.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>20</td>
+                            <td>အမျိုးသားစည်းလုံးညီညွတ်ရေးနှင့်ငြိမ်းချမ်းရေး
+                                ဖော်ဆောင်မှုညှိနှိုင်းရေးကော်မတီ</td>
+                            <td><a href="https://nspnc.gov.mm">https://nspnc.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>21</td>
+                            <td>တစ်နိုင်ငံလုံးပစ်ခတ်တိုက်ခိုက်မှုရပ်စဲရေးသဘောတူစာချုပ်</td>
+                            <td><a href="https://nca.gov.mm">https://nca.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>22</td>
+                            <td>ဝန်ဆောင်မှုကုန်သွယ်ရေးနှင့် ရင်းနှီးမြှုပ်နှံမှု အချက်အလက်များ
+                                ဘဏ္ဍာတိုက်</td>
+                            <td><a href="https://www.servicetrade.gov.mm">https://www.servicetrade.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>23</td>
+                            <td>မိုးလေဝသနှင့်ဇလဗေဒညွှန်ကြားမှုဦးစီးဌာန</td>
+                            <td><a href="https://www.moezala.gov.mm">https://www.moezala.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>24</td>
+                            <td>E-Mandalay</td>
+                            <td><a href="https://www.emandalay.gov.mm">https://www.emandalay.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>25</td>
+                            <td>မြန်မာဥပဒေသတင်းအချက်အလက်စနစ်</td>
+                            <td><a href="https://mlis.gov.mm">https://mlis.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>26</td>
+                            <td>နေပြည်တော်စည်ပင်သာယာရေးကော်မတီ</td>
+                            <td><a href="https://www.nptdc.gov.mm">https://www.nptdc.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>27</td>
+                            <td>ရန်ကုန်မြို့တော်စည်ပင်သာယာရေးကော်မတီ</td>
+                            <td><a href="https://www.ycdc.gov.mm">https://www.ycdc.gov.mm</a></td>
+                        </tr>
+                         <tr>
+                            <td>28</td>
+                            <td>မန္တလေးမြို့တော်စည်ပင်သာယာရေးကော်မတီ</td>
+                            <td><a href="https://www.emcdc.com">https://www.emcdc.com</a></td>
+                        </tr>
+                         <tr>
+                            <td>29</td>
+                            <td>မြန်မာနိုင်ငံအမျိုးသားစာကြည့်တိုက်(နေပြည်တော်)</td>
+                            <td><a href="https://eresources.nlmnpt.gov.mm">https://eresources.nlmnpt.gov.mm</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 </div>
-    
-
- 
-
-    
 
 
  
 
+   
+ 
 
-    
+
+
 
 
 
@@ -785,25 +984,24 @@
   
 
 
+  
 
 
-   
+  
 
 
-   
+
 
 
  
 
 
-  
-    <script>
-        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-    </script>
+
+ 
 
     <!-- footer-section start -->
     <footer class="footer-section pt-120 pb-120">
-        <div class="container">
+        <div class="container footer-container">
             <div class="row mb-30-none">
                 <!-- <div class="col-lg-3 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
@@ -819,39 +1017,39 @@
                 </div> -->
                 <div class="col-lg-4 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
-                        <h3 class="widget-title">Quick Links</h3>
+                        <!-- <h3 class="widget-title">Quick Links</h3> -->
                         <ul>
-                            <li><a href="#">Explore Myanmar</a></li>
-                            <li><a href="#">Map</a></li>
-                            <li><a href="#">Air Ballons</a></li>
-                            <li><a href="#">Statistics</a></li>
-                            
+                            <li><a href="#">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ</a></li>
+                            <li><a href="#">မြေပုံများ</a></li>
+                            <li><a href="#">မိုးပျံပူဖောင်းများ</a></li>
+                            <li><a href="#">စာရင်းအင်းအချက်အလက်များ</a></li>
+
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
-                        <h3 class="widget-title">Explore Our Site</h3>
+                        <!-- <h3 class="widget-title">Explore Our Site</h3> -->
                         <ul>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="#">Announcements</a></li>
-                            <li><a href="#">Accommodation</a></li>
-                            <li><a href="#">Tour</a></li>
+                            <li><a href="#">သတင်းများ</a></li>
+                            <li><a href="#">ကြေညာချက်များ</a></li>
+                            <li><a href="#">တည်းခိုနေထိုင်ရေး</a></li>
+                            <li><a href="#">ခရီးသွားလာရေး</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-30">
                     <div class="footer-widget widget-menu">
-                        <h3 class="widget-title">Contact Us</h3>
+                        <!-- <h3 class="widget-title">Contact Us</h3> -->
                         <ul class="footer-widget-content">
                             <li>
-                                <p><i class="fas fa-phone-alt"></i> (+95) 673406458</p>
+                                <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၄၅၈</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-phone-alt"></i> (+95) 673406247</p>
+                                <p><i class="fas fa-phone-alt"></i> (+၉၅) ၆၇၃၄၀၆၂၄၇</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-phone-alt"></i> 1551</p>
+                                <p><i class="fas fa-phone-alt"></i> ၁၅၅၁</p>
                             </li>
                             <li>
                                 <p><i class="fas fa-map-marker-alt"></i>Ministry of Hotels and Tourism, Office No. 33,
@@ -916,8 +1114,8 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- for mobile menu -->
-   
-  <script>
+
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             function isMobile() {
                 return window.innerWidth < 992;
