@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ministry of Hotels and Tourism, Myanmar</title>
+    <link rel="stylesheet" href="../assets/css/tourism-investment-opportunity.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="../assets/font/flaticon.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!-- nice-select css -->
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/images/fav.png" type="image/x-icon">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+
+
+    <!-- preloader -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="preloader-thumb">
+            <img src="assets/images/propeller.png" alt="image">
+        </div>
+    </div> -->
+
+    <!-- header-section start -->
+      <header class="header-section">
+    <!-- start top header section -->
+    <div class="header-top border-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class=" d-xl-flex d-none d-md-flex" id="logo_for_web">
+                    <a class="site-logo site-title" href="index.html">
+                        <img src="../assets/images/logo-with-text-cut.png" width="500px" height="500px"
+                            alt="Ministry of Hotels and Tourism">
+                    </a>
+                </div>
+                <div class="d-xl-flex d-none d-md-flex">
+                    <select class="form-select" id="language-selector" onchange="changeLanguageWeb()">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  top header section end -->
+    <!--  bottom header section start-->
+
+    <div class="header-bottom">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo-container">
+                    <img src="../assets/images/logo-with-text-cut.png" alt="Mobile Logo" width="300px"
+                        height="300px">
+                </div>
+                <div id="mobile-lang-switcher" class="d-block d-xl-none d-md-none ml-auto">
+                    <select class="form-select" id="language-selector-mobile" onchange="changeLanguage()"
+                        style="max-width: 160px;">
+                        <option value="en">အင်္ဂလိပ်ဘာသာ</option>
+                        <option value="mm" selected>မြန်မာဘာသာ</option>
+                    </select>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <nav class="navbar navbar-expand-lg p-0">
+                    <div class="collapse navbar-collapse">
+                        <!-- removed in collapse id="navbarSupportedContent" -->
+                        <ul class="navbar-nav main-menu ml-auto">
+                            <li class="menu_has_children"><a href="">အချက်အလက်<i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<i
+                                                class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a>
+                                            </li>
+                                            <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                            <li><a href="coming.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">ဆောင်ရန်/ ရှောင်ရန်အချက်များ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                            <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="">သတင်းပြန်ကြားရေးကောင်တာများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                    ကော်မတီများ</a></li>
+                                            <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a>
+                                            </li>
+                                            <li><a
+                                                    href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                    <li class="menu_has_children">
+                                        <a href="">သံရုံးများ<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                            <li><a href="coming.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="coming.html">ဝန်ကြီးဌာနများ</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="menu_has_children"><a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<i
+                                        class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">မြောက်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ကချင်</a></li>
+                                            <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                            <li><a href="coming.html">ချင်း</a></li>
+                                            <li><a href="coming.html">ရှမ်း</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">အလယ်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">မကွေး</a></li>
+                                            <li><a href="coming.html">နေပြည်တော်</a></li>
+                                            <li><a href="coming.html">မန္တလေး</a></li>
+                                            <li><a href="coming.html">ရခိုင်</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_has_children">
+                                        <a href="coming.html">တောင်ပိုင်း<i class="fas fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                            <li><a href="coming.html">ကယား</a></li>
+                                            <li><a href="coming.html">ကရင်</a></li>
+                                            <li><a href="coming.html">ပဲခူး</a></li>
+                                            <li><a href="coming.html">ရန်ကုန်</a></li>
+                                            <li><a href="coming.html">မွန်</a></li>
+
+                                            <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                        </ul>
+                                    </li>
+
+
+                            </li>
+
+                        </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu_has_children"><a href="coming.html">၀န်ဆောင်မှုများ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html"> ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး<i class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu_has_children">
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="">
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="menu_has_children">
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ<i
+                                                    class="fas fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu_has_children"><a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="menu_has_children" id="our-role-menu"><a href="coming.html">လုပ်ငန်းတာဝန်<i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ<i
+                                            class="fas fa-caret-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="coming.html">ဝန်ထမ်းဖိုရမ်</a>
+
+                                </li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
+
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
+                            </ul>
+                        </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- Mobile Menu Section start -->
+                <!-- Mobile Menu -->
+                <div class="mobile-menu" id="navbarSupportedContent">
+                    <div class="mobile-menu-header">
+                        <span class="mobile-menu-close">&times;</span>
+                    </div>
+                    <ul class="mobile-main-menu">
+                        <li class="mobile-menu_has_children">
+                            <a href="#">အချက်အလက်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="about-myanmar.html">မြန်မာနိုင်ငံ အကြောင်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဗီဇာလျှောက်ထားရန်လိုအပ်ချက်များ<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">အွန်လိုင်းမှတစ်ဆင့်ဗီဇာလျှောက်ထားခြင်း</a></li>
+                                        <li><a href="coming.html">ဗီဇာသက်တမ်းတိုးခြင်း</a></li>
+                                        <li><a href="coming.html">ဆိုက်ရောက်ဗီဇာ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ခရီးသွားကုမ္ပဏီများအတွက်လမ်းညွှန်ချက်များ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">ဆောင်ရန်/ ရှောင်ရန်အချက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဆောင်ရန်/ ရှောင်ရန်အချက်များ</a></li>
+                                        <li><a href="coming.html">ခရီးသွားရန် လိုအပ်သော စာရွက်စာတမ်းများ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သတင်းပြန်ကြားရေးကောင်တာများ <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="branch-offices.html">နယ်ရုံးခွဲများနှင့်ဒေသဆိုင်ရာခရီးသွား
+                                                ကော်မတီများ</a></li>
+                                        <li><a href="information-counters.html">သတင်းအချက်အလက်ကောင်တာများ</a></li>
+                                        <li><a
+                                                href="tourism-police-offices.html">ကမ္ဘာလှည့်ခရီးသွားရဲတပ်ဖွဲ့ရုံးများ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဇုန်ဝင်ကြေးများ</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">သံရုံးများ<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာသံရုံးများ</a></li>
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရှိ နိုင်ငံခြားသံရုံးများ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="coming.html">ဝန်ကြီးဌာနများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">မြန်မာနိုင်ငံသို့ လှမ်းလာခဲ့ပါ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">မြောက်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ကချင်</a></li>
+                                        <li><a href="coming.html">စစ်ကိုင်း</a></li>
+                                        <li><a href="coming.html">ချင်း</a></li>
+                                        <li><a href="coming.html">ရှမ်း</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">အလယ်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မကွေး</a></li>
+                                        <li><a href="coming.html">နေပြည်တော်</a></li>
+                                        <li><a href="coming.html">မန္တလေး</a></li>
+                                        <li><a href="coming.html">ရခိုင်</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="#">တောင်ပိုင်း<span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဧရာဝတီ</a></li>
+                                        <li><a href="coming.html">ကယား</a></li>
+                                        <li><a href="coming.html">ကရင်</a></li>
+                                        <li><a href="coming.html">ပဲခူး</a></li>
+                                        <li><a href="coming.html">ရန်ကုန်</a></li>
+                                        <li><a href="coming.html">မွန်</a></li>
+                                        <li><a href="coming.html">တနင်္သာရီ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">စိတ်ဝင်စားဖွယ်ရာများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ဆယ့်နှစ်လရာသီ ပွဲတော်များ</a></li>
+                                <li><a href="coming.html">သဘာဝအခြေခံခရီးသွားလုပ်ငန်း</a></li>
+                                <li><a href="coming.html">ရပ်ရွာလူထုအခြေပြုခရီးသွားလုပ်ငန်း</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">၀န်ဆောင်မှုများ <span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">တည်းခိုနေထိုင်ရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်တည်းခို ရိပ်သာ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလာရေး <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ခရီးသွားကုမ္ပဏီများ<span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">ပြည်တွင်း ခရီးသွားကုမ္ပဏီများ</a></li>
+                                                <li><a href="coming.html">ပြည်ပ ခရီးသွားကုမ္ပဏီများ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="coming.html">ဧည့်လမ်းညွှန်များ</a>
+                                            <!-- <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">National Tour Guides</a></li>
+                                                <li><a href="coming.html">Regional Tour Guides</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li class="mobile-menu_has_children">
+                                            <a href="coming.html">ပို့ဆောင်ရေးကုမ္ပဏီများ <span
+                                                    class="sub-menu-icon">+</span></a>
+                                            <ul class="mobile-sub-menu">
+                                                <li><a href="coming.html">အပျော်စီးသင်္ဘော နှင့်အခြား</a></li>
+                                                <li><a href="coming.html">ရွက်လှေ၊ မိုးပျံပူဖောင်း</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လမ်းညွှန်ချက်နှင့်အရင်းအမြစ်များ<span
+                                    class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာဥပဒေများ</a></li>
+                                <li><a href="coming.html">ခရီးစဉ် လျှောက်ထားရာတွင် လိုအပ်ချက်များ</a></li>
+                                <li><a href="coming.html">စွဲမက်ဖွယ်ရာပြည်မြန်မာ</a></li>
+                                <li><a href="coming.html">မြန်မာပြည်သို့ ခရီးသွားစို့</a></li>
+                                <li><a href="coming.html">လက်ကမ်းစာစောင်များ</a></li>
+                                <li><a href="coming.html">ခရီးသွားလမ်းညွှန် စာအုပ်များ</a></li>
+                                <li><a href="coming.html">ဆောင်းပါးများ</a></li>
+                                <li><a href="coming.html">ဗီဒီယိုနှင့်ဓာတ်ပုံများ</a></li>
+                                <li><a href="coming.html">မြေပုံများ</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">သတင်းနှင့်ကြေငြာချက်များ<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="coming.html">ကျန်းမာရေးဆိုင်ရာကြေညာချက်</a></li>
+                                <li><a href="coming.html">မိုးလေဝသ ခန့်မှန်းချက်</a></li>
+                                <li><a href="coming.html">သတင်းများ</a></li>
+                                <li><a href="coming.html">ကြေညာချက်များ</a></li>
+                                <li><a href="coming.html">သတင်းလွှာ</a></li>
+                                <li><a href="coming.html">ခရီးသွားအကြံပြုချက်</a></li>
+                                <li><a href="coming.html">ကျင်းပမည့်ပွဲများ၊အခမ်းအနားများ</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu_has_children">
+                            <a href="coming.html">လုပ်ငန်းတာဝန်<span class="sub-menu-icon">+</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li><a href="duties.html">တာဝန်နှင့်ဝတ္တရားများ</a></li>
+                                <li><a href="objectives.html">ရည်မှန်းချက်များ</a></li>
+                                <li><a href="six-policies.html">ဝန်ကြီးဌာန၏ မူဝါဒ (၆) ရပ်</a>
+                                </li>
+                                <li><a href="coming.html">နိုင်ငံတကာအဖွဲ့အစည်း</a></li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">ခရီးသွားလုပ်ငန်းဆိုင်ရာ ရင်းနှီးမြှုပ်နှံမှု<span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</a></li>
+                                        <li><a href="coming.html">ရင်းနှီးမြှုပ်နှံမှုအခွင့်အလမ်းများ</a></li>
+                                        <li><a href="coming.html">ဘာကြောင့်ရင်းနှီးမြုပ်နှံသင့်သလဲ?</a></li>
+                                        <li><a href="coming.html">ဟိုတယ်နှင့်ခရီးသွားလုပ်ငန်းဆိုင်ရာ
+                                                နိုင်ငံခြားရင်းနှီးမြုပ်နှံမှု</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="mobile-menu_has_children">
+                                    <a href="coming.html">စာရင်းအင်းအချက်အလက်များ <span
+                                            class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">ခုနှစ်အလိုက် ပြည်ပဧည့်သည်လာရောက်မှုစာရင်း</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="mobile-menu_has_children">
+                                    <a href="coming.html">Training <span class="sub-menu-icon">+</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="coming.html">Training Courses</a></li>
+                                    </ul>
+                                </li> -->
+                                <li><a href="coming.html">ဝန်ထမ်းဖိုရမ်</a></li>
+                                <li><a href="coming.html">သင်တန်းအစီအစဉ်များ</a></li>
+                                <li><a href="contact-us.html">ဆက်သွယ်ရန်</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu Section end -->
+            </div>
+        </div>
+    </div>
+    <!-- end bottom header section -->
+</header>
+    <!-- header-section end -->
+
+
+    <!-- banner-section start -->
+    <section class="news1 banner-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="banner-content">
+                        <h2 class="title text-shadow">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
+
+      <nav aria-label="breadcrumb" class="breadcrumb-section">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ
+
+        </li>
+    </ol>
+</nav>
+    <!-- <a href="#" class="scrollToTop"><img src="assets/images/aeroplane.png" alt="image"></a> -->
+    <a href="#" class="scrollToTop"><img src="../assets/images/plane-up-solid.svg" alt="image"></a>
+
+  
+
+<div class="container">
+    <h1 class="text-center">မြန်မာနိုင်ငံရင်းနှီးမြှုပ်နှံမှုဥပဒေ
+</h1>
+
+    <section id="investment-law-content" class="mt-5">
+        <div class="invest-section">
+            <h2>အဆိုပြုချက်တင်သွင်းခြင်း</h2>
+            <p>၃၆။ ရင်းနှီးမြှုပ်နှံသူသည် နည်းဥပေဒများတွင်ဖော်ပြထားသော အောက်ပါလုပ်ငန်းများအား ကော်မရှင်သို့ အဆိုပြုချက်တင်ပြစေပြီး ခွင့်ပြုမိန့်ရရှိမှသာ ရင်းနှီး မြှုပ်နှံရမည်- </p>
+            <ol>
+                <li>
+                    (က) နိုင်ငံတော်အတွက် မဟာဗျူဟာ အရ အရေးပါသည့် ရင်းနှီး မြှုပ် နှံမှုလုပ်ငန်းအမျိုးအစားများ၊</li>
+                <li>
+                    (ခ) မတည်ငွေရင်း ကြီး မားသည့် ရင်းနှီး မြှုပ် နှံမှု လုပ်ငန်းအမျိုးအစားများ၊</li>
+                <li>
+                    (ဂ) သဘာဝပတ်ဝန်းကျင်နှင့် ဒေသခံလူထုအပေါ် ကြီးမားသော သက်ရောက်မှုဖြစ်စေနိုင် သည့်ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းများ၊</li>
+                <li>
+                    (ဃ) နိုင်ငံတော်ပိုင်မြေနှင့် အဆောက်အဦများအသုံးပြုသည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ၊ </li>
+                <li>
+                    (င) ကော်မရှင်သို့အဆိုပြုချက်တင်ပြစေရန် အစိုးရအဖွဲ့ကသတ်မှတ်ထားသည့် ရင်းနှီးမြှုပ် နှံမှု လုပ်ငန်းများ။</li>
+            </ol>
+        </div>
+
+        <div class="invest-section">
+            <h2>အတည်ပြုလျှောက်ထားလွှာတင်သွင်းခြင်း</h2>
+            <p>၃၇။ ရင်းနှီးမြုပ်နှံသူသည် ပုဒ်မ ၃၆ ပါ လုပ်ငန်းများမှတစ်ပါး အခြားရင်းနှီးမြုပ်နှံမှု လုပ်ငန်းများ နှင့်ပတ်သက်၍ ကော်မရှင်သို့အဆိုပြုချက်တင်ပြရန်မလို။ သို့ရာတွင် ဤဉကဒေ၏ အခန်း(၁၂)မြေအသုံးပြုခွင့်နှင့် ပုဒ်မ ၇၅၊ ၇၇နှင့် ၇၈ ပါ ကင်းလွတ်ခွင့်၊ သက်သာခွင့် တစ်ရပ်ကိုဖြစ်စေ၊ တစ်ရပ်ရပ် ထက်ပို၍ဖြစ်စေ၊ အားလုံးကိုဖြစ်စေ ခံစားနိုင်ရန် အလိုငှာ သတ်မှတ်ပုံစံဖြင့် အတည်ပြုလျှောက်ထားလွှာကို ကော်မရှင်ရုံးသို့ တင်ပြရမည်။</p>
+            <p>၃၈။ အတည်ပြုလျှောက်ထားလွှာ တင်သွင်းရာတွင် ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းအမျိုးအစားအလိုက် သက်ဆိုင်ရာအဖွဲ့အစည်း၏ ခွင့်ပြုချက် သို့မဟုတ် ပါမစ် သို့မဟုတ် အလားတူ စာရွက်စာတမ်းများ ပူးတွဲတင်ပြရမည်။</p>
+            <p>၃၉။ ပုဒ်မ ၃၇ အရ တင်ပြလာသော အတည်ပြုလျှောက်ထားလွှာကို ကော်မရှင်ရုံးသည် လိုအပ်သည့် စိစစ်မှုများပြုလုပ်ပြီး ပြည်စုံပါက လက်ခံခြင်း၊ ပြည့်စုံမှုမရှိပါက ပြင်ဆင် ဖြည့်စွက်၍ ပြန်လည်တင်ပြစေခြင်းပြုနိုင်သည်။</p>
+        </div>
+
+        <div class="invest-section">
+            <h2>ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်း အမျိုးအစားများ သတ်မှတ်ခြင်း</h2>
+            <p>၄၀။ ရင်းနှီးမြှုပ်နှံမှုတွင် အောက်ပါတို့လည်း အပါအဝင်ဖြစ်သည်- </p>
+            <ol>
+                <li>
+                    (က) စီးပွားရေးအဖွဲ့အစည်း၊ </li>
+                <li>
+                    (ခ) ရွှေ့ပြောင်းနိုင်သောပစ္စည်း၊ မရွှေ့ပြောင်းနိုင်သောပစ္စည်းနှင့် အခြားပစ္စည်းဆိုင်ရာ အခွင့်အရေးများ၊ ငွေသား၊ အပေါင်ပစ္စည်းများ၊ အပေါင်ခံခွင့်နှင့် ပေါင်နှံခွင့်များ၊ စက်ပစ္စည်း၊ စက်ကိရိယာများ၊ စက်အပိုပစ္စည်းများနှင့် ဆက်စပ် အသုံးအဆောင်များ၊</li>
+                <li>
+                    (ဂ) ကုမ္ပဏီတစ်ခု၏ အစုရှယ်ယာများ၊ စတော့(ခ်)များနှင့် ဒီဘင်ချာ ခေါ် ငွေချေး သက်သေခံလက်မှတ်များ၊ </li>
+                <li>
+                    (ဃ) နည်းပညာကျွမ်းကျင်မှု၊ တီထွင်မှုမူပိုင်ခွင့်၊ စက်မှုဒီဇိုင်း၊ ကုန်အမှတ်တံဆိပ် မူပိုင်ခွင့်အပါအဝင် ဥပဒေများနှင့်အညီ အသိဉာဏ်ပစ္စည်းဆိုင်ရာ အခွင့်အရေး များ၊ </li>
+                <li>
+                    (င) ငွေရေးကြေးရေးဆိုင်ရာ တန်ဖိုးအဖြစ်ထားရှိသည့် ပဋိညာဉ်စာချုပ်အရ ငွေကြေးအခွင့် အရေးများ သို့မဟုတ် ဆောင်ရွက်မှုများ၊ </li>
+                <li>
+                    (စ) အကျိုးအမြတ်ခွဲဝေသည့် သဘောတူစာချုပ် သို့မဟုတ် ထုတ်လုပ်ခြင်း၊ စီမံခန့်ခွဲခြင်း၊ ဆောက်လုပ်ခြင်း၊ အလုံးစုံတာဝန်ယူ ဆောင်ရွက်သည့် စနစ် အပါအဝင် သဘောတူစာချုပ်ပါ အခွင့်အရေးများ၊ </li>
+                <li>
+                    (ဆ) သဘာဝသယံဇာတပစ္စည်းများ ရှာဖွေခြင်းနှင့် စမ်းသပ်တိုင်းတာခြင်း၊ ထုတ်လုပ်ခြင်း ဆိုင်ရာ အခွင့်အရေးများ အပါအဝင် သက်ဆိုင်ရာဉပဒေ သို့မဟုတ် ပဋိညာဉ်စာချုပ် အရပေးအပ်ထားသည့် လုပ်ငန်းဆိုင်ရာ အခွင့်အရေးများ။</li>
+            </ol>
+        </div>
+
+        <div class="invest-section">
+            <p>၄၁။ အောက်ပါ ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများကိုတားမြစ်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများအဖြစ် သတ်မှတ်သည်- </p>
+            <ol>
+                <li>
+                    (က) နိုင်ငံတော်အတွင်းသို့ သဘာဝဘေးအန္တရာယ် သို့မဟုတ် အဆိပ်အတောက်ရှိသော စွန့်ပစ်ပစ္စည်းများ သယ်ဆောင်လာနိုင်သည့် သို့မဟုတ် ပေါ်ပေါက်လာနိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ၊ </li>
+                <li>
+                    (ခ) သုတေသနနှင့် ဖွံ့ဖြိုးတိုးတက်မှု ရည်ရွယ်ချက်ဖြင့် ပြုလုပ်သော ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများမှအပပြည်ပမှ စမ်းသပ်ဆဲဖြစ်သော သို့မဟုတ်အသုံးပြုရန်၊ စိုက်ပျိုး မွေးမြူရန်၊ အတည်ပြုချက် မရရှိသေးသော နည်းပညာများ၊ဆေးဝါးများ၊ အပင်နှင့် တိရိစ္ဆာန် မျိုးစိတ်များ၊ အသုံးအဆောင်များ သယ်ဆောင်လာနိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ၊ </li>
+                <li>
+                    (ဂ) နိုင်ငံတော်အတွင်း တိုင်းရင်းသားလူမျိုးများ၏ရိုးရာယဉ်ကျေးမှုနှင့် ဓလေ့ထုံးစံများကို ထိခိုက်စေသော ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (ဃ) ပြည်သူတို့ အပေါ်သဘာဝအန္တရာယ်ဖြစ်စေနိုင်သော ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းများ </li>
+                <li>
+                    (င) သဘာဝပတ်ဝန်းကျင်နှင့် ဂေဟစနစ်တို့ကို ကြီးမားစွာ ထိခိုက်ပျက်စီး စေနိုင် သော ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (စ) တည်ဆဲဥပေဒတစ်ရပ်ရပ်အရ တားမြစ်ပိတ်ပင်ထားသော ဝန်ဆောင်မှုနှင့် ကုန်ပစ္စည်း များ ထုတ်လုပ်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ</li>
+            </ol>
+        </div>
+
+        <div class="invest-section">
+            <p>၄၂။ အောက်ပါ ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းအမျိုးအစားများကို ကန့်သတ်သည့်ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်း များအဖြစ် သတ်မှတ်သည်- </p>
+            <ol>
+                <li>
+                    (က) နိုင်ငံတော်ကသာဆောင်ရွက်ခွင့်ရှိသည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (ခ) နိုင်ငံခြားသား ရင်းနှီးမြှုပ်နှံသူက ဆောင်ရွက်နိုင်ခွင့်မရှိသည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်း များ </li>
+                <li>
+                    (ဂ) နိုင်ငံခြားရင်းနှီးမြှုပ်နှံမှုများကို ပြည်တွင်းရှိ နိုင်ငံသားလူပုဂ္ဂိုလ်တစ်ဦးဦးသို့မဟုတ် နိုင်ငံသားပိုင်လုပ်ငန်းတစ်ခုခုနှင့် ပူးပေါင်း၍ ဖက်စပ်ရင်းနှီးမြှုပ်နှံမှုဖြင့်သာ ဆောင်ရွက် နိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ </li>
+                <li>
+                    (ဃ) သက်ဆိုင်ရာဝန်ကြီးဌာနများ၏အတည်ပြုချက်ဖြင့်ဆောင်ရွက်နိုင်သည့် ရင်းနှီးမြှုပ်နှံမှု လုပ်ငန်းများ။</li>
+            </ol>
+        </div>
+
+        <div class="invest-section">
+            <h2>မြေအသုံးပြုခွင့်</h2>
+            <p>၅၀။</p>
+            <ol>
+                <li>
+                    (က) ဤဥပေဒအရ ခွင့်ပြုမိန့်ရရှိထားသော သို့မဟုတ် အတည်ပြုမိန့်ရရှိထားသော ရင်းနှီးမြှုပ်နှံသူသည် ပုဂ္ဂလိက‌မြေ သို့မဟုတ် အဆောက် အအုံ ဖြစ်ပါကပိုင်ရှင်ထံမှ လည်းကောင်း၊ အစိုးရက စီမံခန့်ခွဲပိုင်ခွင့်ရှိသောမြေ၊ နိုင်ငံတော်ပိုင်မြေ သို့မဟုတ် အဆောက်အအုံ ဖြစ်ပါက သက်ဆိုင် ရာအစိုးရဌာန၊ အစိုးရအဖွဲ့အစည်းများ ထံမှလည်းကောင်းရင်းနှီးမြှုပ်နှံမှု ပြုလုပ်ရန်အလို့ ငှာသတ်မှတ်ချက်များ နှင့်အညီ နှစ်ရှည်မြေသို့မဟုတ် အဆောက်အအုံ ငှားရမ်းခွင့်ရှိသည်။ နိုင်ငံသားရင်းနှီးမြှုပ် နှံသူသည် မိမိပိုင်မြေ သို့မဟုတ် အဆောက်အအုံ တွင်တည်ဆဲ ဥပေဒများနှင့်အညီ ရင်းနှီးမြှုပ်နှံနိုင်သည်။
+                </li>
+                <li>
+                    (ခ) နိုင်ငံခြားသားရင်းနှီးမြှုပ်နှံသူသည် အစိုးရ သို့မဟုတ် အစိုးရအဖွဲ့ အစည်းများထံ မှဖြစ်စေ၊ ပုဂ္ဂလိက‌ မြေ သို့မဟုတ် အ‌ဆောက်အအုံပိုင်ရှင် ထံမှ ဖြစ်စေကော်မရှင် ခွင့်ပြုမိန့် သို့မဟုတ် အတည်ပြုမိန့် ရရှိသည့်နေ့မှစ၍ကနဦးနှစ်(၅၀)အထိ သတ်မှတ် ချက်နှင့် အညီမြေသို့မဟုတ် အဆောက်အအုံ ငှားရမ်းနိုင်သည်။
+                </li>
+                <li>
+                    (ဂ) အထက်ဖော်ပြပါ ပုဒ်မခွဲ(ခ)အရ ခွင့်ပြုထားသောမြေသို့မဟုတ် အဆောက်အအုံ ငှားရမ်းကာလ သို့မဟုတ် မြေသို့မဟုတ် အဆောက်အအုံ အသုံးပြုခွင့်ကာလ သက်တမ်းကုန်ဆုံးပြီးနောက် ကော်မရှင်၏ ခွင့်ပြုချက်ဖြင့် တစ်ဆက်တည်း သက်တမ်းတိုးခွင့် ၁၀နှစ်နှင့် ယင်းသက်တမ်း ကုန်ဆုံးပြီး ထပ်မံ၍ ၁၀နှစ်သက်တမ်း တိုးမြှင့်နိုင်သည်။</li>
+                <li>
+                    (ဃ) ရင်းနှီးမြှုပ်နှံသူသည် မြေငှားရမ်းခြင်း စာချုပ်အား စာချုပ်စာတမ်း မှတ်ပုံတင်ခြင်း အက်ဥပေဒ နှင့်အညီ စာချုပ်စာတမ်း မှတ်ပုံတင်ရုံး တွင်မှတ်ပုံတင်ရမည်။</li>
+                <li>
+                    (င) အစိုးရအဖွဲ့သည်မြေအသုံးချမှု သို့မဟုတ်မြေ ငှားရမ်းမှုများအတွက် မြန်မာနိုင်ငံသား ရင်းနှီးမြှုပ်နှံသူများအား ပိုမိုကောင်းမွန်သော သတ်မှတ်ချက်များနှင့် အခွင့်အရေး များကို ခွင့်ပြုပေးနိုင်သည်။</li>
+                <li>
+                    (စ) ကော်မရှင်သည် နိုင်ငံတော်တစ်ဝန်းလုံးတွင်ဖွံ့ဖြိုးတိုးတက်စေရန် အလို့ငှာစီးပွား ရေးဖွံ့ဖြိုး တိုးတက်မှု နည်းပါးပြီး ဆက်သွယ် သွားလာရေး ခက်ခဲသော ဒေသများတွင် ရင်းနှီးမြှုပ်‌နှံသူများ အတွက် ဤဥပေဒပါမြေသို့မဟုတ်အဆောက် အအုံ ငှားရမ်းခွင့်ကာလ သို့မဟုတ် မြေ သို့မဟုတ် အဆောက် အအုံအသုံးပြုခွင့် ကာလထက် ပိုခံစားခွင့်ပြုရာတွင် အစိုးရအဖွဲ့မှ တစ်ဆင့် ပြည်ထောင်စု လွှတ်တော်သို့ တင်ပြ အတည်ပြုချက်ရယူရမည်။</li>
+            </ol>
+        </div>
+
+        <div class="invest-section">
+            <h2>ရင်းနှီးမြှုပ်နှံသူများ၏ တာဝန်ဝတ္တရားများ</h2>
+            <p>၆၅။ ရင်းနှီးမြှုပ်နှံသူသည် –</p>
+            <ol>
+                <li>
+                    (က) နိုင်ငံတော်အတွင်းရှိ တိုင်းရင်းသားလူမျိုးတို့၏ ဓလေ့ထုံးတမ်း၊ အစဉ်အလာ၊ ရိုးရာ ယဉ်ကျေးမှု တို့ကိုလေးစားလိုက်နာရမည်၊</li>
+                <li>
+                    (ခ) ရင်းနှီးမြှုပ်နှံမှုလုပ်ဆောင်ရန်အတွက် ကုမ္ပဏီ သို့မဟုတ် တစ်ဦးတည်းပိုင်သို့မဟုတ် တရားဝင် စီးပွားရေးအဖွဲ့အစည်းများ သို့မဟုတ် အဆိုပါ တရားဝင် စီးပွားရေး အဖွဲ့အစည်း၏ ရုံးခွဲများကို ဥပေဒ နှင့်အညီ ဖွဲ့စည်းတည်ထောင်၍မှတ်ပုံတင်ရမည်၊</li>
+                <li>
+                    (ဂ) တည်ဆဲဥပေဒများနှင့် ဤဥပေဒအရထုတ်ပြန်သော နည်းဥပေဒများ၊ လုပ်ထုံးလုပ်နည်းများ၊ အမိန့်ကြေငြာစာများ၊ အမိန့်နှင့် ညွှန်ကြားချက် များ၊ သဘောတူစာချုပ်ပါစည်းကမ်းချက်များနှင့် အခွန်ဆိုင်ရာ တာဝန်ရှိမှုအပါအဝင် ၎င်းတို့အားထုတ်ပေးထားသော အထူးပြုလိုင်စင်၊ ခွင့်ပြုမိန့်နှင့်လုပ်ငန်းဆောင်ရွက်ခွင့် လက်မှတ်များတွင် ပါဝင်သည့် စည်းကမ်းချက်များ၊ သတ်မှတ်ချက်များနှင့်အညီ လိုက် နာဆောင်ရွက်ရ မည်၊</li>
+                <li>
+                    (ဃ) လုပ်ငန်းသဘာဝအရဖြစ်စေ၊ အခြားလိုအပ်ချက်အရဖြစ်စေ သက်ဆိုင်သည့် ပြည်ထောင်စုဝန်ကြီးဌာနများ၊ အစိုးရဌာနနှင့် အဖွဲ့အစည်းများမှ လိုင်စင်သို့မဟုတ် ခွင့်ပြုမိန့်ရယူရန် လိုအပ်လျင်ဖြစ်စေ၊ မှတ်ပုံတင်ရန် လိုအပ်လျင်ဖြစ်စေ သက်ဆိုင်ရာဌာန၏ သတ်မှတ်ချက်များနှင့်အညီ ဆောင်ရွက်ရမည်၊</li>
+                <li>
+                    (င) မိမိငှားရမ်းခွင့်ရရှိထားသော သို့မဟုတ် အသုံးပြုခွင့် ရရှိထားသောမြေ၏မြေပေါ် မြေအောက်တွင်ခွင့်ပြုထားသည့် ရင်းနှီးမြှုပ်နှံမှုနှင့်ဆက်စပ် မှုမရှိသော၊ မူလသဘောတူစာချုပ်တွင် မပါဝင်သောသဘာဝ တွင်းထွက်ပစ္စည်းများသို့မဟုတ် ရှေးဟောင်းပစ္စည်းများနှင့်ရတနာသိုက်အစရှိ သည်တို့ကို တွေ့ရှိပါကကော်မရှင်ထံသို့ ချက်ချင်းသတင်းပေးအကြောင်းကြားရမည်။ ကော်မရှင်ကခွင့်ပြုလျင်ယင်းမြေပေါ်၌ ဆက်လက် လုပ်ကိုင်နိုင်ပြီးခွင့်မပြုလျင်ရင်းနှီးမြှုပ်နှံသူက ရွေးချယ်တင်ပြသည့် နေရာတစ်ခုအားအစားထိုး ခွင့်ပြုချက်ရယူ၍ပြောင်းရွှေ့ဆောင်ရွက်ရမည်၊</li>
+                <li>
+                    (စ) မိမိငှားရမ်းခွင့် သို့မဟုတ် အသုံးပြုခွင့်ရရှိသောမြေ၏သဘာဝ မြေမျက်နှာသွင်ပြင် သို့မဟုတ် မြေအနိမ့်အမြင့်အနေအထားအား သိသာ ထင်ရှားစွာ ပြောင်းလဲမှုကို ကော်မရှင်၏ ခွင့်ပြုချက်မရှိဘဲ မပြုလုပ်ရ၊</li>
+                <li>
+                    (ဆ) မိမိ၏ရင်းနှီးမြှုပ်နှံမှုနှင့်စပ်လျဉ်း၍ တည်ဆဲဥပေဒများ၊ နည်းဥပေဒများ၊ လုပ်ထုံးလုပ်နည်းများနှင့်နိုင်ငံတကာတွင်ကျင့်သုံးသည့် အကောင်းဆုံးစံချိန်စံညွှန်းများနှင့်အညီ သဘာဝပတ်ဝန်းကျင်နှင့်လူမှုပတ်ဝန်းကျင်ထိခိုက်ပျက်စီးမှု၊ ညစ်ညမ်းမှု၊ နစ်နာမှုမဖြစ် စေရန်နှင့် ယဉ်ကျေးမှုအမွေအနှစ်များကိုထိခိုက်ပျက်စီးမှုမဖြစ်ပေါ် စေရန်လိုက်နာ ဆောင်ရွက်ရမည်၊</li>
+                <li>
+                    (ဇ) ခွင့်ပြုမိန့် သို့မဟုတ် အတည်ပြုမိန့်ဖြင့် ဆောင်ရွက်သော ရင်းနှီးမြှုပ်နှံမှုများနှင့် သက်ဆိုင်သည့်လုပ်ငန်းဆိုင်ရာစာရင်းဇယားများ၊ နှစ်ပတ်လည် ငွေစာရင်းများနှင့် လိုအပ်သည့် သဘာဝဘေးအန္တရာယ်ကိစ္စရပ်များကို နိုင်ငံတကာနှင့် ပြည်တွင်း အသိ အမှတ်ပြု စာရင်းကိုင်စံနှုန်းများနှင့်အညီ ကောင်းမွန်စွာပြုစုမှတ်တမ်းတင်ထားရှိရ မည်။</li>
+                <li>
+                    (ဈ) အလုပ်ခန့်ထားမှုဆိုင်ရာသဘောတူစာချုပ်ဖောက်ဖျက်ခြင်း၊ ရင်းနှီးမြှုပ်နှံမှုအပြီးပိတ် သိမ်းခြင်း၊ လွှဲပြောင်းရောင်းချခြင်း၊ ရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းရပ်ဆိုင်းခြင်း၊ လုပ်သား အင်အားလျော့ချခြင်းတို့အတွက်အလုပ်သမားများအားတည်ဆဲဥပဒေများနှင့်အညီနစ်နာကြေးပေးပြီးမှသာ ရင်းနှီးမြှုပ်နှံမှု ကိုရပ်ဆိုင်း ပိတ်သိမ်းရမည်။</li>
+                <li>
+                    (ည) ခိုင်လုံသောအကြောင်းပြချက်ဖြင့်ရင်းနှီးမြှုပ်နှံမှုယာယီပိတ်သိမ်းရပါက ပိတ်သိမ်းထား ရသည့်ကာလအတွင်းအလုပ်သမားများအားတည်ဆဲဥပဒေ၊နည်းဥပဒေညွှန်ကြားချက်များ၊ လုပ်ထုံးလုပ်နည်း စသည်တို့နှင့်အညီ လုပ်ခလစာပေးရမည်။</li>
+                <li>
+                    (ဋ) အလုပ်ကြောင့်ထိခိုက်ဒဏ်ရာရရှိမှု ကိုယ်အင်္ဂါအစိတ်အပိုင်းချို့ယွင်းဆုံးရှုံးမှု ရောဂါရရှိ မှု၊သေဆုံးမှုတို့ဖြစ်ပွားသောအလုပ်သမားများအတွက်သက်ဆိုင်ရာအလုပ်သမား(သို့မဟုတ်)အမွေဆက်ခံခွင့်ရှိသူအားတည်ဆဲဥပဒေနှင့်အညီရထိုက်သည့်နစ်နာကြေးနှင့်လျော်ကြေးကိုပေးရမည်။</li>
+                <li>
+                    (ဌ) မိမိ၏ရင်းနှီးမြှုပ်နှံမှုတွင်လာရောက်အလုပ်လုပ်ကိုင်နေသည့်နိုင်ငံခြားသား ကျွမ်းကျင် ပညာရှင်များနှင့် ကြီးကြပ်သူများ မိသားစုဝင်များသည် တည်ဆဲဥပဒေများ၊ နည်းဥပဒေများ အမိန့်နှင့်ညွှန်ကြားချက်များနှင့်ယဉ်ကျေးမှုနှင့် ဓလေ့ထုံးစံများကို လေးစားလိုက်နာရန်ကြပ်မတ်ရမည်။</li>
+                <li>
+                    (ဍ) အလုပ်သမားရေးရာဥပဒေများကိုလေးစားလိုက်နာရမည်။</li>
+                <li>
+                    (ဎ) ဥပဒေနှင့်အညီ တရားစွဲဆိုခွင့်နှင့်တရားစွဲဆိုခံနိုင်ခွင့်ရှိရမည်။</li>
+                <li>
+                    (ဏ) ခွင့်ပြုမိန့်(သို့မဟုတ်) အတည်ပြုမိန့်ပါ ရင်းနှီးမြှုပ်နှံမှုလုပ်ကိုင်နိုင်ရန်အတွက် လိုအပ် ချက်အရ ဆောင်ရွက်ခြင်းမှတပါး ရင်းနှီးမြှုပ်နှံမှုနှင့်မသက်ဆိုင်သော သစ်တောများ ခုတ်ထွင်ခြင်း၊ သဘာဝသယံဇာတများတူးဖော်ခြင်း စသည့် သဘာဝပတ်ဝန်းကျင် ထိခိုက်ပျက်စီးစေခြင်းနှင့် လူမှုစီးပွားရေးဆုံးရှုံးမှုများ ဖြစ်ပေါ်စေပါက အဆိုပါဆုံးရှုံး နစ်နာမှုအတွက် ထိရောက်သည့်လျော်ကြေးကို နစ်နာသူထံသို့ ပေးလျော်ရမည်။</li>
+                <li>
+                    (တ) ကော်မရှင်ကရင်းနှီးမြှုပ်နှံမှုလုပ်ငန်းများအားစစ်ဆေးကြည့်ရှု့ရန်ကြိုတင် အကြောင်း ကြားလာပါက မည့်သည့်နေရာကိုမဆို ဝင်ရောက်စစ်ဆေးရန်ခွင့်ပြုပေးရမည်။</li>
+                <li>
+                    (ထ) သဘာဝပတ်ဝန်းကျင်ထိန်းသိမ်းရေးဥပဒေနှင့် ပတ်ဝန်းကျင်ထိခိုက်မှုစစ်ဆေးခြင်း ဆိုင်ရာလုပ်ထုံးလုပ်နည်းများအရကြိုတင်ခွင့်ပြုချက်ရယူရန်လိုအပ်သောရင်းနှီးမြှုပ်နှံမှုများသည် ဆန်းစစ်ခြင်းများ မလုပ်ဆောင်မီ ကော်မရှင်၏ခွင့်ပြုမိန့်(သို့မဟုတ်) အတည်ပြုမိန့်ကို ဦးစွာရယူရမည်။ ဤသို့ ကော်မရှင်၏ ခွင့်ပြုမိန့်(သို့မဟုတ်) အတည်ပြုမိန့်ရယူထားသည့် ရင်းနှီးမြှုပ်နှံမှုများသည် ၎င်းတို့လုပ်ငန်းဆောင်ရွက် နေသည့်ကာလတစ်လျောက်လုံး လိုအပ်သညပတ်ဝန်းကျင်ထိခိုက်မှုနှင့် လူမှုရေးထိ ခိုက်မှုဆန်းစစ်ချက်များဆောင်ရွက်မှုအခြေအနေများကို ကော်မရှင်သို့တင်ပြရမည်။</li>
+            </ol>
+        </div>
+
+        <div class="invest-section">
+            <h2>ကင်းလွတ်ခွင့်နှင့် သက်သာခွင့်များ</h2>
+            <p>၇၄။ ကော်မရှင်သည်နိုင်ငံတော်အတွင်းဖွံ့ဖြိုးတိုးတက်ရန် လိုအပ်သည်ကိစ္စများတွင် ရင်းနှီးမြှုပ်နှံ မှုများ ဝင်ရောက်စေခြင်းအားဖြင့် နိုင်ငံတော်၏ ဖွံ့ဖြိုးတိုးတက်မှုကို အထောက်အကူပြုစေရေး အတွက်လည်း ကောင်း၊တိုင်းဒေသကြီးနှင့် ပြည်နယ်များ အချိုးကျမျှတစွာ ဖွံ့ဖြိုးတိုးတက် လာစေရေးအတွက် လည်းကောင်း၊အခွန်ကင်းလွတ်ခွင့် (သို့မဟုတ်) သက်သာခွင့်တစ်ရပ်ရပ် ကိုဖြစ်စေ၊တစ်ရပ်ရပ်ထက် ပို၍ ဖြစ်စေခံစားခွင့်ပြုရန် ရင်းနှီးမြှုပ်နှံသူက လျှောက်ထားလာ လျင် စိစစ်၍ ခွင့်ပြုပေးနိုင်သည်။</p>
+            <p>၇၅။</p>
+            <ol>
+                <li>
+                    (က) ဝင်ငွေကင်းလွတ်ခွင့်နှင့်ပတ်သက်၍ ဖွံ့ဖြိုးမှုနည်းပါးသောဒေသများအား ဇုန်(၁) အဖြစ်လည်းကောင်း ဖွံ့ဖြိုးမှုအသင့်အတင့်ရှိသောဒေသများအား ဇုန်(၂) အဖြစ် လည်းကောင်း၊ ဖွံ့ဖြိုးမှုရှိသော ဒေသများအား ဇုန်(၃)အဖြစ်လည်းကောင်း အစိုးရ အဖွဲ့၏ အတည်ပြုချက်ဖြင့် ကော်မရှင်က အမိန့် ကြေငြာစာထုတ်ပြန်သတ်မှတ်ကာ ဇုန်(၁) အတွင်းရင်းနှီးမြှုပ်နှံသူများအား စီးပွားဖြစ်စတင်သော နှစ် အပါအဝင် တဆက်တည်း (၇) နှစ်အထိလည်းကောင်း ဇုန်(၂) အတွင်း ရင်းနှီးမြှုပ်နှံသူများအား စီးပွားဖြစ်စတင်သော နှစ်အပါအဝင် တဆက်တည်း (၅)နှစ်အထိလည်းကောင်း၊ဇုန်(၃) အတွင်း ရင်းနှီး မြှုပ်နှံသူများအားစီးပွားဖြစ်စတင်သော နှစ်အပါအဝင် တဆက်တည်း (၃)နှစ်အထိလည်းကောင်းဝင်ငွေခွန် ကင်းလွတ်ခွင့်ပြုနိုင်သည်။</li>
+                <li>
+                    (ခ) အစိုးရအဖွဲ့၏အတည်ပြုချက်ဖြင့် ကော်မရှင်သည် ဇုန်သတ်မှတ်ခြင်းကို သက်ဆိုင်ရာ ဒေသများ၏ဖွံ့ဖြိုးတိုးတက်မှုအပေါ်မူတည်၍အခါအားလျော်စွာ လိုအပ်သလိုပြောင်း လဲ သတ်မှတ်နိုင်သည်။</li>
+                <li>
+                    (ဂ) ဝင်ငွေကင်းလွတ်ခွင့်ကို ရင်းနှီးမြှုပ်နှံမှုမြှင့်တင်ဆောင်ရွက်ရန် ကော်မရှင်က အမိန့် ကြေငြာစာထုတ်ပြန်ထားသည့် ကိစ္စများအတွက်သာ ခွင့်ပြုရမည်။</li>
+            </ol>
+        </div>
+    </section>
+</div>
+    
+
+ 
+
+    
+
+
+ 
+
+
+    
+
+
+
+
+
+  
+
+
+
+
+   
+
+
+   
+
+
+ 
+
+
+  
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
+
+    <!-- footer-section start -->
+    <footer class="footer-section pt-120 pb-120">
+        <div class="container">
+            <div class="row mb-30-none">
+                <!-- <div class="col-lg-3 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Tourism Sectors</h3>
+                        <ul>
+                            <li><a href="#">Hotel Industry</a></li>
+                            <li><a href="#">Tour Operations</a></li>
+                            <li><a href="#">Transport Services</a></li>
+                            <li><a href="#">Tour Guide Licensing</a></li>
+                            <li><a href="#">Community Tourism</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Explore Myanmar</a></li>
+                            <li><a href="#">Map</a></li>
+                            <li><a href="#">Air Ballons</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Explore Our Site</h3>
+                        <ul>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="#">Announcements</a></li>
+                            <li><a href="#">Accommodation</a></li>
+                            <li><a href="#">Tour</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="footer-widget widget-menu">
+                        <h3 class="widget-title">Contact Us</h3>
+                        <ul class="footer-widget-content">
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+95) 673406458</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> (+95) 673406247</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-alt"></i> 1551</p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Ministry of Hotels and Tourism, Office No. 33,
+                                    Nay Pyi Taw, Myanmar</p>
+                            </li>
+                        </ul>
+                        <ul class="footer-social">
+                            <li><a href="https://facebook.com/tourismmyanmar.com.mm" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/VisitMyanmar_MM" class="active" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCYYysRno81dDb7Tyhxz3OEQ" target="_blank"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://linkedin.com/in/tourismmyanmar"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="https://instagram.com/tourismmyanmar" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+
+                            <li><a href="https://t.me/myanmarbeenchanted" target="_blank"><i
+                                        class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="https://pinterest.com/tourisminmyanmar" target="_blank"><i
+                                        class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="privacy-area wow fadeIn" data-wow-duration="0.5" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>© 2023 Ministry of Hotels and Tourism, Myanmar. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- footer-section end -->
+
+
+    <!-- jquery -->
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <!-- migarate-jquery -->
+    <script src="../assets/js/jquery-migrate-3.0.0.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- magnific-popup js -->
+    <script src="../assets/js/jquery.magnific-popup.js"></script>
+    <!-- isotope -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <!-- nice-select js-->
+    <script src="../assets/js/jquery.nice-select.js"></script>
+    <!-- swipper js -->
+    <script src="../assets/js/swiper.min.js"></script>
+    <!-- waypoints js link -->
+    <script src="../assets/js/jquery.waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <!-- paroller js -->
+    <script src="../assets/js/jquery.paroller.min.js"></script>
+    <!-- main -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- for mobile menu -->
+   
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function isMobile() {
+                return window.innerWidth < 992;
+            }
+
+            const mobileMenuLinks = document.querySelectorAll('.mobile-main-menu .mobile-menu_has_children > a');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+
+            mobileMenuLinks.forEach(function (parentLink) {
+                parentLink.addEventListener('click', function (e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        const parentLi = this.parentElement;
+                        const submenu = parentLi.querySelector(':scope > .mobile-sub-menu');
+
+                        // Close other open submenus at the same level
+                        const siblings = Array.from(parentLi.parentElement.children).filter(li => li !== parentLi);
+                        siblings.forEach(function (sibling) {
+                            sibling.classList.remove('open');
+                            const siblingSub = sibling.querySelector(':scope > .mobile-sub-menu');
+                            if (siblingSub) {
+                                siblingSub.style.display = 'none'; // Hide the submenu
+                            }
+                        });
+
+                        // Toggle the current submenu
+                        if (submenu) {
+                            if (submenu.style.display === 'block') {
+                                submenu.style.display = 'none';
+                                parentLi.classList.remove('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '+'; // Change icon to plus
+                            } else {
+                                submenu.style.display = 'block';
+                                parentLi.classList.add('open');
+                                parentLink.querySelector('.sub-menu-icon').textContent = '-'; // Change icon to minus
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Mobile menu toggle button
+            navbarToggler.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event bubbling
+                mobileMenu.classList.toggle('active'); // Add/remove a class to show/hide the whole menu
+            });
+
+            // Mobile menu close button
+            mobileMenuClose.addEventListener('click', function () {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#language-selector').niceSelect('destroy');
+            $('#language-selector-mobile').niceSelect('destroy');
+        });
+
+        function changeLanguageWeb() {
+            var lang = document.getElementById('language-selector').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+        function changeLanguage() {
+            var lang = document.getElementById('language-selector-mobile').value;
+            if (lang === 'mm') {
+                window.location.href = '../mm/index.html';
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+
+    </script>
+
+</body>
+
+<!-- index.html  30 Nov 2019 03:18:45 GMT -->
+
+</html>

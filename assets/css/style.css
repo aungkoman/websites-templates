@@ -4252,6 +4252,9 @@ footer.footer-section{
         display: block !important; /* Show the mobile language selector */
     }
 }
+.software-icon{
+  font-size: 30px !important;
+}
 
 
 
